@@ -123,17 +123,39 @@
   .btn.primary:hover{background:#0a5a5a}
   .honesty-pill{display:inline-block;margin-top:18px;font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.03em;color:var(--teal);border:1px solid var(--teal);border-radius:20px;padding:7px 14px}
   @media(max-width:560px){.triad{gap:20px}.cta-row .btn{flex:1 1 100%;justify-content:center}}
-  .card .claimrow{margin-top:2px}
+  .herosearch{display:flex;gap:10px;margin:24px 0 2px;max-width:560px}
+  #hq{flex:1;padding:15px 16px;border:1.5px solid var(--teal);border-radius:9px;font-family:inherit;font-size:16px;background:#fff}
+  #hq:focus{outline:none;box-shadow:0 0 0 3px rgba(14,110,110,.15)}
+  .herosearch .btn{white-space:nowrap}
+  @media(max-width:560px){.herosearch{flex-direction:column}}
+  .card .claimrow{margin-top:2px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .minilink{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.04em;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+  .minilink:hover{color:var(--ink)}
   .claimlink{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--teal);border:1px solid var(--teal);border-radius:6px;padding:4px 9px;display:inline-block;transition:background .2s,color .2s}
   .claimlink:hover{background:var(--teal);color:#fff;text-decoration:none}
   .claimed-tag{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--brass)}
 </style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agent Passport Registry — SaSame">
+<meta property="og:description" content="21,137 public MCP/agent endpoints indexed. Observed / Claimed / Certified. Verification only — no risk verdict. Search & claim your endpoint, free.">
+<meta property="og:url" content="https://shigeki7777.github.io/sasame-mcp-observatory/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Agent Passport Registry — SaSame">
+<meta name="twitter:description" content="Search & claim your MCP/agent endpoint. Observed/Claimed/Certified. No risk verdict.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"SaSame Agent Passport Registry","description":"Public, outside-in observability registry of the AI agent economy: one machine-readable Agent Passport per public MCP server and x402 service. Verification status only; no risk verdict on a named agent.","url":"https://shigeki7777.github.io/sasame-mcp-observatory/","keywords":["MCP","Model Context Protocol","AI agents","x402","agent registry","MCP observatory","Agent Passport","MCP server","claim MCP server"],"creator":{"@type":"Organization","name":"SaSame SRL","url":"https://srl-sasame.com"},"license":"https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/LICENSE","isAccessibleForFree":true,"distribution":[{"@type":"DataDownload","encodingFormat":"application/x-ndjson","contentUrl":"https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2"}]}
+</script>
 </head>
 <body>
 <header class="site"><div class="wrap fade">
   <p class="eyebrow">Built by SaSame · Agent Customs</p>
   <h1>Agent Passport Registry</h1>
   <p class="thesis">A public, outside-in log of the AI agent economy — one machine-readable passport per public MCP / x402 endpoint.</p>
+
+  <div class="herosearch">
+    <input id="hq" type="search" placeholder="Search your MCP / agent endpoint — domain or name" aria-label="Search your endpoint" autocomplete="off">
+    <a class="btn primary" href="#search" id="hqgo">Search &rarr;</a>
+  </div>
 
   <div class="hero-grid">
     <div class="bignum-wrap">
@@ -148,8 +170,7 @@
   </div>
 
   <div class="cta-row">
-    <a class="btn primary" href="#search">Search your endpoint</a>
-    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your agent</a>
+    <a class="btn primary" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your agent</a>
     <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Download full dataset</a>
   </div>
 
@@ -273,6 +294,10 @@ fetch('passports/search-index.json').then(r=>r.json()).then(d=>{
 }).catch(()=>{countLine.textContent='Could not load the search index.';});
 
 let t;q.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(run,140);});
+const hq=document.getElementById('hq');
+if(hq){let th;hq.addEventListener('input',()=>{q.value=hq.value;clearTimeout(th);th=setTimeout(run,140);});
+  hq.addEventListener('keydown',(e)=>{if(e.key==='Enter'){q.value=hq.value;run();document.getElementById('search').scrollIntoView({behavior:'smooth'});}});
+  const go=document.getElementById('hqgo');if(go)go.addEventListener('click',()=>{q.value=hq.value;run();});}
 catSel.addEventListener('change',run);regSel.addEventListener('change',run);
 moreBtn.addEventListener('click',()=>{render(FI,true);});
 
@@ -303,7 +328,9 @@ function render(list,append){
       const t=encodeURIComponent('Claim: '+(r[0]||r[1]||'my endpoint'));
       const ep=encodeURIComponent(r[1]||'');const nm=encodeURIComponent(r[0]||'');
       const url=CLAIM_BASE+'?template=claim-passport.yml&title='+t+'&endpoint='+ep+'&name='+nm;
-      action='<div class="claimrow"><a class="claimlink" href="'+url+'" target="_blank" rel="noopener noreferrer">Claim this &rarr;</a></div>';
+      const durl=CLAIM_BASE+'?template=correct-or-delist.yml&endpoint='+ep;
+      action='<div class="claimrow"><a class="claimlink" href="'+url+'" target="_blank" rel="noopener noreferrer">Claim this &rarr;</a>'
+        +'<a class="minilink" href="'+durl+'" target="_blank" rel="noopener noreferrer">correct / remove</a></div>';
     } else {
       action='<div class="claimrow"><span class="claimed-tag">'+s_lab(r[2])+' &#10003;</span></div>';
     }

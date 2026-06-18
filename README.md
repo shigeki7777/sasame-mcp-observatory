@@ -5,11 +5,14 @@
 We continuously and externally audit public MCP (Model Context Protocol) servers — does each one actually complete the handshake, list valid tools, return real content, and stay reachable — and publish **signed, time-limited readiness observations**. This repo is the transparent mirror of https://live-vps.sasame.online/observatory/.
 
 > 🔭 **Live viewer:** https://shigeki7777.github.io/sasame-mcp-observatory/ — browse the Agent Passport Registry (dashboard + identity-confidence ladder + coarse Map + search over all indexed endpoints).
+>
+> 🪪 **Is your endpoint here?** Search your domain in the viewer — if it is `unclaimed`, **claim it for free** ([CLAIM.md](CLAIM.md)) and embed an [Agent Passport badge](BADGE.md). No account setup, no cost, no sales pitch.
 
 ## The numbers (latest)
 
 - **30000** public MCP entries indexed (21137 with an auditable remote endpoint)
 - **1031** audited · **205** currently meet the **Observed MCP-Ready** bar (A/B)
+- **2,286** owner-identifiable **claimable** endpoints (A/B grade + priced) — ranked in [`passports/claim-targets.json`](passports/claim-targets.json)
 - Full numbers: [`data/latest/summary.json`](data/latest/summary.json)
 
 ## Three levels (we do not over-claim)
