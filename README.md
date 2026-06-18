@@ -28,6 +28,19 @@ We continuously and externally audit public MCP (Model Context Protocol) servers
 - [`data/latest/`](data/latest/) — lightweight machine-readable index + observed-ready set
 - [`certs/`](certs/) — ed25519-signed MCP-Ready certificates (A/B), offline-verifiable
 
+## Agent Passports
+
+The per-agent rollup of this Observatory lives in [`passports/`](passports/): one
+machine-readable record per indexed endpoint, joining self-declaration + outside-in
+observation + what is still unconfirmed, with an explicit **identity confidence**
+(`unconfirmed` → `self_asserted` → `owner_proven` → `corroborated`).
+
+We publish **verification status only — never a risk verdict** on a named agent.
+(A GET probe is a weak signal; MCP answers over POST, so "content not verified via
+GET" is expected, not a defect.) Full per-agent data ships as
+[Release](https://github.com/shigeki7777/sasame-mcp-observatory/releases) assets;
+lightweight summaries + samples are in [`passports/`](passports/).
+
 ## Verify a certificate yourself (no callback to us)
 
 ```js

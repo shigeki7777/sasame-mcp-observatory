@@ -1,0 +1,78 @@
+{
+  "schema_version": "agent-passport-summary-v0.2",
+  "generated_at": "2026-06-18T13:45:57.511Z",
+  "count": 21137,
+  "framing": "Public, outside-in observability projection. No risk verdicts on named agents; verification status only.",
+  "vocabulary": {
+    "levels": [
+      "observed",
+      "claimed",
+      "certified"
+    ],
+    "identity_confidence": [
+      "unconfirmed",
+      "self_asserted",
+      "owner_proven",
+      "corroborated"
+    ]
+  },
+  "aggregates": {
+    "identity_status": {
+      "unclaimed": 21136,
+      "claimed": 1
+    },
+    "identity_confidence": {
+      "unconfirmed": 21136,
+      "owner_proven": 1
+    },
+    "audit_level": {
+      "observed": 21136,
+      "claimed": 1
+    },
+    "audit_grade": {
+      "C": 694,
+      "B": 261,
+      "A": 167,
+      "D": 400,
+      "unaudited": 19615
+    },
+    "source_registry": {
+      "official MCP registry": 6248,
+      "x402 discovery catalog": 1418,
+      "PulseMCP": 83,
+      "Glama": 13388
+    },
+    "protocol": {
+      "mcp": 19721,
+      "x402": 1875,
+      "agent_card": 1
+    },
+    "category": {
+      "mcp": 19719,
+      "Price/Market": 91,
+      "Image/Media": 30,
+      "Search/Discovery": 172,
+      "AI/LLM": 342,
+      "Other": 241,
+      "Wallet/Balance": 16,
+      "Content": 2,
+      "DeFi": 123,
+      "Transaction": 22,
+      "News": 33,
+      "Analytics": 40,
+      "Identity/ENS": 79,
+      "Security": 22,
+      "NFT": 22,
+      "Social": 29,
+      "Intelligence": 3,
+      "Weather": 28,
+      "Bridge/Cross-chain": 17,
+      "Code/Dev": 45,
+      "Storage": 53,
+      "Domain": 2,
+      "Governance": 2,
+      "Finance/FX": 4
+    }
+  },
+  "full_dataset": "See GitHub Release asset passports-public.jsonl (full per-agent records) and passports-index.json (full index)."
+}

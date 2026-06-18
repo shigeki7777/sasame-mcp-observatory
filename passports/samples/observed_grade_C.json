@@ -1,0 +1,94 @@
+{
+  "schema_version": "agent-passport-public-v0.2",
+  "agent_id": "ac-inference-sh-mcp-https-sh-inference-ac-aa8fdf99",
+  "profile_url": "https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/passports/index.md#ac-inference-sh-mcp-https-sh-inference-ac-aa8fdf99",
+  "identity_status": "unclaimed",
+  "identity": {
+    "name": "ac.inference.sh/mcp",
+    "title": "inference.sh",
+    "description": "Run 150+ AI apps — image, video, audio, LLMs, 3D and more. Browse, execute, stream results.",
+    "endpoint": "https://sh.inference.ac",
+    "domain": "sh.inference.ac",
+    "ownership_verification": {
+      "status": "none",
+      "method": null,
+      "verified_at": null
+    }
+  },
+  "source": {
+    "registry": "official MCP registry",
+    "source_url": "https://registry.modelcontextprotocol.io",
+    "indexed_at": "2026-06-18T12:14:41.198Z",
+    "status": "unclaimed"
+  },
+  "protocols": [
+    "mcp"
+  ],
+  "capability_profile": {
+    "kind": "mcp_server",
+    "category": "mcp",
+    "has_endpoint": true,
+    "tool_count": null,
+    "tools_listable": null,
+    "safety_annotations_present": null,
+    "paid_endpoint": false,
+    "price": null,
+    "declared_description": "Run 150+ AI apps — image, video, audio, LLMs, 3D and more. Browse, execute, stream results."
+  },
+  "behavior_profile": {
+    "initialize_ok": null,
+    "returns_real_content": false,
+    "honest_error_behavior": null,
+    "latency_ms": null,
+    "audit_grade": "C",
+    "passes": 2,
+    "total": 10,
+    "top_gap": "C1 Protocol handshake conformance — initialize result keys: (none, status 301)",
+    "delivery": null
+  },
+  "verification": {
+    "identity_confidence": "unconfirmed",
+    "audit_level": "observed",
+    "audit_grade": "C",
+    "unconfirmed_items": [
+      "identity_owner_not_confirmed",
+      "audit_pass_ratio_below_threshold",
+      "content_not_verified_via_get_probe"
+    ],
+    "get_probe_caveat": "A GET probe is a weak signal: MCP servers answer over POST, so content shown as unverified-by-GET is expected and is NOT a defect.",
+    "note": "Verification reflects only what SaSame confirmed from public, outside-in observation. Listed items are UNCONFIRMED, not defects or accusations. Clear any item by claiming (CLAIM.md). Not KYC, legal certification, enforcement, or operator geolocation."
+  },
+  "reputation": {
+    "score": 11,
+    "tier": "observed",
+    "basis": [
+      "standard_audit_pass_ratio=2/10"
+    ],
+    "peer_review": "not_enabled"
+  },
+  "evidence": [
+    {
+      "class": "registry_listing",
+      "source": "census/ledger.jsonl",
+      "reference": "https://sh.inference.ac",
+      "observed_at": "2026-06-18T12:14:41.198Z",
+      "confidence": "low",
+      "summary": "Public registry listing from official MCP registry"
+    },
+    {
+      "class": "standard_audit",
+      "source": "census/observations.jsonl",
+      "reference": "https://sh.inference.ac",
+      "observed_at": "2026-06-18T09:50:05.293Z",
+      "confidence": "medium",
+      "summary": "Audit grade C; real content=false"
+    }
+  ],
+  "last_observed_at": "2026-06-18T09:50:05.293Z",
+  "generated_at": "2026-06-18T13:45:57.511Z",
+  "disclaimers": [
+    "Public endpoint observability only; not KYC, legal certification, enforcement, or operator geolocation.",
+    "Identity claims are separated from observed behavior. unclaimed/self_claimed are not verified.",
+    "No badness verdict is made about any named agent. The strongest caution is \"verify before trust\", always clearable by claiming."
+  ]
+}

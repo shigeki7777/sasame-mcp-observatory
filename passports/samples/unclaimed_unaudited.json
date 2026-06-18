@@ -1,0 +1,90 @@
+{
+  "schema_version": "agent-passport-public-v0.2",
+  "agent_id": "ai-duvera-gateway-https-app-duvera-ai-mcp-6f60b579",
+  "profile_url": "https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/passports/index.md#ai-duvera-gateway-https-app-duvera-ai-mcp-6f60b579",
+  "identity_status": "unclaimed",
+  "identity": {
+    "name": "ai.duvera/gateway",
+    "title": "ai.duvera/gateway",
+    "description": "Governed AI actions with signed, verifiable receipts: free keyless reads, human-approved writes.",
+    "endpoint": "https://app.duvera.ai/mcp",
+    "domain": "app.duvera.ai",
+    "ownership_verification": {
+      "status": "none",
+      "method": null,
+      "verified_at": null
+    }
+  },
+  "source": {
+    "registry": "official MCP registry",
+    "source_url": "https://registry.modelcontextprotocol.io",
+    "indexed_at": "2026-06-18T12:14:42.126Z",
+    "status": "unclaimed"
+  },
+  "protocols": [
+    "mcp"
+  ],
+  "capability_profile": {
+    "kind": "mcp_server",
+    "category": "mcp",
+    "has_endpoint": true,
+    "tool_count": null,
+    "tools_listable": null,
+    "safety_annotations_present": null,
+    "paid_endpoint": false,
+    "price": null,
+    "declared_description": "Governed AI actions with signed, verifiable receipts: free keyless reads, human-approved writes."
+  },
+  "behavior_profile": {
+    "initialize_ok": null,
+    "returns_real_content": null,
+    "honest_error_behavior": null,
+    "latency_ms": null,
+    "audit_grade": null,
+    "passes": null,
+    "total": null,
+    "top_gap": null,
+    "delivery": null
+  },
+  "verification": {
+    "identity_confidence": "unconfirmed",
+    "audit_level": "observed",
+    "audit_grade": null,
+    "unconfirmed_items": [
+      "identity_owner_not_confirmed"
+    ],
+    "get_probe_caveat": "A GET probe is a weak signal: MCP servers answer over POST, so content shown as unverified-by-GET is expected and is NOT a defect.",
+    "note": "Verification reflects only what SaSame confirmed from public, outside-in observation. Listed items are UNCONFIRMED, not defects or accusations. Clear any item by claiming (CLAIM.md). Not KYC, legal certification, enforcement, or operator geolocation."
+  },
+  "reputation": {
+    "score": 0,
+    "tier": "unrated",
+    "basis": [],
+    "peer_review": "not_enabled"
+  },
+  "evidence": [
+    {
+      "class": "registry_listing",
+      "source": "census/ledger.jsonl",
+      "reference": "https://app.duvera.ai/mcp",
+      "observed_at": "2026-06-18T12:14:42.126Z",
+      "confidence": "low",
+      "summary": "Public registry listing from official MCP registry"
+    },
+    {
+      "class": "standard_audit",
+      "source": "census/observations.jsonl",
+      "reference": "https://app.duvera.ai/mcp",
+      "observed_at": "2026-06-18T09:55:00.284Z",
+      "confidence": "medium",
+      "summary": "Audit grade unknown; real content=null"
+    }
+  ],
+  "last_observed_at": "2026-06-18T09:55:00.284Z",
+  "generated_at": "2026-06-18T13:45:57.511Z",
+  "disclaimers": [
+    "Public endpoint observability only; not KYC, legal certification, enforcement, or operator geolocation.",
+    "Identity claims are separated from observed behavior. unclaimed/self_claimed are not verified.",
+    "No badness verdict is made about any named agent. The strongest caution is \"verify before trust\", always clearable by claiming."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "agent-passport-public-v0.2",
+  "agent_id": "ai-agentdm-agentdm-https-api-agentdm-ai-api-v1-grid-f9cc4667",
+  "profile_url": "https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/passports/index.md#ai-agentdm-agentdm-https-api-agentdm-ai-api-v1-grid-f9cc4667",
+  "identity_status": "unclaimed",
+  "identity": {
+    "name": "ai.agentdm/agentdm",
+    "title": "AgentDM",
+    "description": "Agent-to-agent messaging platform using MCP for cross-model communication.",
+    "endpoint": "https://api.agentdm.ai/api/v1/grid",
+    "domain": "api.agentdm.ai",
+    "ownership_verification": {
+      "status": "none",
+      "method": null,
+      "verified_at": null
+    }
+  },
+  "source": {
+    "registry": "official MCP registry",
+    "source_url": "https://registry.modelcontextprotocol.io",
+    "indexed_at": "2026-06-18T12:14:41.198Z",
+    "status": "unclaimed"
+  },
+  "protocols": [
+    "mcp"
+  ],
+  "capability_profile": {
+    "kind": "mcp_server",
+    "category": "mcp",
+    "has_endpoint": true,
+    "tool_count": null,
+    "tools_listable": null,
+    "safety_annotations_present": null,
+    "paid_endpoint": false,
+    "price": null,
+    "declared_description": "Agent-to-agent messaging platform using MCP for cross-model communication."
+  },
+  "behavior_profile": {
+    "initialize_ok": null,
+    "returns_real_content": false,
+    "honest_error_behavior": null,
+    "latency_ms": null,
+    "audit_grade": "A",
+    "passes": 3,
+    "total": 10,
+    "top_gap": "C1 Protocol handshake conformance — initialize result keys: (none, status 401)",
+    "delivery": null
+  },
+  "verification": {
+    "identity_confidence": "unconfirmed",
+    "audit_level": "observed",
+    "audit_grade": "A",
+    "unconfirmed_items": [
+      "identity_owner_not_confirmed",
+      "audit_pass_ratio_below_threshold",
+      "content_not_verified_via_get_probe"
+    ],
+    "get_probe_caveat": "A GET probe is a weak signal: MCP servers answer over POST, so content shown as unverified-by-GET is expected and is NOT a defect.",
+    "note": "Verification reflects only what SaSame confirmed from public, outside-in observation. Listed items are UNCONFIRMED, not defects or accusations. Clear any item by claiming (CLAIM.md). Not KYC, legal certification, enforcement, or operator geolocation."
+  },
+  "reputation": {
+    "score": 17,
+    "tier": "observed",
+    "basis": [
+      "standard_audit_pass_ratio=3/10"
+    ],
+    "peer_review": "not_enabled"
+  },
+  "evidence": [
+    {
+      "class": "registry_listing",
+      "source": "census/ledger.jsonl",
+      "reference": "https://api.agentdm.ai/api/v1/grid",
+      "observed_at": "2026-06-18T12:14:41.198Z",
+      "confidence": "low",
+      "summary": "Public registry listing from official MCP registry"
+    },
+    {
+      "class": "standard_audit",
+      "source": "census/observations.jsonl",
+      "reference": "https://api.agentdm.ai/api/v1/grid",
+      "observed_at": "2026-06-18T09:50:15.424Z",
+      "confidence": "medium",
+      "summary": "Audit grade A; real content=false"
+    }
+  ],
+  "last_observed_at": "2026-06-18T09:50:15.424Z",
+  "generated_at": "2026-06-18T13:45:57.511Z",
+  "disclaimers": [
+    "Public endpoint observability only; not KYC, legal certification, enforcement, or operator geolocation.",
+    "Identity claims are separated from observed behavior. unclaimed/self_claimed are not verified.",
+    "No badness verdict is made about any named agent. The strongest caution is \"verify before trust\", always clearable by claiming."
+  ]
+}

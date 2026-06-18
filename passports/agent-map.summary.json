@@ -1,0 +1,294 @@
+{
+  "schema_version": "agent-map-summary-v0.2",
+  "generated_at": "2026-06-18T13:45:57.511Z",
+  "count": 21137,
+  "map_semantics": "Coarse, NON-operator-location topology of the observed agent population. Axes are ecosystem-topological (identity/level/grade/category/protocol/registry/tld-class), NEVER geographic. No IP, city, datacenter, operator, or risk verdict.",
+  "disclaimers": [
+    "Not geolocation. Not enforcement. Not a deny-list. Public endpoint observability only."
+  ],
+  "histograms": {
+    "identity_status": {
+      "unclaimed": 21136,
+      "claimed": 1
+    },
+    "identity_confidence": {
+      "unconfirmed": 21136,
+      "owner_proven": 1
+    },
+    "audit_level": {
+      "observed": 21136,
+      "claimed": 1
+    },
+    "audit_grade": {
+      "C": 694,
+      "B": 261,
+      "A": 167,
+      "D": 400,
+      "unaudited": 19615
+    },
+    "grade_band": {
+      "CD": 1094,
+      "AB": 428,
+      "unaudited": 19615
+    },
+    "category": {
+      "mcp": 19719,
+      "Price/Market": 91,
+      "Image/Media": 30,
+      "Search/Discovery": 172,
+      "AI/LLM": 342,
+      "Other": 241,
+      "Wallet/Balance": 16,
+      "Content": 2,
+      "DeFi": 123,
+      "Transaction": 22,
+      "News": 33,
+      "Analytics": 40,
+      "Identity/ENS": 79,
+      "Security": 22,
+      "NFT": 22,
+      "Social": 29,
+      "Intelligence": 3,
+      "Weather": 28,
+      "Bridge/Cross-chain": 17,
+      "Code/Dev": 45,
+      "Storage": 53,
+      "Domain": 2,
+      "Governance": 2,
+      "Finance/FX": 4
+    },
+    "protocol": {
+      "mcp": 19721,
+      "x402": 1875,
+      "agent_card": 1
+    },
+    "source_registry": {
+      "official MCP registry": 6248,
+      "x402 discovery catalog": 1418,
+      "PulseMCP": 83,
+      "Glama": 13388
+    },
+    "tld_class": {
+      "other": 1194,
+      ".ai": 14472,
+      ".app": 586,
+      ".io": 1178,
+      ".com": 3225,
+      ".dev": 398,
+      ".org": 84
+    }
+  },
+  "clusters": [
+    {
+      "category": "mcp",
+      "grade_band": "CD",
+      "count": 776
+    },
+    {
+      "category": "mcp",
+      "grade_band": "AB",
+      "count": 428
+    },
+    {
+      "category": "mcp",
+      "grade_band": "unaudited",
+      "count": 18515
+    },
+    {
+      "category": "Price/Market",
+      "grade_band": "CD",
+      "count": 68
+    },
+    {
+      "category": "Image/Media",
+      "grade_band": "CD",
+      "count": 1
+    },
+    {
+      "category": "Search/Discovery",
+      "grade_band": "CD",
+      "count": 45
+    },
+    {
+      "category": "AI/LLM",
+      "grade_band": "CD",
+      "count": 35
+    },
+    {
+      "category": "Other",
+      "grade_band": "CD",
+      "count": 20
+    },
+    {
+      "category": "Wallet/Balance",
+      "grade_band": "CD",
+      "count": 8
+    },
+    {
+      "category": "Content",
+      "grade_band": "CD",
+      "count": 1
+    },
+    {
+      "category": "Search/Discovery",
+      "grade_band": "unaudited",
+      "count": 127
+    },
+    {
+      "category": "DeFi",
+      "grade_band": "CD",
+      "count": 64
+    },
+    {
+      "category": "Transaction",
+      "grade_band": "CD",
+      "count": 8
+    },
+    {
+      "category": "News",
+      "grade_band": "CD",
+      "count": 6
+    },
+    {
+      "category": "Analytics",
+      "grade_band": "CD",
+      "count": 2
+    },
+    {
+      "category": "Identity/ENS",
+      "grade_band": "CD",
+      "count": 14
+    },
+    {
+      "category": "Security",
+      "grade_band": "CD",
+      "count": 3
+    },
+    {
+      "category": "NFT",
+      "grade_band": "CD",
+      "count": 22
+    },
+    {
+      "category": "Social",
+      "grade_band": "CD",
+      "count": 1
+    },
+    {
+      "category": "Intelligence",
+      "grade_band": "CD",
+      "count": 3
+    },
+    {
+      "category": "Weather",
+      "grade_band": "CD",
+      "count": 2
+    },
+    {
+      "category": "DeFi",
+      "grade_band": "unaudited",
+      "count": 59
+    },
+    {
+      "category": "Bridge/Cross-chain",
+      "grade_band": "CD",
+      "count": 15
+    },
+    {
+      "category": "Bridge/Cross-chain",
+      "grade_band": "unaudited",
+      "count": 2
+    },
+    {
+      "category": "Other",
+      "grade_band": "unaudited",
+      "count": 221
+    },
+    {
+      "category": "Identity/ENS",
+      "grade_band": "unaudited",
+      "count": 65
+    },
+    {
+      "category": "AI/LLM",
+      "grade_band": "unaudited",
+      "count": 307
+    },
+    {
+      "category": "Wallet/Balance",
+      "grade_band": "unaudited",
+      "count": 8
+    },
+    {
+      "category": "Image/Media",
+      "grade_band": "unaudited",
+      "count": 29
+    },
+    {
+      "category": "Code/Dev",
+      "grade_band": "unaudited",
+      "count": 45
+    },
+    {
+      "category": "Analytics",
+      "grade_band": "unaudited",
+      "count": 38
+    },
+    {
+      "category": "Storage",
+      "grade_band": "unaudited",
+      "count": 53
+    },
+    {
+      "category": "News",
+      "grade_band": "unaudited",
+      "count": 27
+    },
+    {
+      "category": "Domain",
+      "grade_band": "unaudited",
+      "count": 2
+    },
+    {
+      "category": "Price/Market",
+      "grade_band": "unaudited",
+      "count": 23
+    },
+    {
+      "category": "Transaction",
+      "grade_band": "unaudited",
+      "count": 14
+    },
+    {
+      "category": "Weather",
+      "grade_band": "unaudited",
+      "count": 26
+    },
+    {
+      "category": "Security",
+      "grade_band": "unaudited",
+      "count": 19
+    },
+    {
+      "category": "Social",
+      "grade_band": "unaudited",
+      "count": 28
+    },
+    {
+      "category": "Governance",
+      "grade_band": "unaudited",
+      "count": 2
+    },
+    {
+      "category": "Finance/FX",
+      "grade_band": "unaudited",
+      "count": 4
+    },
+    {
+      "category": "Content",
+      "grade_band": "unaudited",
+      "count": 1
+    }
+  ],
+  "full_markers": "See GitHub Release asset agent-map-public.json for the full per-agent marker set."
+}

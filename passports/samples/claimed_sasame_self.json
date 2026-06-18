@@ -1,0 +1,91 @@
+{
+  "schema_version": "agent-passport-public-v0.2",
+  "agent_id": "online-sasame-research-https-live-vps-sasame-online-public-mcp-8cdca063",
+  "profile_url": "https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/passports/index.md#online-sasame-research-https-live-vps-sasame-online-public-mcp-8cdca063",
+  "identity_status": "claimed",
+  "identity": {
+    "name": "online.sasame/research",
+    "title": "SaSame Research Agent",
+    "description": "Research-as-a-service: web, PubMed, competitive scan. Free preview; full cited result via x402.",
+    "endpoint": "https://live-vps.sasame.online/public-mcp",
+    "domain": "live-vps.sasame.online",
+    "ownership_verification": {
+      "status": "claimed",
+      "method": "well-known",
+      "verified_at": "2026-06-18T11:12:34.778Z"
+    }
+  },
+  "source": {
+    "registry": "official MCP registry",
+    "source_url": "https://registry.modelcontextprotocol.io",
+    "indexed_at": "2026-06-18T12:17:17.402Z",
+    "status": "unclaimed"
+  },
+  "protocols": [
+    "mcp",
+    "x402"
+  ],
+  "capability_profile": {
+    "kind": "mcp_server",
+    "category": "mcp",
+    "has_endpoint": true,
+    "tool_count": null,
+    "tools_listable": null,
+    "safety_annotations_present": null,
+    "paid_endpoint": false,
+    "price": null,
+    "declared_description": "Research-as-a-service: web, PubMed, competitive scan. Free preview; full cited result via x402."
+  },
+  "behavior_profile": {
+    "initialize_ok": null,
+    "returns_real_content": null,
+    "honest_error_behavior": null,
+    "latency_ms": null,
+    "audit_grade": null,
+    "passes": null,
+    "total": null,
+    "top_gap": null,
+    "delivery": null
+  },
+  "verification": {
+    "identity_confidence": "owner_proven",
+    "audit_level": "claimed",
+    "audit_grade": null,
+    "unconfirmed_items": [],
+    "get_probe_caveat": "A GET probe is a weak signal: MCP servers answer over POST, so content shown as unverified-by-GET is expected and is NOT a defect.",
+    "note": "Verification reflects only what SaSame confirmed from public, outside-in observation. Listed items are UNCONFIRMED, not defects or accusations. Clear any item by claiming (CLAIM.md). Not KYC, legal certification, enforcement, or operator geolocation."
+  },
+  "reputation": {
+    "score": 10,
+    "tier": "claimed",
+    "basis": [
+      "ownership_claim=claimed"
+    ],
+    "peer_review": "not_enabled"
+  },
+  "evidence": [
+    {
+      "class": "registry_listing",
+      "source": "census/ledger.jsonl",
+      "reference": "https://live-vps.sasame.online/public-mcp",
+      "observed_at": "2026-06-18T12:17:17.402Z",
+      "confidence": "low",
+      "summary": "Public registry listing from official MCP registry"
+    },
+    {
+      "class": "ownership_claim",
+      "source": "census/claims.jsonl",
+      "reference": "https://live-vps.sasame.online/public-mcp",
+      "observed_at": "2026-06-18T11:12:34.778Z",
+      "confidence": "high",
+      "summary": "Ownership claim via well-known"
+    }
+  ],
+  "last_observed_at": "2026-06-18T11:12:34.778Z",
+  "generated_at": "2026-06-18T13:45:57.511Z",
+  "disclaimers": [
+    "Public endpoint observability only; not KYC, legal certification, enforcement, or operator geolocation.",
+    "Identity claims are separated from observed behavior. unclaimed/self_claimed are not verified.",
+    "No badness verdict is made about any named agent. The strongest caution is \"verify before trust\", always clearable by claiming."
+  ]
+}

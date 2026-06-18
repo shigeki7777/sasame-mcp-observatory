@@ -9,3 +9,13 @@ If your server is listed as **Observed MCP-Ready (unclaimed)**, the signed certi
 Want your real-time grade now? Run the free audit: MCP `audit_mcp(url)` / `verify_mcp_ready(url)` on `https://live-vps.sasame.online/public-mcp`.
 
 **Embed your badge** (A/B): `[![MCP-Ready by SaSame](https://live-vps.sasame.online/observatory/badge/<your-server>.svg)](https://live-vps.sasame.online/observatory/)`
+
+---
+
+## Claiming your Agent Passport
+
+The same proof upgrades your **Agent Passport** (`passports/`) from
+`unclaimed` (owner-unconfirmed) to `claimed` / `verified`. Claiming is the way to
+clear any `unconfirmed_items` on your passport — it is **free**, and identity is
+never paywalled. Open an issue/PR here or email **consulting@srl-sasame.com** from
+your server's domain.
