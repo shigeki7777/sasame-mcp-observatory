@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-18T10:25:58.051Z",
+  "source": "https://live-vps.sasame.online/observatory/",
+  "standard": "agent-tool-discoverability-standard/0.1",
+  "indexed_total": 34548,
+  "auditable_endpoints": 21332,
+  "audited": 200,
+  "observed_ready": 88,
+  "by_source": {
+    "official MCP registry": 15077,
+    "x402 discovery catalog": 1418,
+    "Glama": 13505,
+    "GitHub": 1604,
+    "awesome-mcp-servers": 2944
+  },
+  "categories": [
+    {
+      "key": "research",
+      "title": "Research & Knowledge",
+      "count": 8
+    },
+    {
+      "key": "livedata",
+      "title": "Live Data",
+      "count": 18
+    },
+    {
+      "key": "commerce",
+      "title": "Commerce & Payments",
+      "count": 4
+    },
+    {
+      "key": "security",
+      "title": "Security & Compliance",
+      "count": 3
+    },
+    {
+      "key": "devtools",
+      "title": "Developer Tools",
+      "count": 7
+    },
+    {
+      "key": "bizops",
+      "title": "Business Operations",
+      "count": 3
+    },
+    {
+      "key": "agentinfra",
+      "title": "Agent Infrastructure",
+      "count": 28
+    },
+    {
+      "key": "experimental",
+      "title": "Experimental & General",
+      "count": 17
+    }
+  ],
+  "claimed": 0,
+  "levels": {
+    "observed": "measured from outside, owner not confirmed",
+    "claimed": "owner proved control",
+    "certified": "continuously monitored by SaSame"
+  }
+}
