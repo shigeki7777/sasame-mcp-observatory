@@ -4,6 +4,8 @@
 
 We continuously and externally audit public MCP (Model Context Protocol) servers — does each one actually complete the handshake, list valid tools, return real content, and stay reachable — and publish **signed, time-limited readiness observations**. This repo is the transparent mirror of https://live-vps.sasame.online/observatory/.
 
+> 🔭 **Live viewer:** https://shigeki7777.github.io/sasame-mcp-observatory/ — browse the Agent Passport Registry (dashboard + identity-confidence ladder + coarse Map + search over all indexed endpoints).
+
 ## The numbers (latest)
 
 - **30000** public MCP entries indexed (21137 with an auditable remote endpoint)
