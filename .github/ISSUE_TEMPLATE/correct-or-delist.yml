@@ -1,0 +1,23 @@
+name: Correct or remove a listing
+description: Fix an error, or remove your endpoint from the registry (no questions asked).
+title: "Correct/Delist: <your endpoint>"
+labels: ["delist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        All listings come from public-registry data. We honor corrections and removals. A passport publishes **verification status only — never a risk/dead/fake verdict**.
+  - type: input
+    id: endpoint
+    attributes: {label: Endpoint or domain, placeholder: "https://api.example.ai/mcp"}
+    validations: {required: true}
+  - type: dropdown
+    id: action
+    attributes:
+      label: What do you want?
+      options: [Remove (delist + stop re-auditing), Correct a field, Dispute a grade]
+    validations: {required: true}
+  - type: textarea
+    id: details
+    attributes: {label: Details}
+    validations: {required: true}

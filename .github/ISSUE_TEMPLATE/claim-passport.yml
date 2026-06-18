@@ -1,0 +1,48 @@
+name: Claim your Agent Passport
+description: Prove control of a listed endpoint to upgrade it from unclaimed → claimed (free).
+title: "Claim: <your endpoint>"
+labels: ["claim"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Claiming is **free** and clears any `unconfirmed_items` on your passport. We only need proof you control the endpoint. **Do not paste secrets, credentials, or private data.**
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint or domain
+      placeholder: https://api.example.ai/mcp
+    validations: {required: true}
+  - type: input
+    id: name
+    attributes:
+      label: Listed name (if known)
+  - type: dropdown
+    id: method
+    attributes:
+      label: Proof of control (pick one)
+      options:
+        - .well-known file (/.well-known/mcp-ready-claim.txt)
+        - DNS TXT record
+        - GitHub repository control
+        - agent-card linkback
+        - signed public-key challenge
+    validations: {required: true}
+  - type: textarea
+    id: proof
+    attributes:
+      label: Proof details
+      description: e.g. the well-known URL, the TXT record name, or the repo URL. We verify, then mark you claimed.
+    validations: {required: true}
+  - type: textarea
+    id: corrections
+    attributes:
+      label: Corrections (optional)
+      description: Anything wrong on the listing (name, description, category)?
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: This listing is built from public-registry data; I am not submitting secrets or private data.
+          required: true

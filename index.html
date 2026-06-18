@@ -123,6 +123,10 @@
   .btn.primary:hover{background:#0a5a5a}
   .honesty-pill{display:inline-block;margin-top:18px;font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.03em;color:var(--teal);border:1px solid var(--teal);border-radius:20px;padding:7px 14px}
   @media(max-width:560px){.triad{gap:20px}.cta-row .btn{flex:1 1 100%;justify-content:center}}
+  .card .claimrow{margin-top:2px}
+  .claimlink{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--teal);border:1px solid var(--teal);border-radius:6px;padding:4px 9px;display:inline-block;transition:background .2s,color .2s}
+  .claimlink:hover{background:var(--teal);color:#fff;text-decoration:none}
+  .claimed-tag{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--brass)}
 </style>
 </head>
 <body>
@@ -145,7 +149,7 @@
 
   <div class="cta-row">
     <a class="btn primary" href="#search">Search your endpoint</a>
-    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/CLAIM.md">Claim your agent</a>
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your agent</a>
     <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Download full dataset</a>
   </div>
 
@@ -170,7 +174,7 @@
 </div></section>
 
 <section id="search" style="scroll-margin-top:18px;background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
-  <div class="sec-head"><h2>Search the registry</h2><span class="note" id="searchnote"></span></div>
+  <div class="sec-head"><h2>Find &amp; claim your endpoint</h2><span class="note" id="searchnote"></span></div>
   <div class="controls">
     <input id="q" type="search" placeholder="Search by name or domain…" autocomplete="off" aria-label="Search passports">
     <select id="cat" aria-label="Category"><option value="">All categories</option></select>
@@ -194,6 +198,8 @@
 </div></footer>
 
 <script>
+const CLAIM_BASE='https://github.com/shigeki7777/sasame-mcp-observatory/issues/new';
+const s_lab=(c)=>({u:'unclaimed',s:'self_claimed',c:'claimed',v:'verified',x:'flagged'}[c]||c);
 const STATUS={u:{lab:'unclaimed',conf:'unconfirmed',c:'var(--grey)'},s:{lab:'self_claimed',conf:'self_asserted',c:'var(--teal-soft)'},c:{lab:'claimed',conf:'owner_proven',c:'var(--teal)'},v:{lab:'verified',conf:'corroborated',c:'var(--brass)'},x:{lab:'spoof_suspected',conf:'unconfirmed',c:'var(--grey)'}};
 const fmt=n=>n.toLocaleString('en-US');
 const el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
@@ -292,7 +298,16 @@ function render(list,append){
     if(r[3])meta+='<span class="pill grade">grade '+r[3]+'</span>';
     if(r[4])meta+='<span class="pill cat">'+r[4]+'</span>';
     if(r[5])meta+='<span class="pill">'+r[5]+'</span>';
-    c.innerHTML='<div class="nm">'+(r[0]||'(unnamed)')+'</div>'+(r[1]?'<div class="dm">'+r[1]+'</div>':'')+'<div class="meta">'+meta+'</div>';
+    let action='';
+    if(r[2]==='u'||r[2]==='s'){
+      const t=encodeURIComponent('Claim: '+(r[0]||r[1]||'my endpoint'));
+      const ep=encodeURIComponent(r[1]||'');const nm=encodeURIComponent(r[0]||'');
+      const url=CLAIM_BASE+'?template=claim-passport.yml&title='+t+'&endpoint='+ep+'&name='+nm;
+      action='<div class="claimrow"><a class="claimlink" href="'+url+'" target="_blank" rel="noopener noreferrer">Claim this &rarr;</a></div>';
+    } else {
+      action='<div class="claimrow"><span class="claimed-tag">'+s_lab(r[2])+' &#10003;</span></div>';
+    }
+    c.innerHTML='<div class="nm">'+(r[0]||'(unnamed)')+'</div>'+(r[1]?'<div class="dm">'+r[1]+'</div>':'')+'<div class="meta">'+meta+'</div>'+action;
     cardsEl.appendChild(c);
   }
   shown+=slice.length;

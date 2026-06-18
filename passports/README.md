@@ -66,6 +66,14 @@ See this repo's [Releases](https://github.com/shigeki7777/sasame-mcp-observatory
 - Almost all are `unclaimed` (owner-unconfirmed) and most are `unaudited` — an
   honest picture of an early, mostly-unverified agent economy.
 
+## Claim targets (inbound-first)
+
+[`claim-targets.json`](claim-targets.json) ranks the highest-confidence, owner-identifiable
+endpoints (A/B grade + priced, mostly on custom domains) by a `claim_priority_score`. It is a
+**discoverability aid, not a list for mass outbound**: the goal is that owners find their own
+endpoint here (or in the live viewer) and claim it. Any direct invitation is hand-picked and
+owner-gated — we do not blast issues or email.
+
 ## Claim / correct / remove
 
 Being observed, claiming, correcting, and delisting are **all free** — identity is
