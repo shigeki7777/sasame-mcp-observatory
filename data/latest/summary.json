@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-18T10:25:58.051Z",
+  "generated_at": "2026-06-18T10:34:49.880Z",
   "source": "https://live-vps.sasame.online/observatory/",
   "standard": "agent-tool-discoverability-standard/0.1",
   "indexed_total": 34548,
   "auditable_endpoints": 21332,
-  "audited": 200,
-  "observed_ready": 88,
+  "audited": 587,
+  "observed_ready": 129,
   "by_source": {
     "official MCP registry": 15077,
     "x402 discovery catalog": 1418,
@@ -17,17 +17,17 @@
     {
       "key": "research",
       "title": "Research & Knowledge",
-      "count": 8
+      "count": 11
     },
     {
       "key": "livedata",
       "title": "Live Data",
-      "count": 18
+      "count": 27
     },
     {
       "key": "commerce",
       "title": "Commerce & Payments",
-      "count": 4
+      "count": 13
     },
     {
       "key": "security",
@@ -47,12 +47,12 @@
     {
       "key": "agentinfra",
       "title": "Agent Infrastructure",
-      "count": 28
+      "count": 43
     },
     {
       "key": "experimental",
       "title": "Experimental & General",
-      "count": 17
+      "count": 22
     }
   ],
   "claimed": 0,

@@ -1,6 +1,6 @@
 # Experimental & General — Observed MCP-Ready
 
-17 externally-audited, signed, time-limited Observed MCP-Ready servers. Observed = measured from outside (owner not confirmed).
+22 externally-audited, signed, time-limited Observed MCP-Ready servers. Observed = measured from outside (owner not confirmed).
 
 | Server | Grade | Level | Endpoint | Cert | Strength |
 |---|---|---|---|---|---|
@@ -8,6 +8,11 @@
 | [ai.compeller/compel](https://live-vps.sasame.online/directory/compeller-ai-api-mcp.html) | A | observed | `https://compeller.ai/api/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/compeller-ai-api-mcp.json) | returns real content |
 | [ai.kontato/kontato](https://live-vps.sasame.online/directory/api-kontato-ai-mcp.html) | A | observed | `https://api.kontato.ai/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/api-kontato-ai-mcp.json) | returns real content |
 | [ai.modulos/demo-booking](https://live-vps.sasame.online/directory/www-modulos-ai-api-mcp.html) | A | observed | `https://www.modulos.ai/api/mcp/` | [cert](https://live-vps.sasame.online/observatory/certs/www-modulos-ai-api-mcp.json) | returns real content |
+| [tech.ydb-qdrant.pets/codex-pets-ydb-qdrant](https://live-vps.sasame.online/directory/pets-ydb-qdrant-tech-mcp.html) | A | observed | `https://pets.ydb-qdrant.tech/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/pets-ydb-qdrant-tech-mcp.json) | returns real content |
+| [tech.ydb-qdrant/gravity-ai-ui](https://live-vps.sasame.online/directory/gravity-ai-ydb-qdrant-tech-mcp.html) | A | observed | `https://gravity-ai.ydb-qdrant.tech/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/gravity-ai-ydb-qdrant-tech-mcp.json) | returns real content |
+| [uk.co.shipmycar/quote](https://live-vps.sasame.online/directory/www-shipmycar-co-uk-mcp.html) | A | observed | `https://www.shipmycar.co.uk/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/www-shipmycar-co-uk-mcp.json) | returns real content |
+| [xyz.cabalspy/wallet-tracker](https://live-vps.sasame.online/directory/mcp-cabalspy-xyz-mcp.html) | A | observed | `https://mcp.cabalspy.xyz/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/mcp-cabalspy-xyz-mcp.json) | returns real content |
+| [xyz.picoads/picoads](https://live-vps.sasame.online/directory/picoads-xyz-mcp.html) | A | observed | `https://picoads.xyz/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/picoads-xyz-mcp.json) | returns real content |
 | [ai.bezal/local-commerce](https://live-vps.sasame.online/directory/app-bezal-ai-api-mcp.html) | A | observed | `https://app.bezal.ai/api/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/app-bezal-ai-api-mcp.json) | returns real content |
 | [ai.bowmark/bowmark](https://live-vps.sasame.online/directory/api-bowmark-ai-mcp.html) | A | observed | `https://api.bowmark.ai/mcp` | [cert](https://live-vps.sasame.online/observatory/certs/api-bowmark-ai-mcp.json) | returns real content |
 | [ai.bowmark/bowmark](https://live-vps.sasame.online/directory/api-bowmark-ai-mcp-s-r.html) | A | observed | `https://api.bowmark.ai/mcp?s=r` | [cert](https://live-vps.sasame.online/observatory/certs/api-bowmark-ai-mcp-s-r.json) | returns real content |
