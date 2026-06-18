@@ -2,6 +2,8 @@
 
 > A public, reproducible observatory of MCP servers: external readiness observations, signed MCP-Ready certificates, and curated portfolios of agent-callable tools.
 
+**🪪 Is your MCP server listed here? [Claim it free in one click →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — prove control via `.well-known` / DNS / repo. No account setup, no cost, no sales pitch.
+
 We continuously and externally audit public MCP (Model Context Protocol) servers — does each one actually complete the handshake, list valid tools, return real content, and stay reachable — and publish **signed, time-limited readiness observations**. This repo is the transparent mirror of https://live-vps.sasame.online/observatory/.
 
 > 🔭 **Live viewer:** https://shigeki7777.github.io/sasame-mcp-observatory/ — browse the Agent Passport Registry (dashboard + identity-confidence ladder + coarse Map + search over all indexed endpoints).

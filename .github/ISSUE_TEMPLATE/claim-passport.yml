@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Claiming is **free** and clears any `unconfirmed_items` on your passport. We only need proof you control the endpoint. **Do not paste secrets, credentials, or private data.**
+        After you open this, SaSame verifies your proof (usually within a day) and flips your listing to **Claimed** — we reply right here in the issue. No account setup, no fee.
   - type: input
     id: endpoint
     attributes:
