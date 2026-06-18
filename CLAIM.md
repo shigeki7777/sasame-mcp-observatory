@@ -1,6 +1,8 @@
 # Claim your MCP server
 
 > ⚡ **Fastest:** open a prefilled [**Claim issue**](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml) — no account setup, no cost. Or follow the methods below.
+>
+> 💬 Questions or stuck? Join the [SaSame MCP Readiness Discord](https://discord.gg/bAKtSKqKT) (Early Access) — we'll help you claim.
 
 
 If your server is listed as **Observed MCP-Ready (unclaimed)**, the signed certificate is already yours to use. To upgrade **Observed → Claimed**:
