@@ -15,6 +15,8 @@ We continuously and externally audit public MCP (Model Context Protocol) servers
 - **2,286** owner-identifiable **claimable** endpoints (A/B grade + priced) — ranked in [`passports/claim-targets.json`](passports/claim-targets.json)
 - Full numbers: [`data/latest/summary.json`](data/latest/summary.json)
 
+> 📊 **Scoreboard (daily):** [`gold-rush-scoreboard.json`](gold-rush-scoreboard.json) — North Star = **external claims** (owner-proven control by a non-SaSame party). History: [`scoreboard-history.jsonl`](scoreboard-history.jsonl). We measure what is real and report unmeasurable KPIs as null.
+
 ## Three levels (we do not over-claim)
 
 | Level | Meaning |

@@ -1,0 +1,32 @@
+{
+  "schema": "gold-rush-scoreboard-v0.1",
+  "date": "2026-06-18",
+  "north_star": {
+    "metric": "external_claims",
+    "value": 0,
+    "definition": "owner-proven control of a non-SaSame endpoint"
+  },
+  "measured": {
+    "passports_total": 21137,
+    "claim_targets_total": 2286,
+    "external_claims_total": 0,
+    "claimed_total": 1,
+    "self_claimed_by_sasame": 1,
+    "certified_total": 0,
+    "github_stars": 0,
+    "github_forks": 0,
+    "github_watchers": 0,
+    "github_open_issues": 0,
+    "release_downloads_total": 0,
+    "pages_traffic_views_14d": 0,
+    "pages_traffic_uniques_14d": 0,
+    "clones_14d": 0
+  },
+  "not_tracked_yet": {
+    "badge_installs": null,
+    "dataset_mentions": null,
+    "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
+  },
+  "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
+  "generated_at": "2026-06-18T15:20:15.144390+00:00"
+}
