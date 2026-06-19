@@ -1,0 +1,34 @@
+name: Good first contribution
+description: Propose or pick up a small, well-scoped contribution (humans or coding agents welcome).
+title: "Contribution: <short title>"
+labels: ["good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Small PRs welcome — from humans **and** coding agents. Keep the rails (see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md)):
+        honest labels only, no ghosts/sybils, reproducible, public-data + safe probing only.
+        Ideas: a cert verifier in another language, a standard-criterion improvement (with spec/measurement
+        justification), better portfolio categorization, docs/examples.
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want to build/fix?
+    validations: {required: true}
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Verifier/client library, Standard criteria, Portfolio categorization, Docs/examples, Other]
+    validations: {required: true}
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who's doing it
+      options: [I'll send a PR, A coding agent will attempt it, Just proposing — someone else can take it]
+    validations: {required: true}
+  - type: textarea
+    id: falsify
+    attributes:
+      label: How will we know it works?
+      description: What should a reviewer run to verify it? (Reproducibility is a rail.)

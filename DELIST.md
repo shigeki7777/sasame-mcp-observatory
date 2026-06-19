@@ -7,13 +7,3 @@ All listings are built from **public-registry data**. We honor corrections and r
 - Open an issue on this repo for anything public.
 
 We never publish a "dead/worst/fake" list, and `unclaimed` always means *auto-indexed, unverified* — not a quality judgement.
-
----
-
-## Agent Passports
-
-The same applies to **Agent Passports** (`passports/`). A passport publishes only
-**verification status** (what we could/couldn't confirm from outside) — never a
-"risk", "dead", "fake", or "worst" verdict on a named agent. `unclaimed` means
-*auto-indexed, owner-unconfirmed*, not a quality judgement. Correction, claiming,
-and removal are all free: open an issue/PR or email **consulting@srl-sasame.com**.

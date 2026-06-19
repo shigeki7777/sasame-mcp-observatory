@@ -1,5 +1,11 @@
 blank_issues_enabled: true
 contact_links:
+  - name: SaSame Agent Gold Rush Guild (Discord)
+    url: https://discord.gg/bAKtSKqKT
+    about: Ask questions, share feedback, get help claiming your passport, find good-first-issues.
+  - name: For Agents — try the public MCP
+    url: https://live-vps.sasame.online/for-agents/
+    about: Copy-paste prompts to point your agent at the free public MCP (audit / verify / claim / toolbelt).
   - name: Email instead
     url: mailto:consulting@srl-sasame.com
     about: Prefer email? Claim, correct, or delist via consulting@srl-sasame.com from your domain.

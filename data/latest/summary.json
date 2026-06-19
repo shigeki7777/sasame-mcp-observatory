@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-06-18T12:48:17.573Z",
+  "generated_at": "2026-06-19T10:53:43.697Z",
   "source": "https://live-vps.sasame.online/observatory/",
   "standard": "agent-tool-discoverability-standard/0.1",
   "indexed_total": 30000,
-  "auditable_endpoints": 21137,
-  "audited": 1031,
-  "observed_ready": 205,
+  "auditable_endpoints": 21119,
+  "audited": 2158,
+  "observed_ready": 629,
   "by_source": {
-    "official MCP registry": 15094,
+    "official MCP registry": 15163,
     "x402 discovery catalog": 1418,
-    "PulseMCP": 100,
-    "Glama": 13388
+    "Glama": 13419
   },
   "categories": [
     {

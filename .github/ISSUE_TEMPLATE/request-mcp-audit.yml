@@ -1,0 +1,35 @@
+name: Request an MCP audit
+description: Ask SaSame to grade a public MCP server against the open readiness standard (free, reproducible).
+title: "Audit: <server URL>"
+labels: ["audit-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We audit **public** MCP endpoints only, with a legitimate handshake (no auth-bypass, no payment, no
+        destructive calls), SSRF-guarded. You get a grade (A–D) + the failing criteria + the fix for each.
+        Want it instantly? Call `audit_mcp(url)` on `https://live-vps.sasame.online/public-mcp` yourself.
+  - type: input
+    id: url
+    attributes:
+      label: MCP server URL (public)
+      placeholder: https://api.example.ai/mcp
+    validations: {required: true}
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to it
+      options: [I built/own it, I depend on it, Just curious]
+    validations: {required: true}
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything we should know? (optional)
+      description: Stateful? Requires specific init params? Known quirks?
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: This is a public endpoint and I'm OK with a public, reproducible audit result.
+          required: true

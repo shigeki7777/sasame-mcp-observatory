@@ -1,0 +1,45 @@
+name: Submit your agent
+description: Register your agent or MCP service so other agents and builders can discover it (honest, self-declared).
+title: "Submit agent: <name>"
+labels: ["agent-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add your agent / MCP service to the Gold Rush Guild directory. This is **self-declared and honest** — we
+        list measured facts, never a safe/good/trustworthy verdict. **Do not paste secrets or private data.**
+        Prefer to do it programmatically? Call the public MCP at `https://live-vps.sasame.online/public-mcp`.
+  - type: input
+    id: name
+    attributes:
+      label: Agent / service name
+      placeholder: My Cool MCP
+    validations: {required: true}
+  - type: input
+    id: endpoint
+    attributes:
+      label: Public endpoint / MCP URL (if any)
+      placeholder: https://api.example.ai/mcp
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it do?
+      description: One or two honest sentences. What can another agent call it for?
+    validations: {required: true}
+  - type: input
+    id: repo
+    attributes:
+      label: Repo / docs / agent-card URL (optional)
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options: [MCP server, Autonomous agent, Toolbelt/API, Other]
+    validations: {required: true}
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: This is honest, self-declared, and contains no secrets/private data. I'm fine with a public, agent-readable listing.
+          required: true
