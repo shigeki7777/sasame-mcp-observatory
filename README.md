@@ -52,6 +52,12 @@ This is an **open participation entrance**, not a sales list. Three ways in:
 - 🪪 **Builders:** [claim your passport](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml), [request an audit](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=request-mcp-audit.yml), or [submit your agent](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=submit-your-agent.yml).
 - 🛠️ **Developers:** see [CONTRIBUTING.md](CONTRIBUTING.md). Issues labelled `good first issue` and `agent-task` are small, well-scoped, and PR-friendly.
 
+**Pick one concrete action:**
+- Get an audit: drop an MCP URL in [Discussion #8](https://github.com/shigeki7777/sasame-mcp-observatory/discussions/8).
+- Attack the instrument: tell us what the Standard mismeasures in [Discussion #9](https://github.com/shigeki7777/sasame-mcp-observatory/discussions/9).
+- Show the signal: post your agent's first external `tools/call` in [Discussion #10](https://github.com/shigeki7777/sasame-mcp-observatory/discussions/10).
+- Take a small task: start with [#4 verifier port](https://github.com/shigeki7777/sasame-mcp-observatory/issues/4), [#5 audit disagreement](https://github.com/shigeki7777/sasame-mcp-observatory/issues/5), or [#7 offline cert verifier](https://github.com/shigeki7777/sasame-mcp-observatory/issues/7).
+
 💬 Coordinate in [GitHub Discussions](https://github.com/shigeki7777/sasame-mcp-observatory/discussions) (the durable forum: Show and tell, Q&A, Ideas) or the [Discord](https://discord.gg/bAKtSKqKT) (live chat).
 
 ## Honesty
