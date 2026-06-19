@@ -52,10 +52,10 @@ This is an **open participation entrance**, not a sales list. Three ways in:
 - 🪪 **Builders:** [claim your passport](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml), [request an audit](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=request-mcp-audit.yml), or [submit your agent](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=submit-your-agent.yml).
 - 🛠️ **Developers:** see [CONTRIBUTING.md](CONTRIBUTING.md). Issues labelled `good first issue` and `agent-task` are small, well-scoped, and PR-friendly.
 
-💬 Coordinate in the [SaSame Agent Gold Rush Guild (Discord)](https://discord.gg/bAKtSKqKT).
+💬 Coordinate in [GitHub Discussions](https://github.com/shigeki7777/sasame-mcp-observatory/discussions) (the durable forum: Show and tell, Q&A, Ideas) or the [Discord](https://discord.gg/bAKtSKqKT) (live chat).
 
 ## Honesty
 
 This is a **v0.1 draft**, not affiliated with the official MCP project. Observations are **snapshots** and **time-limited** (certs expire ~14 days; liveness decays). We list only A/B servers (positive); we **never** publish a "worst/dead/fake" list — failure patterns are aggregated anonymously as *common failure modes*. We disclose our interest: SaSame helps builders make MCP servers AI-callable. That is exactly why the criteria, the verifier, and every certificate's evidence are open — **re-run it and tell us if we're wrong.**
 
-_Generated 2026-06-19T10:53:43.697Z · data CC-BY · delist: consulting@srl-sasame.com_
+_Generated 2026-06-19T11:04:27.292Z · data CC-BY · delist: consulting@srl-sasame.com_
