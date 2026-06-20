@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://sasame.online/ns/validation#",
+    "schema": "https://schema.org/",
+    "validation_type": "validationType",
+    "method": "validationMethod",
+    "result": "validationResult",
+    "grade": "readinessGrade",
+    "owner_claimed": "ownerClaimed",
+    "continuously_rechecked": "continuouslyRechecked",
+    "issuer_pubkey_spki_hex": "issuerPubkeySpkiHex",
+    "attestations_sha256": "attestationsSha256",
+    "measured_at": {
+      "@type": "schema:DateTime"
+    },
+    "generated_at": {
+      "@type": "schema:DateTime"
+    }
+  }
+}

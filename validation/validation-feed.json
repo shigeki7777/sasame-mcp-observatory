@@ -1,0 +1,45 @@
+{
+  "@context": "https://shigeki7777.github.io/sasame-mcp-observatory/validation/validation-context.jsonld",
+  "schema": "sasame-validation-feed/0.1",
+  "validation_type": "mcp-readiness",
+  "method": "agent-tool-discoverability-standard/0.2",
+  "issuer_pubkey_spki_hex": "302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6",
+  "count": 21137,
+  "attestations_file": "attestations.jsonl",
+  "attestations_sha256": "6f92175ea30aceb64b370fa59b8a76c9fc7f396f9600ff77f045d683d6ae0c36",
+  "generated_at": "2026-06-20T08:32:28.473Z",
+  "attestations_bytes": 19115370,
+  "grade_distribution": {
+    "C": 694,
+    "B": 261,
+    "A": 167,
+    "D": 400,
+    "ungraded": 19615
+  },
+  "validator": {
+    "name": "SaSame",
+    "operator": "SaSame SRL",
+    "issuer_pubkey_spki_hex": "302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6",
+    "method": "agent-tool-discoverability-standard/0.2",
+    "verify": "ed25519.verify(base64 signature, utf8(canonical_json), issuer_pubkey). Then recompute sha256(attestations.jsonl) == attestations_sha256. No callback to SaSame."
+  },
+  "erc8004": {
+    "registry": "validation",
+    "note": "Off-chain, ERC-8004 Validation-Registry-shaped attestations. Identity & Reputation sockets are occupied industry-wide; the Validation socket is the open seat. On-chain anchoring on Base mainnet is a separate owner action (needs ETH).",
+    "registry_contract_base_sepolia": "0x7177a6867296406881E20d6647232314736Dd09A",
+    "status": "off-chain-live; on-chain-pending"
+  },
+  "honesty": "Measured facts only — reachable/callable/schema-valid/owner-claimed/continuously-rechecked + readiness grade. NEVER a safety, quality, or trust verdict. A GET probe is a weak signal (MCP answers over POST). Any agent can clear unconfirmed items by claiming its endpoint (free).",
+  "links": {
+    "attestations": "https://shigeki7777.github.io/sasame-mcp-observatory/validation/attestations.jsonl",
+    "human": "https://shigeki7777.github.io/sasame-mcp-observatory/validation/",
+    "claim": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml",
+    "standard": "https://live-vps.sasame.online/research/agent-tool-discoverability-standard.html",
+    "observer_census": "https://shigeki7777.github.io/sasame-mcp-observatory/observers.html"
+  },
+  "signature": {
+    "signed_by": "sasame-trust-302a300506032b65",
+    "signature": "1R8HTBaM+M6sNKUYegARt62wkel3CGtcLndldn+NIfwrpYQKL5xGW4bp+otANRCu2rTSvGSDiTGKRp/6Wcv7Cw==",
+    "canonical_json": "{\"attestations_file\":\"attestations.jsonl\",\"attestations_sha256\":\"6f92175ea30aceb64b370fa59b8a76c9fc7f396f9600ff77f045d683d6ae0c36\",\"count\":21137,\"generated_at\":\"2026-06-20T08:32:28.473Z\",\"issuer_pubkey_spki_hex\":\"302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6\",\"method\":\"agent-tool-discoverability-standard/0.2\",\"schema\":\"sasame-validation-feed/0.1\",\"validation_type\":\"mcp-readiness\"}"
+  }
+}

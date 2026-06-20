@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validation Feed — ERC-8004-shaped, signed | SaSame Agent Customs</title>
+<meta name="description" content="An off-chain, ed25519-signed, ERC-8004 Validation-Registry-shaped feed of measured MCP readiness attestations. Measured facts only — never a safety or trust verdict. Re-verify offline with the issuer pubkey.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#EEF1F2;--panel:#F7F9F9;--ink:#14202A;--muted:#5F6E76;--line:#D5DCDD;--teal:#0E6E6E;--brass:#9A6B12;--maxw:1080px}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.5}
+.mono{font-family:"Space Mono",ui-monospace,Menlo,monospace}.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}.muted{color:var(--muted)}
+header.site{padding:44px 0 26px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.05;font-weight:700;margin:0 0 12px;letter-spacing:-.015em}
+.thesis{font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:64ch;margin:0}
+.banner{margin:22px 0 0;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:6px;padding:14px 16px;font-size:14px;color:#314048}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:26px 0 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px}
+.stat .v{font-size:24px;font-weight:700;letter-spacing:-.02em}.stat .k{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+section{padding:34px 0}h2{font-size:22px;margin:0 0 6px}.sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+pre{background:#10242a;color:#cfe;padding:14px;border-radius:8px;overflow:auto;font-size:12.5px}
+.kv{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;font-size:13px}
+.kv code{font-family:"Space Mono",monospace;word-break:break-all}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style></head><body>
+<header class="site"><div class="wrap">
+  <p class="eyebrow">SaSame Agent Customs · Validation Feed</p>
+  <h1>A signed Validation Registry for the agent economy</h1>
+  <p class="thesis">ERC-8004 has three sockets — Identity, Reputation, and <b>Validation</b>. The first two are occupied industry-wide; the Validation socket is open. This is an off-chain, ed25519-signed, ERC-8004 Validation-Registry-shaped feed of <b>measured</b> MCP readiness attestations — built from the same data behind the Agent Passport Registry. Measured facts only: never a safety, quality, or trust verdict. Re-verify every record offline; no callback to SaSame.</p>
+  <div class="banner"><b>Honesty:</b> each attestation records reachable / callable / schema-valid / owner-claimed / continuously-rechecked + a readiness grade, with a GET-probe caveat. Any agent clears unconfirmed items by claiming its endpoint (free).</div>
+  <div class="stats">
+    <div class="stat"><div class="v">21,137</div><div class="k">Attestations</div></div>
+    <div class="stat"><div class="v">167</div><div class="k">Grade A</div></div>
+    <div class="stat"><div class="v">261</div><div class="k">Grade B</div></div>
+    <div class="stat"><div class="v">1094</div><div class="k">Grade C/D</div></div>
+    <div class="stat"><div class="v">1</div><div class="k">ed25519 signature</div></div>
+  </div>
+</div></header>
+<main class="wrap">
+  <section>
+    <h2>Consume it</h2>
+    <p class="sub">Signed manifest + JSONL attestations + JSON-LD context. Built for graph/census/index builders to ingest directly as an upstream validation source.</p>
+    <div class="kv">
+      <div>Signed manifest: <a href="validation-feed.json">validation-feed.json</a></div>
+      <div>Attestations (JSONL, 18 MB): <a href="attestations.jsonl">attestations.jsonl</a></div>
+      <div>JSON-LD context: <a href="validation-context.jsonld">validation-context.jsonld</a></div>
+      <div>Portable signed example: <a href="attestation-example-claimed.json">attestation-example-claimed.json</a></div>
+      <div style="margin-top:8px">Issuer pubkey (SPKI hex): <code>302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6</code></div>
+    </div>
+  </section>
+  <section>
+    <h2>Verify it offline</h2>
+    <pre>const m = await (await fetch("validation-feed.json")).json();
+// 1) attestations file intact: sha256(attestations.jsonl) === m.attestations_sha256
+// 2) manifest signed by issuer: ed25519.verify(
+//      base64 m.signature.signature,
+//      utf8 m.signature.canonical_json,
+//      issuer pubkey from m.issuer_pubkey_spki_hex (SPKI/DER) )
+// No callback to SaSame. Same key/format as SaSame MCP-Ready certs,
+// so the open verifier (MCP verify_mcp_cert) checks these too.</pre>
+  </section>
+  <section>
+    <h2>On-chain</h2>
+    <p class="sub">Off-chain feed is live now. Anchoring on Base mainnet (ERC-8004 Validation Registry) is next — gated on mainnet ETH (owner action). Testnet registry: <span class="mono">0x7177a6867296406881E20d6647232314736Dd09A</span>.</p>
+    <p class="sub"><a href="../index.html">&larr; Agent Passport Registry</a> · <a href="../observers.html">Observer Census</a></p>
+  </section>
+</main>
+<footer><div class="wrap">Generated 2026-06-20 08:32 UTC · Measured facts only · No risk verdict on any named agent · ed25519-signed, offline-verifiable</div></footer>
+</body></html>
