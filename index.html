@@ -180,6 +180,7 @@
   </div>
 
   <p class="honesty-pill">Not KYC · Not a risk verdict · public observability only — claiming is free</p>
+  <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:6px">No GitHub? Claim by email <a href="mailto:consulting@srl-sasame.com?subject=Claim%20my%20MCP%20endpoint">consulting@srl-sasame.com</a> from your domain. Prove control with a <code>.well-known/mcp-ready-claim.txt</code>, a DNS TXT record, your repo, or your agent-card.</p>
 
   <div class="ladder">
     <div class="ladder-track" id="ladder" aria-label="Population by identity confidence"></div>
@@ -335,7 +336,9 @@ function render(list,append){
       const ep=encodeURIComponent(r[1]||'');const nm=encodeURIComponent(r[0]||'');
       const url=CLAIM_BASE+'?template=claim-passport.yml&title='+t+'&endpoint='+ep+'&name='+nm;
       const durl=CLAIM_BASE+'?template=correct-or-delist.yml&endpoint='+ep;
+      const mailto='mailto:consulting@srl-sasame.com?subject='+encodeURIComponent('Claim '+(r[1]||r[0]||'my endpoint'))+'&body='+encodeURIComponent('I control '+(r[1]||r[0]||'')+'. Proof: well-known file / DNS TXT / repo / agent-card.');
       action='<div class="claimrow"><a class="claimlink" href="'+url+'" target="_blank" rel="noopener noreferrer">Claim this &rarr;</a>'
+        +'<a class="minilink" href="'+mailto+'">or email</a>'
         +'<a class="minilink" href="'+durl+'" target="_blank" rel="noopener noreferrer">correct / remove</a></div>';
     } else {
       action='<div class="claimrow"><span class="claimed-tag">'+s_lab(r[2])+' &#10003;</span></div>';
