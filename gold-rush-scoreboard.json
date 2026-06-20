@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-06-19",
+  "date": "2026-06-20",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -17,7 +17,7 @@
     "github_stars": 0,
     "github_forks": 0,
     "github_watchers": 0,
-    "github_open_issues": 1,
+    "github_open_issues": 6,
     "release_downloads_total": 0,
     "pages_traffic_views_14d": 6,
     "pages_traffic_uniques_14d": 1,
@@ -29,5 +29,5 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-19T07:15:04.814338+00:00"
+  "generated_at": "2026-06-20T07:15:05.868612+00:00"
 }
