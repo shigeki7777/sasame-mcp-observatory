@@ -18,7 +18,7 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 0,
+    "release_downloads_total": 1,
     "pages_traffic_views_14d": 6,
     "pages_traffic_uniques_14d": 1,
     "clones_14d": 155
@@ -29,7 +29,7 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-20T08:43:52.907668+00:00",
+  "generated_at": "2026-06-20T09:07:12.237295+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -37,9 +37,9 @@
     }
   ],
   "observer_intelligence": {
-    "external_sessions": 4,
-    "ai_crawler_sessions": 4,
-    "mcp_client_sessions": 357,
+    "external_sessions": 21,
+    "ai_crawler_sessions": 21,
+    "mcp_client_sessions": 367,
     "external_tool_calls": 2,
     "real_arg_tool_calls": 0,
     "claim_related_calls": 0,
@@ -49,11 +49,12 @@
     "hostile_probe_ips": 0,
     "canary_hits": 0,
     "top_observer_orgs": [
+      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US"
     ],
     "top_interest_paths": [
       "/"
     ],
-    "generated_at": "2026-06-20T08:43:27.471925+00:00"
+    "generated_at": "2026-06-20T09:04:43.227792+00:00"
   }
 }
