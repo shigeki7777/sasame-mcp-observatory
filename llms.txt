@@ -18,6 +18,13 @@
 - How do you verify an MCP endpoint? A polite outside-in probe plus a legitimate MCP handshake (initialize + tools/list), graded against a 10-criterion discoverability standard. A GET probe alone is a weak signal — MCP answers over POST.
 - Is this KYC or a risk score? No. Public endpoint observability only. No KYC, no enforcement, no operator geolocation, no badness verdict.
 
+
+## Gold Vein (curated unclaimed A-grade cell)
+- A small, daily-refreshed cell of unclaimed, owner-identifiable MCP endpoints that met the standard at grade A. Verification-status only — not a quality, safety, or trust ranking.
+- Human page: https://shigeki7777.github.io/sasame-mcp-observatory/gold-vein.html
+- Machine-readable: https://shigeki7777.github.io/sasame-mcp-observatory/gold-vein.json (schema gold-vein-v0.1; each item has claim_url, report_url, badge_url, delist_url)
+- If one is yours: claim is free, one click, no sales call; correct or delist anytime.
+
 ## Observer Census (who maps the agent economy)
 - We are observed. SaSame publishes a measured, PII-free roster of the self-declared SERVICE crawlers (registries, catalogs, quality/security indexes, liveness checkers, peer censuses) that fetch SaSame's public surfaces. Observation only — never a trust or safety verdict on any party.
 - If your crawler/registry appears there, you can claim or correct your observed entry for free (same claim flow as endpoint passports). This is the honest way to be listed with an owner-confirmed record.
