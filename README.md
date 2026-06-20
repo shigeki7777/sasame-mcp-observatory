@@ -10,8 +10,8 @@ We continuously and externally audit public MCP (Model Context Protocol) servers
 
 ## The numbers (latest)
 
-- **30000** public MCP entries indexed (21119 with an auditable remote endpoint)
-- **2158** audited · **629** currently meet the **Observed MCP-Ready** bar (A/B)
+- **30000** public MCP entries indexed (21042 with an auditable remote endpoint)
+- **2849** audited · **772** currently meet the **Observed MCP-Ready** bar (A/B)
 - Full numbers: [`data/latest/summary.json`](data/latest/summary.json)
 
 ## Three levels (we do not over-claim)
@@ -64,4 +64,4 @@ This is an **open participation entrance**, not a sales list. Three ways in:
 
 This is a **v0.1 draft**, not affiliated with the official MCP project. Observations are **snapshots** and **time-limited** (certs expire ~14 days; liveness decays). We list only A/B servers (positive); we **never** publish a "worst/dead/fake" list — failure patterns are aggregated anonymously as *common failure modes*. We disclose our interest: SaSame helps builders make MCP servers AI-callable. That is exactly why the criteria, the verifier, and every certificate's evidence are open — **re-run it and tell us if we're wrong.**
 
-_Generated 2026-06-19T11:04:27.292Z · data CC-BY · delist: consulting@srl-sasame.com_
+_Generated 2026-06-20T10:35:01.611Z · data CC-BY · delist: consulting@srl-sasame.com_

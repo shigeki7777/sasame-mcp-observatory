@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Passport Registry — SaSame Agent Customs</title>
+<meta name="description" content="A public, outside-in observability log of the AI agent economy. Verification status only — never a risk verdict on a named agent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#EEF1F2; --panel:#F7F9F9; --ink:#14202A; --muted:#5F6E76; --line:#D5DCDD;
+    --teal:#0E6E6E; --teal-soft:#7FB0AE; --brass:#9A6B12; --grey:#B7C0C4;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:"Space Grotesk",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .mono{font-family:"Space Mono",ui-monospace,Menlo,monospace}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
+  :focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+  /* header */
+  header.site{padding:44px 0 26px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.04;font-weight:700;margin:0 0 12px;letter-spacing:-.015em}
+  .thesis{font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:60ch;margin:0}
+  .stamp{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--brass);
+    color:var(--brass);font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;padding:5px 10px;border-radius:3px;transform:rotate(-1.5deg)}
+
+  .banner{margin:22px 0 0;background:var(--panel);border:1px solid var(--line);
+    border-left:3px solid var(--teal);border-radius:6px;padding:14px 16px;font-size:14px;color:#314048}
+  .banner b{color:var(--ink)}
+
+  /* ladder (signature) */
+  .ladder{margin:26px 0 4px}
+  .ladder-track{display:flex;height:46px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+  .ladder-seg{display:flex;flex-direction:column;justify-content:center;padding:0 12px;color:#fff;min-width:0}
+  .ladder-seg .n{font-weight:700;font-size:15px;line-height:1}
+  .ladder-seg .l{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.08em;
+    text-transform:uppercase;opacity:.92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ladder-key{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:12px;color:var(--muted)}
+  .ladder-key span{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+
+  /* stat row */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+  .stat .v{font-size:26px;font-weight:700;letter-spacing:-.02em}
+  .stat .k{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+  section{padding:38px 0}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin:0 0 18px;border-bottom:1px solid var(--line);padding-bottom:10px}
+  .sec-head h2{font-size:20px;font-weight:600;margin:0;letter-spacing:-.01em}
+  .sec-head .note{font-size:13px;color:var(--muted)}
+
+  /* map bars */
+  .maps{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  @media(max-width:720px){.maps{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+  .bargroup h3{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+  .bar{display:grid;grid-template-columns:120px 1fr 56px;align-items:center;gap:10px;margin:7px 0;font-size:13px}
+  .bar .lab{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar .track{height:9px;background:#E2E7E8;border-radius:5px;overflow:hidden}
+  .bar .fill{height:100%;background:var(--teal);border-radius:5px}
+  .bar .cnt{font-family:"Space Mono",monospace;font-size:12px;color:var(--muted);text-align:right}
+
+  /* search */
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+  #q{flex:1 1 240px;min-width:200px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;
+    font-family:inherit;font-size:15px;background:#fff}
+  select{padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;font-family:inherit;font-size:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .chip{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.04em;padding:6px 11px;border:1px solid var(--line);
+    border-radius:20px;background:#fff;cursor:pointer;color:var(--muted);user-select:none}
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .count-line{font-size:13px;color:var(--muted);margin-bottom:14px}
+
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:720px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px 16px;
+    display:flex;flex-direction:column;gap:9px}
+  .card .nm{font-weight:600;font-size:15px;letter-spacing:-.01em;word-break:break-word}
+  .card .dm{font-family:"Space Mono",monospace;font-size:12px;color:var(--muted);word-break:break-all}
+  .card .meta{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:2px}
+  .pill{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;padding:3px 8px;border-radius:5px;border:1px solid var(--line);color:var(--muted)}
+  .pill.id{display:inline-flex;align-items:center;gap:6px;border:none;padding-left:0}
+  .pill.grade{border-color:var(--teal);color:var(--teal)}
+  .pill.cat{background:#EDF2F2}
+  .more{margin:22px auto 0;display:block;padding:12px 22px;border:1px solid var(--ink);background:#fff;
+    border-radius:8px;font-family:inherit;font-size:14px;cursor:pointer}
+  .empty{color:var(--muted);font-size:14px;padding:24px 0}
+
+  footer{border-top:1px solid var(--line);padding:30px 0 60px;color:var(--muted);font-size:13px}
+  footer .links{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:14px}
+  .loading{color:var(--muted);font-size:14px;padding:8px 0}
+  @media(prefers-reduced-motion:no-preference){
+    .fade{opacity:0;transform:translateY(6px);animation:rise .5s ease forwards}
+    @keyframes rise{to{opacity:1;transform:none}}
+  }
+
+  /* 3-second hero */
+  .hero-grid{display:flex;flex-wrap:wrap;align-items:flex-end;gap:24px 44px;margin:26px 0 2px}
+  .bignum{font-family:"Space Grotesk",sans-serif;font-size:clamp(46px,8.5vw,76px);font-weight:700;line-height:.86;letter-spacing:-.03em;color:var(--teal)}
+  .bignum-lab{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+  .triad{display:flex;gap:28px;padding-bottom:4px}
+  .tri{display:flex;flex-direction:column}
+  .tri .dot{width:11px;height:11px;border-radius:2px;margin-bottom:7px}
+  .tri .tn{font-size:23px;font-weight:700;letter-spacing:-.02em}
+  .tri .tl{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{display:inline-flex;align-items:center;padding:12px 20px;border:1px solid var(--ink);border-radius:8px;font-size:14px;font-weight:500;color:var(--ink);background:#fff;transition:transform .15s,background .2s,color .2s}
+  .btn:hover{text-decoration:none;transform:translateY(-1px)}
+  .btn.primary{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .btn.primary:hover{background:#0a5a5a}
+  .honesty-pill{display:inline-block;margin-top:18px;font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.03em;color:var(--teal);border:1px solid var(--teal);border-radius:20px;padding:7px 14px}
+  @media(max-width:560px){.triad{gap:20px}.cta-row .btn{flex:1 1 100%;justify-content:center}}
+  .hook{font-size:clamp(17px,2.6vw,21px);font-weight:500;margin:22px 0 0;color:var(--ink)}
+  .hook strong{color:var(--teal)}
+  .herosearch{display:flex;gap:10px;margin:14px 0 2px;max-width:560px}
+  #hq{flex:1;padding:15px 16px;border:1.5px solid var(--teal);border-radius:9px;font-family:inherit;font-size:16px;background:#fff}
+  #hq:focus{outline:none;box-shadow:0 0 0 3px rgba(14,110,110,.15)}
+  .herosearch .btn{white-space:nowrap}
+  @media(max-width:560px){.herosearch{flex-direction:column}}
+  .card .claimrow{margin-top:2px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .minilink{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.04em;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+  .minilink:hover{color:var(--ink)}
+  .claimlink{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--teal);border:1px solid var(--teal);border-radius:6px;padding:4px 9px;display:inline-block;transition:background .2s,color .2s}
+  .claimlink:hover{background:var(--teal);color:#fff;text-decoration:none}
+  .claimed-tag{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--brass)}
+</style>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agent Passport Registry — SaSame">
+<meta property="og:description" content="21,137 public MCP/agent endpoints indexed. Observed / Claimed / Certified. Verification only — no risk verdict. Search & claim your endpoint, free.">
+<meta property="og:url" content="https://shigeki7777.github.io/sasame-mcp-observatory/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Agent Passport Registry — SaSame">
+<meta name="twitter:description" content="Search & claim your MCP/agent endpoint. Observed/Claimed/Certified. No risk verdict.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"SaSame Agent Passport Registry","description":"Public, outside-in observability registry of the AI agent economy: one machine-readable Agent Passport per public MCP server and x402 service. Verification status only; no risk verdict on a named agent.","url":"https://shigeki7777.github.io/sasame-mcp-observatory/","keywords":["MCP","Model Context Protocol","AI agents","x402","agent registry","MCP observatory","Agent Passport","MCP server","claim MCP server"],"creator":{"@type":"Organization","name":"SaSame SRL","url":"https://srl-sasame.com"},"license":"https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/LICENSE","isAccessibleForFree":true,"distribution":[{"@type":"DataDownload","encodingFormat":"application/x-ndjson","contentUrl":"https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2"}]}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap fade">
+  <p class="eyebrow">Built by SaSame · Agent Customs</p>
+  <h1>Agent Passport Registry</h1>
+  <p class="thesis">A public, outside-in log of the AI agent economy — one machine-readable passport per public MCP / x402 endpoint.</p>
+
+  <p class="hook">Most AI agents are unclaimed. <strong>Search yours.</strong></p>
+
+  <div class="herosearch">
+    <input id="hq" type="search" placeholder="Search your MCP / agent endpoint — domain or name" aria-label="Search your endpoint" autocomplete="off">
+    <a class="btn primary" href="#search" id="hqgo">Search &rarr;</a>
+  </div>
+
+  <div class="hero-grid">
+    <div class="bignum-wrap">
+      <div class="bignum" id="bignum">21,137</div>
+      <div class="bignum-lab">endpoints indexed</div>
+    </div>
+    <div class="triad" id="triad">
+      <div class="tri"><i class="dot" style="background:var(--grey)"></i><span class="tn" id="t-observed">21,136</span><span class="tl">Observed</span></div>
+      <div class="tri"><i class="dot" style="background:var(--teal)"></i><span class="tn" id="t-claimed">1</span><span class="tl">Claimed</span></div>
+      <div class="tri"><i class="dot" style="background:var(--brass)"></i><span class="tn" id="t-certified">0</span><span class="tl">Certified</span></div>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a class="btn primary" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your agent</a>
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Download full dataset</a>
+    <a class="btn" href="observers.html">Observer Census &rarr;</a>
+  </div>
+
+  <p class="honesty-pill">Not KYC · Not a risk verdict · public observability only — claiming is free</p>
+  <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:6px">No GitHub? Claim by email <a href="mailto:consulting@srl-sasame.com?subject=Claim%20my%20MCP%20endpoint">consulting@srl-sasame.com</a> from your domain. Prove control with a <code>.well-known/mcp-ready-claim.txt</code>, a DNS TXT record, your repo, or your agent-card.</p>
+
+  <div class="ladder">
+    <div class="ladder-track" id="ladder" aria-label="Population by identity confidence"></div>
+    <div class="ladder-key">
+      <span><i class="dot" style="background:var(--grey)"></i>unconfirmed</span>
+      <span><i class="dot" style="background:var(--teal-soft)"></i>self_asserted</span>
+      <span><i class="dot" style="background:var(--teal)"></i>owner_proven</span>
+      <span><i class="dot" style="background:var(--brass)"></i>corroborated</span>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>The Map</h2><span class="note">Coarse, non-operator-location topology — never geographic.</span></div>
+  <div class="maps" id="maps"><p class="loading">Loading observations…</p></div>
+</div></section>
+
+<section id="search" style="scroll-margin-top:18px;background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="sec-head"><h2>Find &amp; claim your endpoint</h2><span class="note" id="searchnote"></span></div>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search by name or domain…" autocomplete="off" aria-label="Search passports">
+    <select id="cat" aria-label="Category"><option value="">All categories</option></select>
+    <select id="reg" aria-label="Registry"><option value="">All registries</option></select>
+  </div>
+  <div class="chips" id="statuschips" role="group" aria-label="Identity status filter"></div>
+  <p class="count-line" id="countline">Loading index…</p>
+  <div class="cards" id="cards"></div>
+  <button class="more" id="more" hidden>Load more</button>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Full dataset (Release)</a>
+    <a href="https://github.com/shigeki7777/sasame-mcp-observatory/tree/main/passports">Passport docs</a>
+    <a href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/CLAIM.md">Claim your passport</a>
+    <a href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/DELIST.md">Correct / remove</a>
+    <a href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md">Methodology</a>
+    <a href="observers.html">Observer Census</a>
+  </div>
+  <p>Public endpoint observability only. Not KYC, legal certification, enforcement, or operator geolocation. No badness verdict is made about any named agent; the strongest caution is “verify before trust,” always clearable by claiming. Built from public-registry data with zero network I/O at generation time.</p>
+</div></footer>
+
+<script>
+const CLAIM_BASE='https://github.com/shigeki7777/sasame-mcp-observatory/issues/new';
+const s_lab=(c)=>({u:'unclaimed',s:'self_claimed',c:'claimed',v:'verified',x:'flagged'}[c]||c);
+const STATUS={u:{lab:'unclaimed',conf:'unconfirmed',c:'var(--grey)'},s:{lab:'self_claimed',conf:'self_asserted',c:'var(--teal-soft)'},c:{lab:'claimed',conf:'owner_proven',c:'var(--teal)'},v:{lab:'verified',conf:'corroborated',c:'var(--brass)'},x:{lab:'spoof_suspected',conf:'unconfirmed',c:'var(--grey)'}};
+const fmt=n=>n.toLocaleString('en-US');
+const el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+
+function bars(host,obj,opts={}){
+  const ent=Object.entries(obj||{}).sort((a,b)=>b[1]-a[1]).slice(0,opts.top||8);
+  const max=Math.max(1,...ent.map(e=>e[1]));
+  const g=el('div','bargroup');g.appendChild(el('h3',null,opts.title||''));
+  for(const [k,v] of ent){
+    const row=el('div','bar');
+    row.appendChild(el('div','lab',k));
+    const tr=el('div','track');const f=el('div','fill');f.style.width=(v/max*100).toFixed(1)+'%';
+    if(opts.color)f.style.background=opts.color(k);tr.appendChild(f);row.appendChild(tr);
+    row.appendChild(el('div','cnt',fmt(v)));
+    g.appendChild(row);
+  }
+  host.appendChild(g);
+}
+
+Promise.all([
+  fetch('passports/summary.json').then(r=>r.json()),
+  fetch('passports/agent-map.summary.json').then(r=>r.json())
+]).then(([sum,map])=>{
+  const A=sum.aggregates;
+  const setn=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=fmt(v);};
+  setn('bignum',sum.count);
+  const AL=A.audit_level||{};setn('t-observed',AL.observed||0);setn('t-claimed',AL.claimed||0);setn('t-certified',AL.certified||0);
+  // ladder
+  const order=[['u',A.identity_status.unclaimed||0],['s',A.identity_status.self_claimed||0],['c',A.identity_status.claimed||0],['v',A.identity_status.verified||0]];
+  const tot=order.reduce((a,b)=>a+b[1],0)||1;const L=document.getElementById('ladder');
+  order.forEach(([k,v])=>{if(v<=0)return;const seg=el('div','ladder-seg');seg.style.background=STATUS[k].c;
+    seg.style.flex=Math.max(v/tot,0.04);seg.innerHTML='<span class="n">'+fmt(v)+'</span><span class="l">'+STATUS[k].conf+'</span>';
+    if(k==='u')seg.style.color='#2a3942';L.appendChild(seg);});
+  // stats
+  const grades=A.audit_grade||{};const ab=(grades.A||0)+(grades.B||0);
+  const st=[['Passports',fmt(sum.count)],['Owner-proven',fmt((A.identity_status.claimed||0)+(A.identity_status.verified||0))],['Observed-ready (A/B)',fmt(ab)],['Registries',fmt(Object.keys(A.source_registry||{}).length)]];
+  const S=document.getElementById('stats');st.forEach(([k,v])=>{const d=el('div','stat');d.innerHTML='<div class="v">'+v+'</div><div class="k">'+k+'</div>';S.appendChild(d);});
+  // maps
+  const M=document.getElementById('maps');M.innerHTML='';
+  const H=map.histograms;
+  bars(M,H.identity_status,{title:'Identity status',color:k=>({unclaimed:'var(--grey)',self_claimed:'var(--teal-soft)',claimed:'var(--teal)',verified:'var(--brass)'}[k]||'var(--teal)')});
+  bars(M,H.audit_grade,{title:'Audit grade'});
+  bars(M,H.category,{title:'Category (top 8)'});
+  bars(M,H.source_registry,{title:'Source registry'});
+  bars(M,H.protocol,{title:'Protocol'});
+  bars(M,H.tld_class,{title:'Endpoint TLD class'});
+}).catch(e=>{document.getElementById('maps').innerHTML='<p class="empty">Could not load observations.</p>';});
+
+// ---- search ----
+let ROWS=[],FI=null,shown=0,PAGE=50;
+const STFILTER=new Set();
+const q=document.getElementById('q'),catSel=document.getElementById('cat'),regSel=document.getElementById('reg'),
+  cardsEl=document.getElementById('cards'),moreBtn=document.getElementById('more'),countLine=document.getElementById('countline');
+
+fetch('passports/search-index.json').then(r=>r.json()).then(d=>{
+  ROWS=d.rows; // [name,domain,status,grade,category,registry]
+  document.getElementById('searchnote').textContent=fmt(ROWS.length)+' endpoints indexed';
+  // dropdowns
+  const cats=[...new Set(ROWS.map(r=>r[4]).filter(Boolean))].sort();
+  const regs=[...new Set(ROWS.map(r=>r[5]).filter(Boolean))].sort();
+  cats.forEach(c=>{const o=el('option');o.value=c;o.textContent=c;catSel.appendChild(o);});
+  regs.forEach(c=>{const o=el('option');o.value=c;o.textContent=c;regSel.appendChild(o);});
+  // status chips
+  const sc=document.getElementById('statuschips');
+  [['c','claimed'],['v','verified'],['u','unclaimed'],['s','self_claimed']].forEach(([code,lab])=>{
+    const b=el('button','chip');b.textContent=lab;b.setAttribute('aria-pressed','false');
+    b.onclick=()=>{if(STFILTER.has(code)){STFILTER.delete(code);b.setAttribute('aria-pressed','false');}else{STFILTER.add(code);b.setAttribute('aria-pressed','true');}run();};
+    sc.appendChild(b);
+  });
+  run();
+}).catch(()=>{countLine.textContent='Could not load the search index.';});
+
+let t;q.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(run,140);});
+const hq=document.getElementById('hq');
+if(hq){let th;hq.addEventListener('input',()=>{q.value=hq.value;clearTimeout(th);th=setTimeout(run,140);});
+  hq.addEventListener('keydown',(e)=>{if(e.key==='Enter'){q.value=hq.value;run();document.getElementById('search').scrollIntoView({behavior:'smooth'});}});
+  const go=document.getElementById('hqgo');if(go)go.addEventListener('click',()=>{q.value=hq.value;run();});}
+catSel.addEventListener('change',run);regSel.addEventListener('change',run);
+moreBtn.addEventListener('click',()=>{render(FI,true);});
+
+function run(){
+  const term=q.value.trim().toLowerCase();const cat=catSel.value,reg=regSel.value;
+  FI=ROWS.filter(r=>{
+    if(STFILTER.size&&!STFILTER.has(r[2]))return false;
+    if(cat&&r[4]!==cat)return false;
+    if(reg&&r[5]!==reg)return false;
+    if(term&&!(r[0].toLowerCase().includes(term)||r[1].toLowerCase().includes(term)))return false;
+    return true;
+  });
+  shown=0;cardsEl.innerHTML='';render(FI,false);
+  countLine.textContent=fmt(FI.length)+' result'+(FI.length===1?'':'s');
+}
+function render(list,append){
+  if(!append)shown=0;
+  const slice=list.slice(shown,shown+PAGE);
+  for(const r of slice){
+    const s=STATUS[r[2]]||STATUS.u;
+    const c=el('div','card');
+    let meta='<span class="pill id"><i class="dot" style="background:'+s.c+'"></i>'+s.lab+'</span>';
+    if(r[3])meta+='<span class="pill grade">grade '+r[3]+'</span>';
+    if(r[4])meta+='<span class="pill cat">'+r[4]+'</span>';
+    if(r[5])meta+='<span class="pill">'+r[5]+'</span>';
+    let action='';
+    if(r[2]==='u'||r[2]==='s'){
+      const t=encodeURIComponent('Claim: '+(r[0]||r[1]||'my endpoint'));
+      const ep=encodeURIComponent(r[1]||'');const nm=encodeURIComponent(r[0]||'');
+      const url=CLAIM_BASE+'?template=claim-passport.yml&title='+t+'&endpoint='+ep+'&name='+nm;
+      const durl=CLAIM_BASE+'?template=correct-or-delist.yml&endpoint='+ep;
+      const mailto='mailto:consulting@srl-sasame.com?subject='+encodeURIComponent('Claim '+(r[1]||r[0]||'my endpoint'))+'&body='+encodeURIComponent('I control '+(r[1]||r[0]||'')+'. Proof: well-known file / DNS TXT / repo / agent-card.');
+      action='<div class="claimrow"><a class="claimlink" href="'+url+'" target="_blank" rel="noopener noreferrer">Claim this &rarr;</a>'
+        +'<a class="minilink" href="'+mailto+'">or email</a>'
+        +'<a class="minilink" href="'+durl+'" target="_blank" rel="noopener noreferrer">correct / remove</a></div>';
+    } else {
+      action='<div class="claimrow"><span class="claimed-tag">'+s_lab(r[2])+' &#10003;</span></div>';
+    }
+    c.innerHTML='<div class="nm">'+(r[0]||'(unnamed)')+'</div>'+(r[1]?'<div class="dm">'+r[1]+'</div>':'')+'<div class="meta">'+meta+'</div>'+action;
+    cardsEl.appendChild(c);
+  }
+  shown+=slice.length;
+  moreBtn.hidden=shown>=list.length;
+  if(list.length===0)cardsEl.innerHTML='<p class="empty">No endpoints match. Try a broader term.</p>';
+}
+</script>
+</body>
+</html>
