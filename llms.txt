@@ -18,8 +18,15 @@
 - How do you verify an MCP endpoint? A polite outside-in probe plus a legitimate MCP handshake (initialize + tools/list), graded against a 10-criterion discoverability standard. A GET probe alone is a weak signal — MCP answers over POST.
 - Is this KYC or a risk score? No. Public endpoint observability only. No KYC, no enforcement, no operator geolocation, no badness verdict.
 
+## Observer Census (who maps the agent economy)
+- We are observed. SaSame publishes a measured, PII-free roster of the self-declared SERVICE crawlers (registries, catalogs, quality/security indexes, liveness checkers, peer censuses) that fetch SaSame's public surfaces. Observation only — never a trust or safety verdict on any party.
+- If your crawler/registry appears there, you can claim or correct your observed entry for free (same claim flow as endpoint passports). This is the honest way to be listed with an owner-confirmed record.
+- Page: https://shigeki7777.github.io/sasame-mcp-observatory/observers.html
+- Machine-readable data: https://shigeki7777.github.io/sasame-mcp-observatory/data/observer-census.json
+
 ## Links
 - Live registry & search: https://shigeki7777.github.io/sasame-mcp-observatory/
 - Full dataset (download): https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2
 - Claim: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/CLAIM.md
 - Methodology: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md
+- Observer Census: https://shigeki7777.github.io/sasame-mcp-observatory/observers.html
