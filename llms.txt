@@ -30,3 +30,4 @@
 - Claim: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/CLAIM.md
 - Methodology: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md
 - Observer Census: https://shigeki7777.github.io/sasame-mcp-observatory/observers.html
+- Telemetry & privacy note: https://github.com/shigeki7777/sasame-mcp-observatory/blob/master/PRIVACY-TELEMETRY.md
