@@ -1,6 +1,6 @@
 {
   "schema": "sasame-observer-census-v0.1",
-  "generated_at": "2026-06-20T08:17:19.769736+00:00",
+  "generated_at": "2026-06-20T09:34:06.284609+00:00",
   "window": "rolling nginx retention (~14d)",
   "what_this_is": "A measured, PII-free roster of self-declared SERVICE crawlers that map the agent/MCP economy and have fetched SaSame's public surfaces. Observation only — no trust/safety verdict on any party. SaSame's own probes, browsers, anonymous clients, and exploit scanners are excluded from the roster.",
   "agent_economy_observers": [
@@ -8,20 +8,20 @@
       "service": "openai-mcp",
       "declared_url": null,
       "category": "agent-economy observer (self-declared)",
-      "hits": 545,
+      "hits": 698,
       "surfaces": [
         "/"
       ],
       "reached_mcp_layer": false,
       "first_seen": "2026-06-18",
-      "last_seen": "2026-06-18",
-      "days_span": 1
+      "last_seen": "2026-06-20",
+      "days_span": 2
     },
     {
       "service": "agent-tools.cloud-crawler",
       "declared_url": "https://agent-tools.cloud",
       "category": "agent-economy observer (self-declared)",
-      "hits": 539,
+      "hits": 550,
       "surfaces": [
         "/",
         "/.well-known/x402",
@@ -34,16 +34,32 @@
       "days_span": 4
     },
     {
+      "service": "aisec-registry",
+      "declared_url": "https://sec.sqrx.io",
+      "category": "agent-economy observer (self-declared)",
+      "hits": 71,
+      "surfaces": [
+        "/public-mcp",
+        "/public-mcp/.well-known/mcp",
+        "/public-mcp/.well-known/oauth-authorization-server",
+        "/public-mcp/.well-known/oauth-protected-resource"
+      ],
+      "reached_mcp_layer": true,
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-20",
+      "days_span": 3
+    },
+    {
       "service": "DoppelOps-AgentPlane-LivenessCheck",
       "declared_url": "https://agentplane.doppelops.com",
       "category": "agent-economy observer (self-declared)",
-      "hits": 59,
+      "hits": 63,
       "surfaces": [
         "/public-mcp"
       ],
       "reached_mcp_layer": true,
       "first_seen": "2026-06-17",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "days_span": 3
     },
     {
@@ -58,22 +74,6 @@
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-20",
       "days_span": 4
-    },
-    {
-      "service": "aisec-registry",
-      "declared_url": "https://sec.sqrx.io",
-      "category": "agent-economy observer (self-declared)",
-      "hits": 50,
-      "surfaces": [
-        "/public-mcp",
-        "/public-mcp/.well-known/mcp",
-        "/public-mcp/.well-known/oauth-authorization-server",
-        "/public-mcp/.well-known/oauth-protected-resource"
-      ],
-      "reached_mcp_layer": true,
-      "first_seen": "2026-06-17",
-      "last_seen": "2026-06-19",
-      "days_span": 2
     },
     {
       "service": "mcp-rugpull-research",
@@ -172,13 +172,13 @@
   ],
   "observer_count": 12,
   "context_traffic_buckets": {
-    "anonymous": 31121,
-    "exploit": 20172,
-    "aisearch": 10813,
-    "generic_client": 2972,
-    "other": 1766,
-    "agentecon": 1303,
-    "self": 968,
+    "anonymous": 31219,
+    "exploit": 20178,
+    "aisearch": 10853,
+    "generic_client": 2995,
+    "other": 1782,
+    "agentecon": 1492,
+    "self": 973,
     "genweb": 27
   },
   "honesty": "Listing here is NOT an endorsement and NOT a safety claim. It records only that the named service self-identified (via its own User-Agent + public URL) and fetched a SaSame public endpoint."
