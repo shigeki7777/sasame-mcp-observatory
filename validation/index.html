@@ -43,7 +43,7 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
     <p class="sub">Signed manifest + JSONL attestations + JSON-LD context. Built for graph/census/index builders to ingest directly as an upstream validation source.</p>
     <div class="kv">
       <div>Signed manifest: <a href="validation-feed.json">validation-feed.json</a></div>
-      <div>Attestations (JSONL, 18 MB): <a href="attestations.jsonl">attestations.jsonl</a></div>
+      <div>Attestations (JSONL, 18 MB): <a href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl">attestations.jsonl (GitHub Release)</a></div>
       <div>JSON-LD context: <a href="validation-context.jsonld">validation-context.jsonld</a></div>
       <div>Portable signed example: <a href="attestation-example-claimed.json">attestation-example-claimed.json</a></div>
       <div style="margin-top:8px">Issuer pubkey (SPKI hex): <code>302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6</code></div>
@@ -52,7 +52,7 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <section>
     <h2>Verify it offline</h2>
     <pre>const m = await (await fetch("validation-feed.json")).json();
-// 1) attestations file intact: sha256(attestations.jsonl) === m.attestations_sha256
+// 1) attestations file (from m.links.attestations) intact: sha256(file) === m.attestations_sha256
 // 2) manifest signed by issuer: ed25519.verify(
 //      base64 m.signature.signature,
 //      utf8 m.signature.canonical_json,
