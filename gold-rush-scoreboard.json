@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,10 +18,10 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 1,
-    "pages_traffic_views_14d": 6,
-    "pages_traffic_uniques_14d": 1,
-    "clones_14d": 155
+    "release_downloads_total": 3,
+    "pages_traffic_views_14d": 22,
+    "pages_traffic_uniques_14d": 4,
+    "clones_14d": 350
   },
   "not_tracked_yet": {
     "badge_installs": null,
@@ -29,7 +29,7 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-20T09:34:05.063915+00:00",
+  "generated_at": "2026-06-21T07:34:55.266866+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -37,24 +37,29 @@
     }
   ],
   "observer_intelligence": {
-    "external_sessions": 28,
-    "ai_crawler_sessions": 27,
-    "mcp_client_sessions": 367,
+    "external_sessions": 147,
+    "ai_crawler_sessions": 86,
+    "mcp_client_sessions": 496,
     "external_tool_calls": 2,
     "real_arg_tool_calls": 0,
     "claim_related_calls": 0,
     "pricing_related_calls": 1,
-    "registry_scanners": 1,
+    "registry_scanners": 3,
     "security_scanners": 0,
-    "hostile_probe_ips": 0,
+    "hostile_probe_ips": 1,
     "canary_hits": 0,
     "client_class_counts": {
-      "ai_crawler": 27,
-      "registry_scanner": 1
+      "ai_crawler": 86,
+      "unknown_automation": 7,
+      "registry_scanner": 3,
+      "likely_human": 44,
+      "crawler": 5,
+      "mcp_client": 1,
+      "hostile_probe": 1
     },
     "conversion_funnel": {
-      "reach_external_ips": 28,
-      "mcp_probe_initializes": 367,
+      "reach_external_ips": 147,
+      "mcp_probe_initializes": 496,
       "tool_calls": 2,
       "real_intent_calls": 1,
       "claim_calls": 0
@@ -64,70 +69,129 @@
         "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "sessions": 22,
-        "hits": 86
+        "sessions": 79,
+        "hits": 486
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "sessions": 5,
-        "hits": 74
+        "sessions": 4,
+        "hits": 338
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "sessions": 4,
+        "hits": 210
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
         "sessions": 1,
-        "hits": 4
+        "hits": 92
+      },
+      {
+        "as_org": "CDNEXT - Datacamp Limited, GB",
+        "country": "FR",
+        "primary_class": "unknown_automation",
+        "sessions": 1,
+        "hits": 18
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "registry_scanner",
+        "sessions": 1,
+        "hits": 16
+      },
+      {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "ai_crawler",
+        "sessions": 1,
+        "hits": 15
+      },
+      {
+        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "sessions": 9,
+        "hits": 10
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "sessions": 5,
+        "hits": 7
+      },
+      {
+        "as_org": "VDSINA-AS - Hosting technology LTD, RU",
+        "country": "RU",
+        "primary_class": "likely_human",
+        "sessions": 1,
+        "hits": 6
       }
     ],
     "top_observer_orgs": [
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "AS-COLOCROSSING - HostPapa, US"
+      "AMAZON-AES - Amazon.com, Inc., US",
+      "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
+      "AMAZON-02 - Amazon.com, Inc., US",
+      "INTERNET-ARCHIVE - Internet Archive, US",
+      "EGIHOSTING - EGIHosting, US",
+      "M247 - M247 Europe SRL, RO"
     ],
     "top_interest_paths": [
       "/",
+      "/.well-known/agent-card.json",
+      "/robots.txt",
+      "/premium/research",
       "/.well-known/x402",
-      "/.well-known/agent-card.json"
+      "/token",
+      "/.well-known/glama.json",
+      "/.well-known/x402.json"
     ],
-    "generated_at": "2026-06-20T09:34:02.379156+00:00",
+    "generated_at": "2026-06-21T07:34:52.510163+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
         "direction": "flat",
-        "days": 3
+        "days": 4
       },
       "external_sessions": {
-        "now": 28,
+        "now": 147,
         "window_start": 28,
-        "delta": 0,
-        "direction": "flat",
-        "days": 3
+        "delta": 119,
+        "direction": "up",
+        "days": 4
       },
       "external_tool_calls": {
         "now": 2,
         "window_start": 2,
         "delta": 0,
         "direction": "flat",
-        "days": 3
+        "days": 4
       },
       "real_arg_tool_calls": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
         "direction": "flat",
-        "days": 3
+        "days": 4
       },
       "pages_views_14d": {
-        "now": 6,
+        "now": 22,
         "window_start": 0,
-        "delta": 6,
+        "delta": 22,
         "direction": "up",
-        "days": 3
+        "days": 4
       }
     }
   }
