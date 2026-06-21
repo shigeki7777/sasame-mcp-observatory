@@ -29,7 +29,7 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-21T07:34:55.266866+00:00",
+  "generated_at": "2026-06-21T07:35:47.216167+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -118,8 +118,8 @@
         "as_org": "AMAZON-AES - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "likely_human",
-        "sessions": 9,
-        "hits": 10
+        "sessions": 11,
+        "hits": 12
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
@@ -141,9 +141,9 @@
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "AMAZON-AES - Amazon.com, Inc., US",
       "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
-      "AMAZON-02 - Amazon.com, Inc., US",
       "INTERNET-ARCHIVE - Internet Archive, US",
       "EGIHOSTING - EGIHosting, US",
+      "AMAZON-02 - Amazon.com, Inc., US",
       "M247 - M247 Europe SRL, RO"
     ],
     "top_interest_paths": [
@@ -156,7 +156,7 @@
       "/.well-known/glama.json",
       "/.well-known/x402.json"
     ],
-    "generated_at": "2026-06-21T07:34:52.510163+00:00",
+    "generated_at": "2026-06-21T07:35:44.828401+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,

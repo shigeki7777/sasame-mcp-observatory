@@ -1,6 +1,6 @@
 {
   "schema": "sasame-observer-census-v0.1",
-  "generated_at": "2026-06-21T07:34:56.534520+00:00",
+  "generated_at": "2026-06-21T07:35:48.105247+00:00",
   "window": "rolling nginx retention (~14d)",
   "what_this_is": "A measured, PII-free roster of self-declared SERVICE crawlers that map the agent/MCP economy and have fetched SaSame's public surfaces. Observation only — no trust/safety verdict on any party. SaSame's own probes, browsers, anonymous clients, and exploit scanners are excluded from the roster.",
   "agent_economy_observers": [
@@ -172,11 +172,11 @@
   ],
   "observer_count": 12,
   "context_traffic_buckets": {
-    "anonymous": 30836,
+    "anonymous": 30842,
     "exploit": 20475,
     "aisearch": 10634,
     "generic_client": 3244,
-    "other": 1820,
+    "other": 1822,
     "agentecon": 1685,
     "self": 1180,
     "genweb": 30
