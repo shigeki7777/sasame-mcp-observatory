@@ -1,6 +1,6 @@
 {
   "schema": "gold-vein-v0.1",
-  "generated_at": "2026-06-20T21:14:47.475545Z",
+  "generated_at": "2026-06-21T10:28:50.035108Z",
   "note": "Curated cell of unclaimed, owner-identifiable MCP-Ready servers SaSame observed from the outside. If one is yours, claim your free Readiness Passport. This is verification-status only (reachable / callable / schema-valid / observed grade) — NOT a safety, quality, or trust verdict.",
   "rails": [
     "verification-status only",
@@ -568,10 +568,10 @@
         "agent_card_linkback",
         "signed_public_key"
       ],
-      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp?api_key={api_key}",
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp%3Fapi_key%3D%7Bapi_key%7D",
       "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-cardog-io-mcp-api-key-api-key.json",
       "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-cardog-io-mcp-api-key-api-key.svg",
-      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp?api_key={api_key}"
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp%3Fapi_key%3D%7Bapi_key%7D"
     },
     {
       "agent_id": "app-dealermax-public-search-https-mcp-dealermax-app-mcp-bf8dee5f",
