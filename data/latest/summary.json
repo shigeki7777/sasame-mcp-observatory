@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-22T03:57:40.336Z",
+  "generated_at": "2026-06-22T04:44:41.285Z",
   "source": "https://live-vps.sasame.online/observatory/",
   "standard": "agent-tool-discoverability-standard/0.1",
   "indexed_total": 30000,
   "auditable_endpoints": 20876,
   "audited": 3606,
-  "observed_ready": 1109,
+  "observed_ready": 1108,
   "by_source": {
     "official MCP registry": 15358,
     "x402 discovery catalog": 1418,
