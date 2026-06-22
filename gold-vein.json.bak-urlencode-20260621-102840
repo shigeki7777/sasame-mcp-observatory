@@ -1,0 +1,617 @@
+{
+  "schema": "gold-vein-v0.1",
+  "generated_at": "2026-06-20T21:29:46.279627Z",
+  "note": "Curated cell of unclaimed, owner-identifiable MCP-Ready servers SaSame observed from the outside. If one is yours, claim your free Readiness Passport. This is verification-status only (reachable / callable / schema-valid / observed grade) — NOT a safety, quality, or trust verdict.",
+  "rails": [
+    "verification-status only",
+    "no badness verdict / no risk score",
+    "free to claim",
+    "owner-controllable: claim, correct, or delist anytime",
+    "PULL / invited only — no cold outbound"
+  ],
+  "selection": "audit_grade=A AND not priced AND owner-identifiable custom domain AND still unclaimed (observed)",
+  "cell_size": 30,
+  "pool_total": 2286,
+  "cell": [
+    {
+      "agent_id": "cc-accrue-mcp-https-accrue-cc-mcp-04e9d688",
+      "name": "cc.accrue/mcp",
+      "endpoint": "https://accrue.cc/mcp",
+      "domain": "accrue.cc",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Faccrue.cc%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/accrue-cc-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/accrue-cc-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Faccrue.cc%2Fmcp"
+    },
+    {
+      "agent_id": "work-agentexchange-aivisibility-ai-visibility-mcp-https-aivisibility-agentexchan-e074d63e",
+      "name": "work.agentexchange.aivisibility/ai-visibility-mcp",
+      "endpoint": "https://aivisibility.agentexchange.work/mcp",
+      "domain": "aivisibility.agentexchange.work",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Faivisibility.agentexchange.work%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/aivisibility-agentexchange-work-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/aivisibility-agentexchange-work-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Faivisibility.agentexchange.work%2Fmcp"
+    },
+    {
+      "agent_id": "ai-agentrapay-agentra-https-api-agentrapay-ai-mcp-ddac02cb",
+      "name": "ai.agentrapay/agentra",
+      "endpoint": "https://api.agentrapay.ai/mcp",
+      "domain": "api.agentrapay.ai",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fapi.agentrapay.ai%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/api-agentrapay-ai-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/api-agentrapay-ai-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fapi.agentrapay.ai%2Fmcp"
+    },
+    {
+      "agent_id": "ai-baselight-baselight-https-api-baselight-app-mcp-1fe17c31",
+      "name": "ai.baselight/baselight",
+      "endpoint": "https://api.baselight.app/mcp",
+      "domain": "api.baselight.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fapi.baselight.app%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/api-baselight-app-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/api-baselight-app-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fapi.baselight.app%2Fmcp"
+    },
+    {
+      "agent_id": "co-bizverify-mcp-https-api-bizverify-co-mcp-77d8d1a8",
+      "name": "co.bizverify/mcp",
+      "endpoint": "https://api.bizverify.co/mcp",
+      "domain": "api.bizverify.co",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fapi.bizverify.co%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/api-bizverify-co-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/api-bizverify-co-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fapi.bizverify.co%2Fmcp"
+    },
+    {
+      "agent_id": "build-exascale-osint-https-api-exascale-build-mcp-0281507d",
+      "name": "build.exascale/osint",
+      "endpoint": "https://api.exascale.build/mcp",
+      "domain": "api.exascale.build",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fapi.exascale.build%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/api-exascale-build-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/api-exascale-build-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fapi.exascale.build%2Fmcp"
+    },
+    {
+      "agent_id": "app-humantaste-taste-mcp-https-api-humantaste-app-mcp-2ffa07d4",
+      "name": "app.humantaste/taste-mcp",
+      "endpoint": "https://api.humantaste.app/mcp/",
+      "domain": "api.humantaste.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fapi.humantaste.app%2Fmcp%2F",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/api-humantaste-app-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/api-humantaste-app-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fapi.humantaste.app%2Fmcp%2F"
+    },
+    {
+      "agent_id": "ai-weftly-weftly-https-api-weftly-ai-mcp-f9450f53",
+      "name": "ai.weftly/weftly",
+      "endpoint": "https://api.weftly.ai/mcp",
+      "domain": "api.weftly.ai",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fapi.weftly.ai%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/api-weftly-ai-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/api-weftly-ai-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fapi.weftly.ai%2Fmcp"
+    },
+    {
+      "agent_id": "wine-beyond-beyond-wine-https-beyond-wine-mcp-ea887050",
+      "name": "wine.beyond/beyond-wine",
+      "endpoint": "https://beyond.wine/mcp",
+      "domain": "beyond.wine",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fbeyond.wine%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/beyond-wine-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/beyond-wine-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fbeyond.wine%2Fmcp"
+    },
+    {
+      "agent_id": "cc-captcha-captchacc-https-captcha-cc-mcp-2ae69648",
+      "name": "cc.captcha/captchacc",
+      "endpoint": "https://captcha.cc/mcp",
+      "domain": "captcha.cc",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fcaptcha.cc%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/captcha-cc-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/captcha-cc-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fcaptcha.cc%2Fmcp"
+    },
+    {
+      "agent_id": "ai-compeller-compel-https-compeller-ai-api-mcp-23fc9186",
+      "name": "ai.compeller/compel",
+      "endpoint": "https://compeller.ai/api/mcp",
+      "domain": "compeller.ai",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fcompeller.ai%2Fapi%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/compeller-ai-api-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/compeller-ai-api-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fcompeller.ai%2Fapi%2Fmcp"
+    },
+    {
+      "agent_id": "cloud-dchub-mcp-server-https-dchub-cloud-mcp-5165939a",
+      "name": "cloud.dchub/mcp-server",
+      "endpoint": "https://dchub.cloud/mcp",
+      "domain": "dchub.cloud",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fdchub.cloud%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/dchub-cloud-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/dchub-cloud-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fdchub.cloud%2Fmcp"
+    },
+    {
+      "agent_id": "app-decibelshield-decibel-shield-https-decibelshield-app-api-mcp-c1539280",
+      "name": "app.decibelshield/decibel-shield",
+      "endpoint": "https://decibelshield.app/api/mcp",
+      "domain": "decibelshield.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fdecibelshield.app%2Fapi%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/decibelshield-app-api-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/decibelshield-app-api-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fdecibelshield.app%2Fapi%2Fmcp"
+    },
+    {
+      "agent_id": "at-designare-knowledge-https-designare-at-api-mcp-4d020272",
+      "name": "at.designare/knowledge",
+      "endpoint": "https://designare.at/api/mcp",
+      "domain": "designare.at",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fdesignare.at%2Fapi%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/designare-at-api-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/designare-at-api-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fdesignare.at%2Fapi%2Fmcp"
+    },
+    {
+      "agent_id": "app-eurocomply-compliance-https-eurocomply-app-api-mcp-d0d55e9c",
+      "name": "app.eurocomply/compliance",
+      "endpoint": "https://eurocomply.app/api/mcp",
+      "domain": "eurocomply.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Feurocomply.app%2Fapi%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/eurocomply-app-api-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/eurocomply-app-api-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Feurocomply.app%2Fapi%2Fmcp"
+    },
+    {
+      "agent_id": "app-evlek-mcp-server-https-evlek-app-api-mcp-7f01a353",
+      "name": "app.evlek/mcp-server",
+      "endpoint": "https://evlek.app/api/mcp",
+      "domain": "evlek.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fevlek.app%2Fapi%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/evlek-app-api-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/evlek-app-api-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fevlek.app%2Fapi%2Fmcp"
+    },
+    {
+      "agent_id": "tech-ydb-qdrant-gravity-ai-ui-https-gravity-ai-ydb-qdrant-tech-mcp-caab927b",
+      "name": "tech.ydb-qdrant/gravity-ai-ui",
+      "endpoint": "https://gravity-ai.ydb-qdrant.tech/mcp",
+      "domain": "gravity-ai.ydb-qdrant.tech",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fgravity-ai.ydb-qdrant.tech%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/gravity-ai-ydb-qdrant-tech-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/gravity-ai-ydb-qdrant-tech-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fgravity-ai.ydb-qdrant.tech%2Fmcp"
+    },
+    {
+      "agent_id": "au-com-iknowthepilot-flight-deals-https-iknowthepilot-com-au-mcp-a9393cf7",
+      "name": "au.com.iknowthepilot/flight-deals",
+      "endpoint": "https://iknowthepilot.com.au/mcp",
+      "domain": "iknowthepilot.com.au",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fiknowthepilot.com.au%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/iknowthepilot-com-au-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/iknowthepilot-com-au-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fiknowthepilot.com.au%2Fmcp"
+    },
+    {
+      "agent_id": "tech-skybridge-investigation-game-investigation-game-https-investigation-game-sk-a759f169",
+      "name": "tech.skybridge.investigation-game/Investigation-Game",
+      "endpoint": "https://investigation-game.skybridge.tech",
+      "domain": "investigation-game.skybridge.tech",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Finvestigation-game.skybridge.tech",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/investigation-game-skybridge-tech.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/investigation-game-skybridge-tech.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Finvestigation-game.skybridge.tech"
+    },
+    {
+      "agent_id": "app-clicon-lotus-https-lotus-clicon-app-mcp-44a15472",
+      "name": "app.clicon/lotus",
+      "endpoint": "https://lotus.clicon.app/mcp/",
+      "domain": "lotus.clicon.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Flotus.clicon.app%2Fmcp%2F",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/lotus-clicon-app-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/lotus-clicon-app-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Flotus.clicon.app%2Fmcp%2F"
+    },
+    {
+      "agent_id": "bz-manda-manda-https-manda-bz-mcp-39087473",
+      "name": "bz.manda/manda",
+      "endpoint": "https://manda.bz/mcp",
+      "domain": "manda.bz",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmanda.bz%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/manda-bz-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/manda-bz-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmanda.bz%2Fmcp"
+    },
+    {
+      "agent_id": "app-marketgenius-mcp-https-marketgenius-app-mcp-0dd0bced",
+      "name": "app.marketgenius/mcp",
+      "endpoint": "https://marketgenius.app/mcp",
+      "domain": "marketgenius.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmarketgenius.app%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/marketgenius-app-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/marketgenius-app-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmarketgenius.app%2Fmcp"
+    },
+    {
+      "agent_id": "cat-2022-catalunya-2022-https-mcp-2022-cat-54c2ea69",
+      "name": "cat.2022/catalunya-2022",
+      "endpoint": "https://mcp.2022.cat",
+      "domain": "mcp.2022.cat",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.2022.cat",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-2022-cat.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-2022-cat.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.2022.cat"
+    },
+    {
+      "agent_id": "co-ainumbers-tools-https-mcp-ainumbers-co-mcp-2cdb2d10",
+      "name": "co.ainumbers/tools",
+      "endpoint": "https://mcp.ainumbers.co/mcp",
+      "domain": "mcp.ainumbers.co",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.ainumbers.co%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-ainumbers-co-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-ainumbers-co-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.ainumbers.co%2Fmcp"
+    },
+    {
+      "agent_id": "bio-atlarium-habitat-database-https-mcp-atlarium-bio-mcp-1ca32653",
+      "name": "bio.atlarium/habitat-database",
+      "endpoint": "https://mcp.atlarium.bio/mcp",
+      "domain": "mcp.atlarium.bio",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.atlarium.bio%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-atlarium-bio-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-atlarium-bio-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.atlarium.bio%2Fmcp"
+    },
+    {
+      "agent_id": "ai-autonomad-travel-https-mcp-autonomad-ai-mcp-8e1ab225",
+      "name": "ai.autonomad/travel",
+      "endpoint": "https://mcp.autonomad.ai/mcp",
+      "domain": "mcp.autonomad.ai",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.autonomad.ai%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-autonomad-ai-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-autonomad-ai-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.autonomad.ai%2Fmcp"
+    },
+    {
+      "agent_id": "xyz-cabalspy-wallet-tracker-https-mcp-cabalspy-xyz-mcp-2e59666f",
+      "name": "xyz.cabalspy/wallet-tracker",
+      "endpoint": "https://mcp.cabalspy.xyz/mcp",
+      "domain": "mcp.cabalspy.xyz",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.cabalspy.xyz%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-cabalspy-xyz-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-cabalspy-xyz-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.cabalspy.xyz%2Fmcp"
+    },
+    {
+      "agent_id": "app-cardog-mcp-https-mcp-cardog-io-mcp-api-key-api-key-08d7f9dc",
+      "name": "app.cardog/mcp",
+      "endpoint": "https://mcp.cardog.io/mcp?api_key={api_key}",
+      "domain": "mcp.cardog.io",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp?api_key={api_key}",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-cardog-io-mcp-api-key-api-key.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-cardog-io-mcp-api-key-api-key.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp?api_key={api_key}"
+    },
+    {
+      "agent_id": "app-dealermax-public-search-https-mcp-dealermax-app-mcp-bf8dee5f",
+      "name": "app.dealermax/public-search",
+      "endpoint": "https://mcp.dealermax.app/mcp/",
+      "domain": "mcp.dealermax.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.dealermax.app%2Fmcp%2F",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-dealermax-app-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-dealermax-app-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.dealermax.app%2Fmcp%2F"
+    },
+    {
+      "agent_id": "app-docwand-pdf-https-mcp-docwand-app-mcp-5aef2b3e",
+      "name": "app.docwand/pdf",
+      "endpoint": "https://mcp.docwand.app/mcp",
+      "domain": "mcp.docwand.app",
+      "grade": "A",
+      "level": "observed",
+      "claim_priority_score": 8,
+      "claim_methods": [
+        "well_known_file",
+        "dns_txt",
+        "repository",
+        "agent_card_linkback",
+        "signed_public_key"
+      ],
+      "claim_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&endpoint=https%3A%2F%2Fmcp.docwand.app%2Fmcp",
+      "report_url": "https://live-vps.sasame.online/observatory/certs/mcp-docwand-app-mcp.json",
+      "badge_url": "https://live-vps.sasame.online/observatory/badge/mcp-docwand-app-mcp.svg",
+      "delist_url": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&endpoint=https%3A%2F%2Fmcp.docwand.app%2Fmcp"
+    }
+  ]
+}

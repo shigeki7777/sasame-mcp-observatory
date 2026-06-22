@@ -1,0 +1,382 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold Vein — Unclaimed MCP-Ready servers · SaSame Observatory</title>
+<meta name="description" content="Unclaimed, owner-identifiable MCP servers SaSame observed to meet the Agent-Tool Discoverability Standard. Verification-status only. Claim your free Readiness Passport.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#EEF1F2;--panel:#F7F9F9;--ink:#14202A;--muted:#5F6E76;--line:#D5DCDD;--teal:#0E6E6E;--brass:#9A6B12;--maxw:1080px}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.5}
+.mono{font-family:"Space Mono",ui-monospace,Menlo,monospace}.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+header.site{padding:42px 0 22px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.05;font-weight:700;margin:0 0 12px;letter-spacing:-.015em}
+.thesis{font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:64ch;margin:0}
+.banner{margin:22px 0 0;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:6px;padding:14px 16px;font-size:13.5px;color:#314048}
+.banner b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:26px 0 40px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+.row{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.grade{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:5px;background:var(--teal);color:#fff;font-weight:700;font-size:14px}
+.dom{font-size:13px;color:var(--muted)}
+.card h3{margin:2px 0 4px;font-size:16px}
+.ep{font-size:11.5px;color:var(--muted);word-break:break-all;margin:0 0 8px}
+.meth{font-size:12px;color:#42525a;margin:0 0 12px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.btn{background:var(--teal);color:#fff;padding:7px 12px;border-radius:5px;font-size:13px;font-weight:500}
+.btn:hover{text-decoration:none;opacity:.92}
+.lnk{font-size:12.5px}.muted{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:22px 0 50px;color:var(--muted);font-size:13px}
+.stamp{display:inline-block;border:1.5px solid var(--brass);color:var(--brass);font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:3px}
+</style></head>
+<body>
+<header class="site"><div class="wrap">
+  <p class="eyebrow">SaSame Observatory · Gold Vein</p>
+  <h1>Unclaimed MCP-Ready servers</h1>
+  <p class="thesis">30 owner-identifiable MCP endpoints that SaSame observed, from the outside, to meet the
+  <a href="STANDARD.md">Agent-Tool Discoverability Standard v0.2</a> at grade A. If one is yours, claim your free, owner-controlled Readiness Passport.</p>
+  <div class="banner"><b>Verification-status only.</b> Grade A means an endpoint was reachable, listable, schema-valid, and returned real content under the public standard — it is <b>not</b> a safety, quality, security, or trust verdict. Claiming is free, one click, no sales call. You can correct or delist any time. SaSame does not cold-email; you found this page, you decide.</div>
+</div></header>
+<main class="wrap">
+  <div class="grid">
+  <article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">accrue.cc</span></div>
+  <h3>cc.accrue/mcp</h3>
+  <p class="ep mono">https://accrue.cc/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Faccrue.cc%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/accrue-cc-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/accrue-cc-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Faccrue.cc%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">aivisibility.agentexchange.work</span></div>
+  <h3>work.agentexchange.aivisibility/ai-visibility-mcp</h3>
+  <p class="ep mono">https://aivisibility.agentexchange.work/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Faivisibility.agentexchange.work%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/aivisibility-agentexchange-work-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/aivisibility-agentexchange-work-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Faivisibility.agentexchange.work%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">api.agentrapay.ai</span></div>
+  <h3>ai.agentrapay/agentra</h3>
+  <p class="ep mono">https://api.agentrapay.ai/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fapi.agentrapay.ai%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/api-agentrapay-ai-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/api-agentrapay-ai-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fapi.agentrapay.ai%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">api.baselight.app</span></div>
+  <h3>ai.baselight/baselight</h3>
+  <p class="ep mono">https://api.baselight.app/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fapi.baselight.app%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/api-baselight-app-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/api-baselight-app-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fapi.baselight.app%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">api.bizverify.co</span></div>
+  <h3>co.bizverify/mcp</h3>
+  <p class="ep mono">https://api.bizverify.co/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fapi.bizverify.co%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/api-bizverify-co-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/api-bizverify-co-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fapi.bizverify.co%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">api.exascale.build</span></div>
+  <h3>build.exascale/osint</h3>
+  <p class="ep mono">https://api.exascale.build/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fapi.exascale.build%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/api-exascale-build-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/api-exascale-build-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fapi.exascale.build%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">api.humantaste.app</span></div>
+  <h3>app.humantaste/taste-mcp</h3>
+  <p class="ep mono">https://api.humantaste.app/mcp/</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fapi.humantaste.app%2Fmcp%2F" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/api-humantaste-app-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/api-humantaste-app-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fapi.humantaste.app%2Fmcp%2F" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">api.weftly.ai</span></div>
+  <h3>ai.weftly/weftly</h3>
+  <p class="ep mono">https://api.weftly.ai/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fapi.weftly.ai%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/api-weftly-ai-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/api-weftly-ai-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fapi.weftly.ai%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">beyond.wine</span></div>
+  <h3>wine.beyond/beyond-wine</h3>
+  <p class="ep mono">https://beyond.wine/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fbeyond.wine%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/beyond-wine-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/beyond-wine-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fbeyond.wine%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">captcha.cc</span></div>
+  <h3>cc.captcha/captchacc</h3>
+  <p class="ep mono">https://captcha.cc/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fcaptcha.cc%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/captcha-cc-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/captcha-cc-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fcaptcha.cc%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">compeller.ai</span></div>
+  <h3>ai.compeller/compel</h3>
+  <p class="ep mono">https://compeller.ai/api/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fcompeller.ai%2Fapi%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/compeller-ai-api-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/compeller-ai-api-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fcompeller.ai%2Fapi%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">dchub.cloud</span></div>
+  <h3>cloud.dchub/mcp-server</h3>
+  <p class="ep mono">https://dchub.cloud/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fdchub.cloud%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/dchub-cloud-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/dchub-cloud-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fdchub.cloud%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">decibelshield.app</span></div>
+  <h3>app.decibelshield/decibel-shield</h3>
+  <p class="ep mono">https://decibelshield.app/api/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fdecibelshield.app%2Fapi%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/decibelshield-app-api-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/decibelshield-app-api-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fdecibelshield.app%2Fapi%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">designare.at</span></div>
+  <h3>at.designare/knowledge</h3>
+  <p class="ep mono">https://designare.at/api/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fdesignare.at%2Fapi%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/designare-at-api-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/designare-at-api-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fdesignare.at%2Fapi%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">eurocomply.app</span></div>
+  <h3>app.eurocomply/compliance</h3>
+  <p class="ep mono">https://eurocomply.app/api/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Feurocomply.app%2Fapi%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/eurocomply-app-api-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/eurocomply-app-api-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Feurocomply.app%2Fapi%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">evlek.app</span></div>
+  <h3>app.evlek/mcp-server</h3>
+  <p class="ep mono">https://evlek.app/api/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fevlek.app%2Fapi%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/evlek-app-api-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/evlek-app-api-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fevlek.app%2Fapi%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">gravity-ai.ydb-qdrant.tech</span></div>
+  <h3>tech.ydb-qdrant/gravity-ai-ui</h3>
+  <p class="ep mono">https://gravity-ai.ydb-qdrant.tech/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fgravity-ai.ydb-qdrant.tech%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/gravity-ai-ydb-qdrant-tech-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/gravity-ai-ydb-qdrant-tech-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fgravity-ai.ydb-qdrant.tech%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">iknowthepilot.com.au</span></div>
+  <h3>au.com.iknowthepilot/flight-deals</h3>
+  <p class="ep mono">https://iknowthepilot.com.au/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fiknowthepilot.com.au%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/iknowthepilot-com-au-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/iknowthepilot-com-au-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fiknowthepilot.com.au%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">investigation-game.skybridge.tech</span></div>
+  <h3>tech.skybridge.investigation-game/Investigation-Game</h3>
+  <p class="ep mono">https://investigation-game.skybridge.tech</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Finvestigation-game.skybridge.tech" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/investigation-game-skybridge-tech.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/investigation-game-skybridge-tech.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Finvestigation-game.skybridge.tech" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">lotus.clicon.app</span></div>
+  <h3>app.clicon/lotus</h3>
+  <p class="ep mono">https://lotus.clicon.app/mcp/</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Flotus.clicon.app%2Fmcp%2F" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/lotus-clicon-app-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/lotus-clicon-app-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Flotus.clicon.app%2Fmcp%2F" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">manda.bz</span></div>
+  <h3>bz.manda/manda</h3>
+  <p class="ep mono">https://manda.bz/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmanda.bz%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/manda-bz-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/manda-bz-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmanda.bz%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">marketgenius.app</span></div>
+  <h3>app.marketgenius/mcp</h3>
+  <p class="ep mono">https://marketgenius.app/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmarketgenius.app%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/marketgenius-app-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/marketgenius-app-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmarketgenius.app%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.2022.cat</span></div>
+  <h3>cat.2022/catalunya-2022</h3>
+  <p class="ep mono">https://mcp.2022.cat</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.2022.cat" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-2022-cat.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-2022-cat.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.2022.cat" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.ainumbers.co</span></div>
+  <h3>co.ainumbers/tools</h3>
+  <p class="ep mono">https://mcp.ainumbers.co/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.ainumbers.co%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-ainumbers-co-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-ainumbers-co-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.ainumbers.co%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.atlarium.bio</span></div>
+  <h3>bio.atlarium/habitat-database</h3>
+  <p class="ep mono">https://mcp.atlarium.bio/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.atlarium.bio%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-atlarium-bio-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-atlarium-bio-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.atlarium.bio%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.autonomad.ai</span></div>
+  <h3>ai.autonomad/travel</h3>
+  <p class="ep mono">https://mcp.autonomad.ai/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.autonomad.ai%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-autonomad-ai-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-autonomad-ai-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.autonomad.ai%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.cabalspy.xyz</span></div>
+  <h3>xyz.cabalspy/wallet-tracker</h3>
+  <p class="ep mono">https://mcp.cabalspy.xyz/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.cabalspy.xyz%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-cabalspy-xyz-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-cabalspy-xyz-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.cabalspy.xyz%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.cardog.io</span></div>
+  <h3>app.cardog/mcp</h3>
+  <p class="ep mono">https://mcp.cardog.io/mcp?api_key={api_key}</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp?api_key={api_key}" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-cardog-io-mcp-api-key-api-key.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-cardog-io-mcp-api-key-api-key.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.cardog.io%2Fmcp?api_key={api_key}" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.dealermax.app</span></div>
+  <h3>app.dealermax/public-search</h3>
+  <p class="ep mono">https://mcp.dealermax.app/mcp/</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.dealermax.app%2Fmcp%2F" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-dealermax-app-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-dealermax-app-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.dealermax.app%2Fmcp%2F" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article><article class="card">
+  <div class="row"><span class="grade">A</span><span class="dom mono">mcp.docwand.app</span></div>
+  <h3>app.docwand/pdf</h3>
+  <p class="ep mono">https://mcp.docwand.app/mcp</p>
+  <p class="meth">Owner proof options: well_known_file, dns_txt, repository</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&amp;endpoint=https%3A%2F%2Fmcp.docwand.app%2Fmcp" rel="nofollow noopener">Claim this passport &rarr;</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/certs/mcp-docwand-app-mcp.json">signed report</a>
+    <a class="lnk" href="https://live-vps.sasame.online/observatory/badge/mcp-docwand-app-mcp.svg">badge</a>
+    <a class="lnk muted" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=correct-or-delist.yml&amp;endpoint=https%3A%2F%2Fmcp.docwand.app%2Fmcp" rel="nofollow noopener">correct / delist</a>
+  </div>
+</article>
+  </div>
+</main>
+<footer><div class="wrap">
+  <span class="stamp">Pull / invited only</span>&nbsp; Generated 2026-06-20T21:29:46.279627Z from 2286 observed claim candidates &middot;
+  <a href="index.html">&larr; full Observatory</a> &middot; <a href="gold-vein.json">gold-vein.json</a> &middot;
+  <a href="METHODOLOGY.md">methodology</a> &middot; <a href="PRIVACY-TELEMETRY.md">privacy</a>.
+  Agents: run <code class="mono">audit_mcp</code> / <code class="mono">verify_mcp_ready</code> on <code class="mono">https://live-vps.sasame.online/public-mcp</code>.
+</div></footer>
+</body></html>

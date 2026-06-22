@@ -1,0 +1,33 @@
+# SaSame Agent Passport Registry
+
+> A public, outside-in observability registry of the AI agent economy: one machine-readable Agent Passport per public MCP (Model Context Protocol) server and x402 service. Verification status only — never a risk verdict on a named agent. Built by SaSame SRL.
+
+## What it is
+- 21,137 public MCP / agent endpoints indexed (30,000 registry entries across official MCP registry, Glama, PulseMCP, x402 discovery).
+- Each endpoint gets a passport: identity confidence (unconfirmed -> self_asserted -> owner_proven -> corroborated) + outside-in observation (audit grade A/B/C/D) + what is still unconfirmed.
+- Three levels: Observed (measured from outside, owner not confirmed) / Claimed (owner proved control) / Certified (continuously monitored).
+
+## How to claim your endpoint (free)
+- If your MCP server or agent is listed as unclaimed, you can claim it for free to prove ownership and clear unconfirmed items.
+- Open a prefilled claim issue: https://shigeki7777.github.io/sasame-mcp-observatory/  (use "Find & claim your endpoint"), or https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml
+- Proof methods: .well-known file, DNS TXT, GitHub repo, agent-card linkback, or signed public key. No secrets required. Claiming, correcting, and delisting are always free.
+
+## FAQ
+- What is the SaSame MCP Observatory? A reproducible, external audit + registry of public MCP servers and x402 services, publishing signed readiness observations and per-agent Agent Passports.
+- How do I claim an Agent Passport? Open a claim issue and prove control of your endpoint (well-known / DNS / repo / agent-card / signed key). It is free.
+- How do you verify an MCP endpoint? A polite outside-in probe plus a legitimate MCP handshake (initialize + tools/list), graded against a 10-criterion discoverability standard. A GET probe alone is a weak signal — MCP answers over POST.
+- Is this KYC or a risk score? No. Public endpoint observability only. No KYC, no enforcement, no operator geolocation, no badness verdict.
+
+## Observer Census (who maps the agent economy)
+- We are observed. SaSame publishes a measured, PII-free roster of the self-declared SERVICE crawlers (registries, catalogs, quality/security indexes, liveness checkers, peer censuses) that fetch SaSame's public surfaces. Observation only — never a trust or safety verdict on any party.
+- If your crawler/registry appears there, you can claim or correct your observed entry for free (same claim flow as endpoint passports). This is the honest way to be listed with an owner-confirmed record.
+- Page: https://shigeki7777.github.io/sasame-mcp-observatory/observers.html
+- Machine-readable data: https://shigeki7777.github.io/sasame-mcp-observatory/data/observer-census.json
+
+## Links
+- Live registry & search: https://shigeki7777.github.io/sasame-mcp-observatory/
+- Full dataset (download): https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2
+- Claim: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/CLAIM.md
+- Methodology: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md
+- Observer Census: https://shigeki7777.github.io/sasame-mcp-observatory/observers.html
+- Telemetry & privacy note: https://github.com/shigeki7777/sasame-mcp-observatory/blob/master/PRIVACY-TELEMETRY.md

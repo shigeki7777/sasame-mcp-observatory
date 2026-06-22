@@ -1,0 +1,18 @@
+{
+  "_schema": "sasame-bait-metrics/0.1",
+  "_note": "External consumption of published bait (discovery+feeds). Self/own-IP excluded. /observatory feed pulls only counted if nginx logs them (currently most are access_log off).",
+  "generated_at": "2026-06-20T17:14:05.100189+00:00",
+  "total_external_bait_hits": 16,
+  "by_category": {
+    "x402": 16
+  },
+  "by_service": {
+    "agent-tools.cloud-crawler/0.1": 16
+  },
+  "by_path": {
+    "/.well-known/x402": 16
+  },
+  "by_day": {
+    "2026-06-20": 16
+  }
+}
