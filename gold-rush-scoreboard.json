@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -29,7 +29,7 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-21T16:36:18.200151+00:00",
+  "generated_at": "2026-06-22T07:15:17.665021+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -41,126 +41,112 @@
     }
   ],
   "observer_intelligence": {
-    "external_sessions": 147,
-    "ai_crawler_sessions": 86,
-    "mcp_client_sessions": 496,
-    "external_tool_calls": 2,
+    "mcp_client_sessions": 654,
+    "external_tool_calls": 3,
     "real_arg_tool_calls": 0,
     "claim_related_calls": 0,
     "pricing_related_calls": 1,
-    "registry_scanners": 3,
+    "registry_scanners": 4,
     "security_scanners": 0,
-    "hostile_probe_ips": 1,
+    "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "ai_crawler": 86,
-      "unknown_automation": 7,
-      "registry_scanner": 3,
-      "likely_human": 44,
-      "crawler": 5,
-      "mcp_client": 1,
-      "hostile_probe": 1
+      "unknown_automation": 6,
+      "registry_scanner": 4,
+      "ai_crawler": 6,
+      "likely_human": 24,
+      "crawler": 5
     },
     "conversion_funnel": {
-      "reach_external_ips": 147,
-      "mcp_probe_initializes": 496,
-      "tool_calls": 2,
-      "real_intent_calls": 1,
+      "reach_external_ips": 45,
+      "mcp_probe_initializes": 654,
+      "tool_calls": 3,
+      "real_intent_calls": 0,
       "claim_calls": 0
     },
     "observer_roster": [
       {
-        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-        "country": "US",
-        "primary_class": "ai_crawler",
-        "sessions": 79,
-        "hits": 486
-      },
-      {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "sessions": 4,
-        "hits": 338
-      },
-      {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "unknown_automation",
-        "sessions": 4,
-        "hits": 210
+        "hits": 283
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "sessions": 1,
-        "hits": 92
+        "hits": 117
       },
       {
-        "as_org": "CDNEXT - Datacamp Limited, GB",
-        "country": "FR",
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
         "primary_class": "unknown_automation",
-        "sessions": 1,
-        "hits": 18
+        "hits": 45
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "sessions": 1,
-        "hits": 16
+        "hits": 27
+      },
+      {
+        "as_org": "CDNEXT - Datacamp Limited, GB",
+        "country": "FR",
+        "primary_class": "unknown_automation",
+        "hits": 22
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "sessions": 1,
-        "hits": 15
+        "hits": 16
       },
       {
-        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
-        "country": "US",
+        "as_org": "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
+        "country": "IN",
         "primary_class": "likely_human",
-        "sessions": 11,
-        "hits": 12
+        "hits": 11
+      },
+      {
+        "as_org": "RAILWAY - Railway, US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 11
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "likely_human",
-        "sessions": 5,
-        "hits": 7
+        "hits": 8
       },
       {
-        "as_org": "VDSINA-AS - Hosting technology LTD, RU",
-        "country": "RU",
-        "primary_class": "likely_human",
-        "sessions": 1,
-        "hits": 6
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "registry_scanner",
+        "hits": 4
       }
     ],
     "top_observer_orgs": [
-      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "AMAZON-AES - Amazon.com, Inc., US",
       "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
-      "INTERNET-ARCHIVE - Internet Archive, US",
-      "EGIHOSTING - EGIHosting, US",
+      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "AMAZON-02 - Amazon.com, Inc., US",
-      "M247 - M247 Europe SRL, RO"
+      "VDSINA-AS - Hosting technology LTD, RU",
+      "AMAZON-AES - Amazon.com, Inc., US",
+      "AS-COLOCROSSING - HostPapa, US",
+      "CDNEXT - Datacamp Limited, GB"
     ],
     "top_interest_paths": [
       "/",
       "/.well-known/agent-card.json",
       "/robots.txt",
       "/premium/research",
-      "/.well-known/x402",
       "/token",
-      "/.well-known/glama.json",
-      "/.well-known/x402.json"
+      "/sitemap.xml",
+      "/.well-known/agent.json",
+      "/.well-known/x402"
     ],
-    "generated_at": "2026-06-21T07:35:44.828401+00:00",
+    "generated_at": "2026-06-22T07:15:13.249013+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -170,17 +156,17 @@
         "days": 4
       },
       "external_sessions": {
-        "now": 147,
+        "now": null,
         "window_start": 28,
-        "delta": 119,
-        "direction": "up",
+        "delta": null,
+        "direction": "flat",
         "days": 4
       },
       "external_tool_calls": {
-        "now": 2,
+        "now": 3,
         "window_start": 2,
-        "delta": 0,
-        "direction": "flat",
+        "delta": 1,
+        "direction": "up",
         "days": 4
       },
       "real_arg_tool_calls": {

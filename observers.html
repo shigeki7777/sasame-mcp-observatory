@@ -36,10 +36,10 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <p class="thesis">We are observed. This page turns the observers' own self-declared footprints into a public, measured record — an observatory <em>of the observers</em>. Self-declared service crawlers only. No residential IPs, no geolocation, no browser fingerprints. Observation only: listing here is <b>not</b> an endorsement and <b>not</b> a safety verdict.</p>
   <div class="banner"><b>How to read this:</b> each row records only that the named service self-identified (via its own User-Agent + public URL) and fetched a SaSame public endpoint. Numbers are raw fetch counts over the current log window. Nothing here ranks, scores, or vouches for any party.</div>
   <div class="stats">
-    <div class="stat"><div class="v">12</div><div class="k">Observers rostered</div></div>
-    <div class="stat"><div class="v">1,685</div><div class="k">Observer fetches</div></div>
-    <div class="stat"><div class="v">10</div><div class="k">Reached MCP layer</div></div>
-    <div class="stat"><div class="v">20,475</div><div class="k">Exploit hits (excluded)</div></div>
+    <div class="stat"><div class="v">17</div><div class="k">Observers rostered</div></div>
+    <div class="stat"><div class="v">1,917</div><div class="k">Observer fetches</div></div>
+    <div class="stat"><div class="v">14</div><div class="k">Reached MCP layer</div></div>
+    <div class="stat"><div class="v">20,604</div><div class="k">Exploit hits (excluded)</div></div>
   </div>
 </div></header>
 <main class="wrap">
@@ -48,6 +48,13 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
     <p class="sub">Self-declared registries, catalogs, quality/security indexes, liveness checkers and peer censuses that fetched SaSame. Is this you? Claim or correct your entry — it's how you appear with a verified, owner-confirmed record.</p>
     <table><thead><tr><th>Service</th><th class="num">Fetches</th><th>Layer</th><th>First → last seen</th><th>Declared URL</th><th>Entry</th></tr></thead>
     <tbody><tr>
+      <td class="svc">agent-tools.cloud-crawler</td>
+      <td class="mono num">842</td>
+      <td><span class="badge yes">MCP</span></td>
+      <td class="mono small">2026-06-16 → 2026-06-22</td>
+      <td class="urlcell small"><a href="https://agent-tools.cloud" target="_blank" rel="noopener nofollow">https://agent-tools.cloud</a></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: agent-tools.cloud-crawler" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
       <td class="svc">openai-mcp</td>
       <td class="mono num">698</td>
       <td><span class="badge no">HTTP</span></td>
@@ -55,24 +62,17 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <td class="urlcell small"><span class="muted">—</span></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: openai-mcp" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
-      <td class="svc">agent-tools.cloud-crawler</td>
-      <td class="mono num">697</td>
-      <td><span class="badge yes">MCP</span></td>
-      <td class="mono small">2026-06-16 → 2026-06-21</td>
-      <td class="urlcell small"><a href="https://agent-tools.cloud" target="_blank" rel="noopener nofollow">https://agent-tools.cloud</a></td>
-      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: agent-tools.cloud-crawler" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
-    </tr><tr>
       <td class="svc">aisec-registry</td>
-      <td class="mono num">92</td>
+      <td class="mono num">140</td>
       <td><span class="badge yes">MCP</span></td>
-      <td class="mono small">2026-06-17 → 2026-06-20</td>
+      <td class="mono small">2026-06-17 → 2026-06-21</td>
       <td class="urlcell small"><a href="https://sec.sqrx.io" target="_blank" rel="noopener nofollow">https://sec.sqrx.io</a></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: aisec-registry" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
       <td class="svc">PRSM-MCP-Graph</td>
-      <td class="mono num">64</td>
+      <td class="mono num">76</td>
       <td><span class="badge yes">MCP</span></td>
-      <td class="mono small">2026-06-17 → 2026-06-21</td>
+      <td class="mono small">2026-06-17 → 2026-06-22</td>
       <td class="urlcell small"><a href="https://prsm.network" target="_blank" rel="noopener nofollow">https://prsm.network</a></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: PRSM-MCP-Graph" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
@@ -84,9 +84,9 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: DoppelOps-AgentPlane-LivenessCheck" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
       <td class="svc">mcp-rugpull-research</td>
-      <td class="mono num">30</td>
+      <td class="mono num">39</td>
       <td><span class="badge yes">MCP</span></td>
-      <td class="mono small">2026-06-17 → 2026-06-20</td>
+      <td class="mono small">2026-06-17 → 2026-06-21</td>
       <td class="urlcell small"><span class="muted">—</span></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: mcp-rugpull-research" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
@@ -97,19 +97,19 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <td class="urlcell small"><a href="https://agenstry.com/bot" target="_blank" rel="noopener nofollow">https://agenstry.com/bot</a></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: AgenstryBot" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
+      <td class="svc">MCP-Catalog-Bot</td>
+      <td class="mono num">12</td>
+      <td><span class="badge yes">MCP</span></td>
+      <td class="mono small">2026-06-17 → 2026-06-21</td>
+      <td class="urlcell small"><span class="muted">—</span></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: MCP-Catalog-Bot" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
       <td class="svc">Chiark</td>
       <td class="mono num">9</td>
       <td><span class="badge yes">MCP</span></td>
       <td class="mono small">2026-06-16 → 2026-06-17</td>
       <td class="urlcell small"><span class="muted">—</span></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: Chiark" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
-    </tr><tr>
-      <td class="svc">MCP-Catalog-Bot</td>
-      <td class="mono num">8</td>
-      <td><span class="badge yes">MCP</span></td>
-      <td class="mono small">2026-06-17 → 2026-06-21</td>
-      <td class="urlcell small"><span class="muted">—</span></td>
-      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: MCP-Catalog-Bot" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
       <td class="svc">SmitheryBot</td>
       <td class="mono num">6</td>
@@ -118,12 +118,19 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <td class="urlcell small"><a href="https://smithery.ai" target="_blank" rel="noopener nofollow">https://smithery.ai</a></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: SmitheryBot" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
-      <td class="svc">Dominion-Census</td>
-      <td class="mono num">1</td>
+      <td class="svc">AgentSEO</td>
+      <td class="mono num">6</td>
       <td><span class="badge yes">MCP</span></td>
-      <td class="mono small">2026-06-19 → 2026-06-19</td>
-      <td class="urlcell small"><a href="https://dominionobservatory.com/auth.md" target="_blank" rel="noopener nofollow">https://dominionobservatory.com/auth.md</a></td>
-      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: Dominion-Census" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+      <td class="mono small">2026-06-21 → 2026-06-21</td>
+      <td class="urlcell small"><span class="muted">—</span></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: AgentSEO" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
+      <td class="svc">mcp-registry-review</td>
+      <td class="mono num">5</td>
+      <td><span class="badge yes">MCP</span></td>
+      <td class="mono small">2026-06-21 → 2026-06-21</td>
+      <td class="urlcell small"><span class="muted">—</span></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: mcp-registry-review" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr><tr>
       <td class="svc">RoamBot</td>
       <td class="mono num">1</td>
@@ -131,13 +138,41 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       <td class="mono small">2026-06-17 → 2026-06-17</td>
       <td class="urlcell small"><a href="https://useroam.dev" target="_blank" rel="noopener nofollow">https://useroam.dev</a></td>
       <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: RoamBot" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
+      <td class="svc">AgentSEO</td>
+      <td class="mono num">1</td>
+      <td><span class="badge yes">MCP</span></td>
+      <td class="mono small">2026-06-21 → 2026-06-21</td>
+      <td class="urlcell small"><span class="muted">—</span></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: AgentSEO" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
+      <td class="svc">Dominion-Census</td>
+      <td class="mono num">1</td>
+      <td><span class="badge yes">MCP</span></td>
+      <td class="mono small">2026-06-19 → 2026-06-19</td>
+      <td class="urlcell small"><a href="https://dominionobservatory.com/auth.md" target="_blank" rel="noopener nofollow">https://dominionobservatory.com/auth.md</a></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: Dominion-Census" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
+      <td class="svc">meta-externalagent</td>
+      <td class="mono num">1</td>
+      <td><span class="badge no">HTTP</span></td>
+      <td class="mono small">2026-06-22 → 2026-06-22</td>
+      <td class="urlcell small"><a href="https://developers.facebook.com/docs/sharing/webmasters/crawler" target="_blank" rel="noopener nofollow">https://developers.facebook.com/docs/sharing/webmasters/crawler</a></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: meta-externalagent" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
+    </tr><tr>
+      <td class="svc">MCP-Stats-Prober</td>
+      <td class="mono num">1</td>
+      <td><span class="badge yes">MCP</span></td>
+      <td class="mono small">2026-06-22 → 2026-06-22</td>
+      <td class="urlcell small"><a href="https://github.com/anthropics/mcp-stats" target="_blank" rel="noopener nofollow">https://github.com/anthropics/mcp-stats</a></td>
+      <td><a class="claimlink" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml&title=Claim observed entry: MCP-Stats-Prober" target="_blank" rel="noopener">Claim / correct &rarr;</a></td>
     </tr></tbody></table>
   </section>
   <section class="two">
     <div>
       <h2>The honest market picture</h2>
       <p class="sub">All inbound traffic by self-declared category over the same window. The agent-economy layer is small and real — and swamped by anonymous and exploit noise. We publish the noise too.</p>
-      <table><thead><tr><th>Category</th><th class="num">Hits</th></tr></thead><tbody><tr><td>Agent-economy observers</td><td class="mono num">1,685</td></tr><tr><td>AI search/fetch bots</td><td class="mono num">10,634</td></tr><tr><td>General web crawlers</td><td class="mono num">30</td></tr><tr><td>Generic clients (node/curl/py)</td><td class="mono num">3,244</td></tr><tr><td>Anonymous (no UA)</td><td class="mono num">30,842</td></tr><tr><td>Exploit / botnet scanners</td><td class="mono num">20,475</td></tr><tr><td>Other</td><td class="mono num">1,822</td></tr></tbody></table>
+      <table><thead><tr><th>Category</th><th class="num">Hits</th></tr></thead><tbody><tr><td>Agent-economy observers</td><td class="mono num">1,917</td></tr><tr><td>AI search/fetch bots</td><td class="mono num">10,404</td></tr><tr><td>General web crawlers</td><td class="mono num">33</td></tr><tr><td>Generic clients (node/curl/py)</td><td class="mono num">3,515</td></tr><tr><td>Anonymous (no UA)</td><td class="mono num">30,575</td></tr><tr><td>Exploit / botnet scanners</td><td class="mono num">20,604</td></tr><tr><td>Other</td><td class="mono num">1,956</td></tr></tbody></table>
     </div>
     <div>
       <h2>Methodology</h2>
@@ -146,5 +181,5 @@ footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
     </div>
   </section>
 </main>
-<footer><div class="wrap">Generated 2026-06-21 07:35 UTC · Measured facts only · No risk verdict on any named party · <a href="data/observer-census.json">JSON</a> · <a href="index.html">Registry home</a></div></footer>
+<footer><div class="wrap">Generated 2026-06-22 07:15 UTC · Measured facts only · No risk verdict on any named party · <a href="data/observer-census.json">JSON</a> · <a href="index.html">Registry home</a></div></footer>
 </body></html>
