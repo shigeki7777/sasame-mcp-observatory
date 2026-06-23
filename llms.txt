@@ -12,6 +12,11 @@
 - Human page: https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html
 - Machine-readable: https://shigeki7777.github.io/sasame-mcp-observatory/data/readiness-census-latest.json (schema sasame-readiness-census-v0.1; carries a self_sha256 for reproducibility)
 
+## MCP Directory Pre-Flight (free, for server operators submitting to a directory)
+- If you are about to submit your MCP server to the Claude Connectors Directory or the ChatGPT Apps Directory, run a free pre-flight first. It catches the MECHANICAL reject reasons (missing tool annotations, untyped schemas, unclear descriptions, unreachable endpoint, generic errors, anti-ghost) before you submit. It is NOT a pass guarantee and does NOT cover privacy-policy content, identity/business verification, OAuth, or prohibited-category rules.
+- Human page: https://shigeki7777.github.io/sasame-mcp-observatory/preflight.html
+- Run it: point audit_mcp(url) (grade + machine-readable preflight PF1-PF3) or readiness_report(url) (full report + Directory Pre-Flight section) at your own endpoint. Public MCP endpoint: https://live-vps.sasame.online/public-mcp . Handshake-only, no auth-bypass, no payment.
+
 ## How to claim your endpoint (free)
 - If your MCP server or agent is listed as unclaimed, you can claim it for free to prove ownership and clear unconfirmed items.
 - Open a prefilled claim issue: https://shigeki7777.github.io/sasame-mcp-observatory/  (use "Find & claim your endpoint"), or https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml

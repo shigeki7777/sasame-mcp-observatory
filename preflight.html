@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP Directory Pre-Flight — free readiness check before you submit | SaSame</title>
+<meta name="description" content="About to submit your MCP server to the Claude Connectors Directory or ChatGPT Apps Directory? Run a free pre-flight that catches the mechanical reject reasons. Verification status only — not a pass guarantee.">
+<link rel="canonical" href="https://shigeki7777.github.io/sasame-mcp-observatory/preflight.html">
+<meta property="og:title" content="MCP Directory Pre-Flight — free readiness check before you submit">
+<meta property="og:description" content="Catches the mechanical reject reasons (annotations, schemas, descriptions, liveness, errors) before you submit to the Claude or ChatGPT MCP directory. Not a pass guarantee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ground:#EEF1F2;--panel:#F7F9F9;--ink:#14202A;--muted:#5F6E76;--line:#D5DCDD;
+    --teal:#0E6E6E;--brass:#9A6B12;--ok:#0E6E6E;--no:#9A3B12;--maxw:920px}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:"Space Grotesk",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .mono{font-family:"Space Mono",ui-monospace,Menlo,monospace}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  a{color:var(--teal)} a:hover{text-decoration:underline}
+  header.site{padding:46px 0 26px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+  h1{font-size:clamp(28px,5vw,42px);line-height:1.06;font-weight:700;margin:0 0 14px;letter-spacing:-.015em}
+  .thesis{font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:64ch;margin:0}
+  .banner{margin:22px 0 0;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:6px;padding:14px 16px;font-size:14px;color:#314048}
+  .banner b{color:var(--ink)}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:22px;margin:0 0 14px;letter-spacing:-.01em}
+  h3{font-size:15px;margin:18px 0 6px;font-family:"Space Mono",monospace;letter-spacing:.04em}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.cols{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+  .card.ok{border-left:3px solid var(--ok)} .card.no{border-left:3px solid var(--no)}
+  .card h3{margin-top:0;color:var(--ink)}
+  ul{margin:8px 0 0;padding-left:18px} li{margin:4px 0;font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  code,.code{font-family:"Space Mono",monospace;font-size:13px;background:#E7ECEC;padding:1px 6px;border-radius:4px}
+  pre{background:#10202A;color:#D7E3E3;padding:14px 16px;border-radius:8px;overflow:auto;font-family:"Space Mono",monospace;font-size:12.5px;line-height:1.5}
+  .pill{display:inline-block;font-family:"Space Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1px solid var(--line)}
+  .pill.ok{color:var(--ok);border-color:#9FC2BF} .pill.no{color:var(--no);border-color:#D6B19F} .pill.soft{color:var(--brass);border-color:#D8C39A}
+  .btn{display:inline-block;font-family:"Space Mono",monospace;font-size:13px;border:1px solid var(--teal);color:var(--teal);padding:9px 14px;border-radius:6px;margin:6px 8px 0 0}
+  .btn.primary{background:var(--teal);color:#fff;border-color:var(--teal)}
+  footer{padding:30px 0 60px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <p class="eyebrow">SaSame MCP Observatory · Directory Pre-Flight</p>
+  <h1>About to submit your MCP server to a directory? Run a free pre-flight first.</h1>
+  <p class="thesis">The Claude Connectors Directory and the ChatGPT Apps Directory reject many first submissions for <b>mechanical</b> reasons — missing tool annotations, untyped input schemas, unclear descriptions, an unreachable endpoint, generic errors. SaSame's free readiness audit measures exactly that class from the outside, before you submit.</p>
+  <div class="banner"><b>Honest scope.</b> A clean pre-flight is <b>not</b> directory approval, and SaSame does not assert your server is "safe / good / worth using" — only what it could verify (reachable, callable, schema-valid, annotated). The legal/account requirements below are out of scope: you handle those yourself.</div>
+  <p style="margin-top:18px">
+    <a class="btn primary" href="#run">How to run it →</a>
+    <a class="btn" href="./index.html">Observatory home</a>
+    <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/STANDARD.md">The open standard</a>
+  </p>
+</div></header>
+
+<section><div class="wrap">
+  <h2>What a pre-flight catches — and what it can't</h2>
+  <div class="cols">
+    <div class="card ok">
+      <h3>✅ Caught (mechanical, measurable)</h3>
+      <ul>
+        <li>Tool <b>annotations</b> — every tool needs a <code>title</code> + <code>readOnlyHint</code> or <code>destructiveHint</code> (missing annotations are ~30% of Claude rejects).</li>
+        <li>Typed <b>input schemas</b> (untyped / invalid schema).</li>
+        <li><b>Description</b> clarity & distinctness (vague or templated descriptions).</li>
+        <li><b>Liveness / reachability</b> over HTTPS; handshake conformance.</li>
+        <li><b>Graceful errors</b> (no generic 500/400 on malformed input).</li>
+        <li><b>Anti-ghost</b> — a read-only tool actually returns real content.</li>
+        <li>Promotional / overly-generic tool <b>names</b> (best, official, helper…).</li>
+      </ul>
+    </div>
+    <div class="card no">
+      <h3>❌ Out of scope (you handle these)</h3>
+      <ul>
+        <li><b>Privacy policy</b> — required in your public docs; missing/incomplete is an <b>immediate</b> reject on Claude. A probe can't verify its content.</li>
+        <li><b>Identity / business verification</b> (publishing under an unverified name is rejected on ChatGPT).</li>
+        <li><b>OAuth</b> setup & callback allow-listing.</li>
+        <li><b>Data minimization</b> / undisclosed PII in tool responses.</li>
+        <li><b>Prohibited categories</b> (financial/crypto transfer, standalone media generation, ad-primary).</li>
+        <li><b>Read/write separation</b> into distinct tools (design).</li>
+      </ul>
+    </div>
+  </div>
+  <p style="font-size:13px;color:var(--muted);margin-top:14px">Authoritative requirements live with the directories themselves:
+    <a href="https://claude.com/docs/connectors/building/submission">Claude Connectors submission</a> ·
+    <a href="https://support.claude.com/en/articles/13145358-anthropic-software-directory-policy">Anthropic Software Directory Policy</a> ·
+    <a href="https://developers.openai.com/apps-sdk/app-submission-guidelines">ChatGPT Apps submission</a>.</p>
+</div></section>
+
+<section id="run"><div class="wrap">
+  <h2>How to run it (free, handshake-only)</h2>
+  <p>Point either tool at <b>your own</b> public MCP endpoint. The probe is a legitimate MCP handshake (<code>initialize</code> + <code>tools/list</code> + one read-only tool call) — no auth-bypass, no payment, no data written to your server.</p>
+  <h3>Public MCP endpoint</h3>
+  <pre>https://live-vps.sasame.online/public-mcp</pre>
+  <table>
+    <tr><th>Tool</th><th>Returns</th></tr>
+    <tr><td class="mono">audit_mcp(url)</td><td>A→D grade, per-criterion pass/evidence, the single biggest gap, plus a machine-readable <code>preflight</code> block (PF1–PF3).</td></tr>
+    <tr><td class="mono">readiness_report(url)</td><td>The full Markdown report: every criterion with a fix, a <b>Directory Pre-Flight</b> section, and an ed25519-signed MCP-Ready certificate at grade A/B.</td></tr>
+    <tr><td class="mono">verify_mcp_ready(url)</td><td>A portable, offline-verifiable signed certificate of the same audit.</td></tr>
+  </table>
+  <h3>Pre-flight checks (advisory layer)</h3>
+  <table>
+    <tr><th>ID</th><th>Check</th><th>Maps to</th></tr>
+    <tr><td><span class="pill ok">PF1</span></td><td>Every tool has a title + readOnly/destructive hint</td><td>Claude & ChatGPT: missing/incorrect action labels — a top reject cause</td></tr>
+    <tr><td><span class="pill ok">PF2</span></td><td>Specific, non-promotional tool names</td><td>ChatGPT: generic/comparative names may be rejected</td></tr>
+    <tr><td><span class="pill soft">PF3</span></td><td>Privacy-policy URL surfaced over MCP (soft reminder)</td><td>Claude: missing policy = immediate reject (verify in your public docs)</td></tr>
+  </table>
+  <p style="font-size:13px;color:var(--muted);margin-top:12px">These map to the canonical, reproducible 10-criterion standard (C1–C10) but are reported as a <b>separate advisory layer</b> — a third party's directory policy never alters the reproducible grade.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Why trust the result</h2>
+  <p>Every criterion is bound to the MCP spec, the registry schema, cryptography, or direct measurement — not taste — so anyone can re-run the audit and reach the same booleans. SaSame reports <b>verification status only</b>; it never issues a safety, quality, or "worth-using" verdict on any named server. SaSame's own public MCP server self-audits at grade A and passes PF1/PF2 (and PF3 is a standing reminder it applies to itself).</p>
+</div></section>
+
+<footer><div class="wrap">
+  SaSame MCP Observatory · <a href="./index.html">Registry</a> · <a href="./readiness-census-2026-06.html">Readiness Census</a> · <a href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md">Methodology</a> · corrections / delist: <a href="mailto:consulting@srl-sasame.com">consulting@srl-sasame.com</a><br>
+  Built by SaSame SRL (Bucharest). Verification status only — never a risk verdict on a named server.
+</div></footer>
+</body>
+</html>
