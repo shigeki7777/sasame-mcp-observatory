@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,10 +18,10 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 4,
-    "pages_traffic_views_14d": 22,
-    "pages_traffic_uniques_14d": 4,
-    "clones_14d": 350
+    "release_downloads_total": 5,
+    "pages_traffic_views_14d": 23,
+    "pages_traffic_uniques_14d": 5,
+    "clones_14d": 422
   },
   "not_tracked_yet": {
     "badge_installs": null,
@@ -29,7 +29,7 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-22T07:15:17.665021+00:00",
+  "generated_at": "2026-06-23T07:15:26.619396+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -41,26 +41,26 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 654,
-    "external_tool_calls": 3,
+    "mcp_client_sessions": 829,
+    "external_tool_calls": 5,
     "real_arg_tool_calls": 0,
     "claim_related_calls": 0,
     "pricing_related_calls": 1,
-    "registry_scanners": 4,
+    "registry_scanners": 3,
     "security_scanners": 0,
     "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
+      "registry_scanner": 3,
+      "ai_crawler": 8,
       "unknown_automation": 6,
-      "registry_scanner": 4,
-      "ai_crawler": 6,
-      "likely_human": 24,
-      "crawler": 5
+      "crawler": 4,
+      "likely_human": 29
     },
     "conversion_funnel": {
-      "reach_external_ips": 45,
-      "mcp_probe_initializes": 654,
-      "tool_calls": 3,
+      "reach_external_ips": 50,
+      "mcp_probe_initializes": 829,
+      "tool_calls": 5,
       "real_intent_calls": 0,
       "claim_calls": 0
     },
@@ -69,7 +69,7 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 283
+        "hits": 470
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
@@ -81,37 +81,19 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 45
-      },
-      {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "registry_scanner",
-        "hits": 27
-      },
-      {
-        "as_org": "CDNEXT - Datacamp Limited, GB",
-        "country": "FR",
-        "primary_class": "unknown_automation",
-        "hits": 22
+        "hits": 112
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 16
+        "hits": 17
       },
       {
-        "as_org": "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
-        "country": "IN",
-        "primary_class": "likely_human",
-        "hits": 11
-      },
-      {
-        "as_org": "RAILWAY - Railway, US",
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
-        "primary_class": "unknown_automation",
-        "hits": 11
+        "primary_class": "registry_scanner",
+        "hits": 12
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
@@ -120,68 +102,86 @@
         "hits": 8
       },
       {
+        "as_org": "CDNEXT - Datacamp Limited, GB",
+        "country": "FR",
+        "primary_class": "unknown_automation",
+        "hits": 7
+      },
+      {
+        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "hits": 5
+      },
+      {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
-        "primary_class": "registry_scanner",
+        "primary_class": "likely_human",
+        "hits": 4
+      },
+      {
+        "as_org": "HVC-AS - HIVELOCITY, Inc., US",
+        "country": "GB",
+        "primary_class": "likely_human",
         "hits": 4
       }
     ],
     "top_observer_orgs": [
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
-      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "AMAZON-02 - Amazon.com, Inc., US",
-      "VDSINA-AS - Hosting technology LTD, RU",
       "AMAZON-AES - Amazon.com, Inc., US",
-      "AS-COLOCROSSING - HostPapa, US",
-      "CDNEXT - Datacamp Limited, GB"
+      "HVC-AS - HIVELOCITY, Inc., US",
+      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+      "OVH - OVH SAS, FR",
+      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+      "HostRoyale - HostRoyale Technologies Pvt Ltd, IN"
     ],
     "top_interest_paths": [
       "/",
-      "/.well-known/agent-card.json",
       "/robots.txt",
       "/premium/research",
-      "/token",
-      "/sitemap.xml",
-      "/.well-known/agent.json",
+      "/.well-known/agent-card.json",
+      "/.well-known/glama.json",
+      "/observatory",
+      "/.well-known/x402.json",
       "/.well-known/x402"
     ],
-    "generated_at": "2026-06-22T07:15:13.249013+00:00",
+    "generated_at": "2026-06-23T07:15:22.050461+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
         "direction": "flat",
-        "days": 4
+        "days": 5
       },
       "external_sessions": {
         "now": null,
         "window_start": 28,
         "delta": null,
         "direction": "flat",
-        "days": 4
+        "days": 5
       },
       "external_tool_calls": {
-        "now": 3,
+        "now": 5,
         "window_start": 2,
-        "delta": 1,
+        "delta": 3,
         "direction": "up",
-        "days": 4
+        "days": 5
       },
       "real_arg_tool_calls": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
         "direction": "flat",
-        "days": 4
+        "days": 5
       },
       "pages_views_14d": {
-        "now": 22,
+        "now": 23,
         "window_start": 0,
-        "delta": 22,
+        "delta": 23,
         "direction": "up",
-        "days": 4
+        "days": 5
       }
     }
   }
