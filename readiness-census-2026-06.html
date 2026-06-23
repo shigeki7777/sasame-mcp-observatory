@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP Readiness Census — June 2026 | SaSame Observatory</title>
+<meta name="description" content="Outside-in, reproducible verification-status census of public MCP endpoints (June 2026): how many are reachable, callable, and schema-valid across fragmented registries. Verification status only — no risk verdict on any named server.">
+<link rel="canonical" href="https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html">
+<meta property="og:title" content="MCP Readiness Census — June 2026">
+<meta property="og:description" content="How many of 20,876 auditable public MCP endpoints are actually reachable, callable, and schema-valid. Verification status only.">
+<meta property="og:url" content="https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"MCP Readiness Census — June 2026","description":"Outside-in verification-status census of public MCP endpoints. Aggregate only; no risk verdict on any named server.","url":"https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html","creator":{"@type":"Organization","name":"SaSame SRL","url":"https://srl-sasame.com"},"isAccessibleForFree":true,"license":"https://shigeki7777.github.io/sasame-mcp-observatory/LICENSE","dateModified":"2026-06-23"}</script>
+<style>
+:root{--ground:#EEF1F2;--panel:#F7F9F9;--ink:#14202A;--muted:#5F6E76;--line:#D5DCDD;--teal:#0E6E6E;--teal-soft:#7FB0AE;--brass:#9A6B12;--grey:#B7C0C4;--maxw:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Space Grotesk",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.mono{font-family:"Space Mono",ui-monospace,Menlo,monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+header.site{padding:44px 0 26px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.05;font-weight:700;margin:0 0 12px;letter-spacing:-.015em}
+.thesis{font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:66ch;margin:0}
+.banner{margin:22px 0 0;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:6px;padding:14px 16px;font-size:14px;color:#314048}
+.banner b{color:var(--ink)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(20px,3vw,26px);margin:0 0 6px;letter-spacing:-.01em}
+.note{color:var(--muted);font-size:13px;margin:0 0 18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+.card .n{font-family:"Space Mono",monospace;font-size:26px;font-weight:700;color:var(--ink)}
+.card .l{font-size:12px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.08em}
+.row{display:grid;grid-template-columns:120px 1fr 130px;align-items:center;gap:12px;margin:9px 0}
+.rl{font-size:13px}.rt{background:#e3e8e9;border-radius:5px;height:16px;overflow:hidden}
+.rf{height:100%;border-radius:5px}.rv{font-size:12px;color:var(--muted);text-align:right}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl td,.tbl th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left}
+.tbl th{color:var(--muted);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.ext{background:#fbf6ec;border:1px solid #e7d9b8;border-left:3px solid var(--brass);border-radius:6px;padding:16px;font-size:14px;color:#41382a}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-block;border:1.5px solid var(--teal);color:var(--teal);padding:9px 14px;border-radius:6px;font-size:14px;font-weight:500}
+.btn.primary{background:var(--teal);color:#fff}
+footer{padding:30px 0 60px;color:var(--muted);font-size:13px}
+code{font-family:"Space Mono",monospace;background:#e7ecec;padding:1px 5px;border-radius:4px;font-size:12px}
+</style></head>
+<body>
+<header class="site"><div class="wrap">
+<p class="eyebrow">SaSame Observatory &middot; Reproducible &middot; 2026-06-23</p>
+<h1>MCP Readiness Census — June 2026</h1>
+<p class="thesis">An outside-in, reproducible measurement of how many public MCP endpoints are actually reachable, callable, and schema-valid across fragmented registries. <b>Verification status only — no risk verdict on any named server.</b></p>
+<div class="banner"><b>What this is &amp; isn't.</b> Every number below is an aggregate from a polite, outside-in probe (MCP <code>initialize</code> + <code>tools/list</code> + one read-only <code>tools/call</code>) graded against a public 10-criterion discoverability standard. A grade reflects <b>pass count, not safety, quality, or trust</b>. Failure patterns are aggregated; <b>no endpoint is named or scored as "bad" here</b>. Priced/x402 endpoints are recorded as delivery <i>unverified</i>, never asserted.</div>
+</div></header>
+
+<section><div class="wrap">
+<h2>Scope</h2>
+<p class="note">Registry entries indexed across four public sources, reduced to auditable public endpoints, rolling-audited over time. Audit window 2026-06-17 → 2026-06-23.</p>
+<div class="cards">
+<div class="card"><div class="n">30,000</div><div class="l">Registry entries indexed</div></div>
+<div class="card"><div class="n">20,876</div><div class="l">Auditable public endpoints</div></div>
+<div class="card"><div class="n">5,260</div><div class="l">Audited (latest state)</div></div>
+<div class="card"><div class="n">1,108</div><div class="l">Observed-ready, re-checked</div></div>
+<div class="card"><div class="n">0</div><div class="l">Owner-claimed</div></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>Readiness distribution</h2>
+<p class="note">Of 5,260 audited endpoints (latest state), share by outside-in grade. <b>Observed-ready = A or B.</b> Grade is a deterministic function of pass count against the standard — not a safety or quality verdict.</p>
+<div class="row"><div class="rl mono">A — top</div><div class="rt"><div class="rf" style="width:5%;background:var(--teal)"></div></div><div class="rv mono">261 &middot; 5%</div></div>
+<div class="row"><div class="rl mono">B</div><div class="rt"><div class="rf" style="width:31%;background:var(--teal-soft)"></div></div><div class="rv mono">1,629 &middot; 31%</div></div>
+<div class="row"><div class="rl mono">C</div><div class="rt"><div class="rf" style="width:57.9%;background:#cdb98a"></div></div><div class="rv mono">3,047 &middot; 57.9%</div></div>
+<div class="row"><div class="rl mono">D</div><div class="rt"><div class="rf" style="width:6.1%;background:#c4a04a"></div></div><div class="rv mono">323 &middot; 6.1%</div></div>
+<p class="note" style="margin-top:16px"><b>Observed-ready (A or B): 35.9%.</b> On a single read-only call, <b>13.4%</b> returned real content (the rest were priced/auth-gated = delivery unverified, empty, or non-conforming). The readiness gap is large and measurable — which is exactly why a continuous, outside-in census exists.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Registries disagree — cross-reference at least two</h2>
+<p class="note">Indexed entries by source. No single registry is a complete or authoritative slice of the ecosystem.</p>
+<table class="tbl"><tr><th>Source</th><th>Indexed entries</th></tr>
+<tr><td>official MCP registry</td><td class="mono">15,358</td></tr><tr><td>Glama</td><td class="mono">13,124</td></tr><tr><td>x402 discovery catalog</td><td class="mono">1,418</td></tr><tr><td>PulseMCP</td><td class="mono">100</td></tr>
+</table>
+<p class="note" style="margin-top:14px"><b>Overlap finding (2026-06-23):</b> two independent registries shared only <b>~1% of their union</b> (147 in both; 220 and 25,769 unique to each). A single source is a biased lens; buyers should cross-reference.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>External context — the security crisis others document</h2>
+<div class="ext"><p style="margin:0 0 8px"><b>Independent 2026 security research</b> reports a serious auth/SSRF posture problem across the MCP ecosystem — on the order of ~37% SSRF-exposed, ~41% requiring no authentication, only ~8.5% on OAuth across ~7,000 public servers, with 30+ CVEs filed in a single 60-day window and hundreds of zero-auth servers found publicly exposed.</p>
+<p style="margin:0"><b>SaSame's distinct role:</b> we do <b>not</b> assign a risk, badness, or safety score to any named server. We publish continuous <b>verification status</b> — reachable, callable, schema-valid, owner-claimed, re-checked — so the readiness gap is measurable without naming-and-shaming. (Consistent with the external picture, "Security &amp; Compliance" is among the thinnest verticals we index: 51 endpoints.)</p></div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Is one of these endpoints yours?</h2>
+<p class="note">Everything here is observation-only and free to correct. Claiming proves you control the endpoint and clears unconfirmed items — no secrets, no sales call.</p>
+<div class="cta">
+<a class="btn primary" href="https://shigeki7777.github.io/sasame-mcp-observatory/">Find &amp; claim your endpoint →</a>
+<a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/CLAIM.md">How claiming works</a>
+<a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md">Methodology (reproduce it)</a>
+<a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/DELIST.md">Correct / remove</a>
+<a class="btn" href="data/readiness-census-latest.json">Machine-readable JSON</a>
+</div>
+<p class="note" style="margin-top:14px">Integrating an MCP server and want a readiness check on <i>that</i> endpoint before you wire it in? <a href="mailto:consulting@srl-sasame.com?subject=MCP%20Readiness%20Check&body=Endpoint%3A%20">Request a readiness report →</a></p>
+</div></section>
+
+<footer><div class="wrap">
+<p>Deterministic, no LLM, reproducible. Aggregate verification-status only; no risk verdict on any named party. Source: <a href="https://live-vps.sasame.online/observatory/">https://live-vps.sasame.online/observatory/</a> &middot; standard <code>agent-tool-discoverability-standard/0.1</code>.</p>
+<p class="mono">data self_sha256: e2d1a290b3f7287cc497bce9c04d4a2d9574b197d57f056f6dfa9467840ef8d9</p>
+<p><a href="https://shigeki7777.github.io/sasame-mcp-observatory/">← Observatory home</a> &middot; <a href="https://shigeki7777.github.io/sasame-mcp-observatory/observers.html">Observer Census</a> &middot; <a href="https://shigeki7777.github.io/sasame-mcp-observatory/gold-vein.html">Gold Vein</a></p>
+</div></footer>
+</body></html>

@@ -1,0 +1,57 @@
+{
+  "schema": "sasame-readiness-census-v0.1",
+  "generated_at": "2026-06-23T08:06:24.090Z",
+  "source": "https://live-vps.sasame.online/observatory/",
+  "standard": "agent-tool-discoverability-standard/0.1",
+  "what_this_is": "Outside-in, reproducible verification-status census of public MCP endpoints. Aggregate only. No risk/safety/trust verdict on any named party.",
+  "scope": {
+    "registry_entries_indexed": 30000,
+    "auditable_public_endpoints": 20876,
+    "audited_records_latest_state": 5260,
+    "unique_domains_audited": 3474,
+    "observed_ready_continuously_rechecked": 1108,
+    "owner_claimed": 0,
+    "audit_window": {
+      "from": "2026-06-17",
+      "to": "2026-06-23"
+    }
+  },
+  "by_source": {
+    "official MCP registry": 15358,
+    "x402 discovery catalog": 1418,
+    "PulseMCP": 100,
+    "Glama": 13124
+  },
+  "readiness_distribution": {
+    "note": "Grade = deterministic function of pass count vs a 10-criterion outside-in discoverability standard. NOT a safety, quality, or trust verdict. Failure patterns are aggregated; no endpoint is named here.",
+    "A": {
+      "count": 261,
+      "pct": 5
+    },
+    "B": {
+      "count": 1629,
+      "pct": 31
+    },
+    "C": {
+      "count": 3047,
+      "pct": 57.9
+    },
+    "D": {
+      "count": 323,
+      "pct": 6.1
+    },
+    "observed_ready_A_or_B_pct": 35.9,
+    "returns_real_content_on_one_read_only_call_pct": 13.4
+  },
+  "registry_fragmentation": {
+    "finding": "Two independent registries overlap on ~1% of their union — a single registry is a biased lens; cross-reference at least two sources.",
+    "in_both": 147,
+    "only_a": 220,
+    "only_b": 25769,
+    "as_of": "2026-06-23"
+  },
+  "external_context": {
+    "note": "Independent 2026 security research documents an auth/SSRF crisis in the MCP ecosystem (e.g. ~37% SSRF-exposed, ~41% no-auth, ~8.5% OAuth across ~7,000 public servers; 30+ CVEs in a 60-day window). SaSame does NOT assign risk/badness to named servers — it publishes continuous verification-status so the readiness gap is measurable without naming-and-shaming."
+  },
+  "self_sha256": "e2d1a290b3f7287cc497bce9c04d4a2d9574b197d57f056f6dfa9467840ef8d9"
+}

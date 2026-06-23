@@ -7,6 +7,11 @@
 - Each endpoint gets a passport: identity confidence (unconfirmed -> self_asserted -> owner_proven -> corroborated) + outside-in observation (audit grade A/B/C/D) + what is still unconfirmed.
 - Three levels: Observed (measured from outside, owner not confirmed) / Claimed (owner proved control) / Certified (continuously monitored).
 
+## MCP Readiness Census (June 2026)
+- A reproducible, aggregate verification-status report: of ~20,876 auditable public MCP endpoints, what share are reachable/callable/schema-valid (grades A/B/C/D), how registries disagree, and how that sits against external 2026 security research. Verification status only — no risk verdict on any named server.
+- Human page: https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html
+- Machine-readable: https://shigeki7777.github.io/sasame-mcp-observatory/data/readiness-census-latest.json (schema sasame-readiness-census-v0.1; carries a self_sha256 for reproducibility)
+
 ## How to claim your endpoint (free)
 - If your MCP server or agent is listed as unclaimed, you can claim it for free to prove ownership and clear unconfirmed items.
 - Open a prefilled claim issue: https://shigeki7777.github.io/sasame-mcp-observatory/  (use "Find & claim your endpoint"), or https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml
