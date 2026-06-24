@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-06-23",
+  "date": "2026-06-24",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,10 +18,10 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 5,
+    "release_downloads_total": 6,
     "pages_traffic_views_14d": 23,
     "pages_traffic_uniques_14d": 5,
-    "clones_14d": 422
+    "clones_14d": 457
   },
   "not_tracked_yet": {
     "badge_installs": null,
@@ -29,7 +29,7 @@
     "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-23T07:15:26.619396+00:00",
+  "generated_at": "2026-06-24T07:15:16.693680+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -41,35 +41,42 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 829,
+    "mcp_client_sessions": 1035,
     "external_tool_calls": 5,
     "real_arg_tool_calls": 0,
     "claim_related_calls": 0,
     "pricing_related_calls": 1,
-    "registry_scanners": 3,
+    "registry_scanners": 2,
     "security_scanners": 0,
-    "hostile_probe_ips": 0,
+    "hostile_probe_ips": 1,
     "canary_hits": 0,
     "client_class_counts": {
-      "registry_scanner": 3,
-      "ai_crawler": 8,
-      "unknown_automation": 6,
-      "crawler": 4,
-      "likely_human": 29
+      "registry_scanner": 2,
+      "likely_human": 5,
+      "hostile_probe": 1,
+      "ai_crawler": 7,
+      "crawler": 7,
+      "unknown_automation": 6
     },
     "conversion_funnel": {
-      "reach_external_ips": 50,
-      "mcp_probe_initializes": 829,
+      "reach_external_ips": 28,
+      "mcp_probe_initializes": 1035,
       "tool_calls": 5,
       "real_intent_calls": 0,
       "claim_calls": 0
     },
     "observer_roster": [
       {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "hostile_probe",
+        "hits": 340
+      },
+      {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 470
+        "hits": 135
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
@@ -81,107 +88,101 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 112
-      },
-      {
-        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "ai_crawler",
-        "hits": 17
+        "hits": 57
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 12
+        "hits": 20
       },
       {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
-        "primary_class": "likely_human",
-        "hits": 8
+        "primary_class": "ai_crawler",
+        "hits": 19
       },
       {
-        "as_org": "CDNEXT - Datacamp Limited, GB",
-        "country": "FR",
+        "as_org": "APPLE-ENGINEERING - Apple Inc., US",
+        "country": "US",
+        "primary_class": "crawler",
+        "hits": 5
+      },
+      {
+        "as_org": "CACHENETWORKS - CacheFly, US",
+        "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 7
+        "hits": 4
       },
       {
         "as_org": "AMAZON-AES - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "likely_human",
-        "hits": 5
+        "hits": 2
       },
       {
-        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 4
-      },
-      {
-        "as_org": "HVC-AS - HIVELOCITY, Inc., US",
-        "country": "GB",
-        "primary_class": "likely_human",
-        "hits": 4
+        "as_org": "Serverius-as - Serverius Holding B.V., NL",
+        "country": "NL",
+        "primary_class": "crawler",
+        "hits": 2
       }
     ],
     "top_observer_orgs": [
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "AMAZON-02 - Amazon.com, Inc., US",
-      "AMAZON-AES - Amazon.com, Inc., US",
-      "HVC-AS - HIVELOCITY, Inc., US",
+      "APPLE-ENGINEERING - Apple Inc., US",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "OVH - OVH SAS, FR",
-      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
-      "HostRoyale - HostRoyale Technologies Pvt Ltd, IN"
+      "AMAZON-AES - Amazon.com, Inc., US",
+      "AS-COLOCROSSING - HostPapa, US",
+      "TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN",
+      "Serverius-as - Serverius Holding B.V., NL"
     ],
     "top_interest_paths": [
       "/",
       "/robots.txt",
-      "/premium/research",
       "/.well-known/agent-card.json",
+      "/premium/research",
+      "/token",
       "/.well-known/glama.json",
-      "/observatory",
       "/.well-known/x402.json",
       "/.well-known/x402"
     ],
-    "generated_at": "2026-06-23T07:15:22.050461+00:00",
+    "generated_at": "2026-06-24T07:15:14.034614+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
         "direction": "flat",
-        "days": 5
+        "days": 6
       },
       "external_sessions": {
         "now": null,
         "window_start": 28,
         "delta": null,
         "direction": "flat",
-        "days": 5
+        "days": 6
       },
       "external_tool_calls": {
         "now": 5,
         "window_start": 2,
         "delta": 3,
         "direction": "up",
-        "days": 5
+        "days": 6
       },
       "real_arg_tool_calls": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
         "direction": "flat",
-        "days": 5
+        "days": 6
       },
       "pages_views_14d": {
         "now": 23,
         "window_start": 0,
         "delta": 23,
         "direction": "up",
-        "days": 5
+        "days": 6
       }
     }
   }
