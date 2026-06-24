@@ -104,6 +104,10 @@
     <tr><td class="mono">readiness_report(url)</td><td>The full Markdown report: every criterion with a fix, a <b>Directory Pre-Flight</b> section, and an ed25519-signed MCP-Ready certificate at grade A/B.</td></tr>
     <tr><td class="mono">verify_mcp_ready(url)</td><td>A portable, offline-verifiable signed certificate of the same audit.</td></tr>
   </table>
+  <h3>Prefer the command line?</h3>
+  <p>Run the same readiness audit locally in one command — no MCP client, no install, no key (open-source, MIT):</p>
+  <pre>npx mcp-readiness https://your-server.example/mcp</pre>
+  <p style="font-size:13px;color:var(--muted)">Same A→D grade and directory pre-flight as the hosted tools. On npm: <a href="https://www.npmjs.com/package/mcp-readiness">mcp-readiness</a>.</p>
   <h3>Pre-flight checks (advisory layer)</h3>
   <table>
     <tr><th>ID</th><th>Check</th><th>Maps to</th></tr>

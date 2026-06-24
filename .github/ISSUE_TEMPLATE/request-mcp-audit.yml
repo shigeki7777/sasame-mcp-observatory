@@ -19,7 +19,7 @@ body:
     id: relationship
     attributes:
       label: Your relationship to it
-      options: [I built/own it, I depend on it, Just curious]
+      options: [I built/own it, I'm submitting it to a directory, I depend on it, Just curious]
     validations: {required: true}
   - type: textarea
     id: context

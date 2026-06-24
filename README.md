@@ -2,6 +2,8 @@
 
 > **MCP Readiness Passports for agent discovery** — agent-readable readiness records for public MCP servers: reachable, callable, and schema-valid (owner-confirmed and continuously monitored only at Claimed/Certified level). Verification status only; never a safe/good/worth-using verdict.
 
+**🛫 Submitting your MCP server to the Claude Connectors or ChatGPT Apps directory? [Run a free pre-flight first →](https://shigeki7777.github.io/sasame-mcp-observatory/preflight.html)** — it catches the *mechanical* reject reasons (missing tool annotations, untyped schemas, unreachable endpoint, generic errors) before you submit, and points to the legal/account requirements that are out of scope. Prefer a terminal? `npx mcp-readiness <url>`. Verification status only — not a pass guarantee.
+
 **🪪 Is your MCP server listed here? [Claim your MCP Readiness Passport free →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — a public, owner-controlled, agent-readable record of measured readiness. Prove control via `.well-known` / DNS / repo. No account setup, no cost, no sales pitch.
 
 💬 **Early Access & feedback:** join the [SaSame MCP Readiness Discord](https://discord.gg/bAKtSKqKT) — ask questions, share feedback, get help claiming your passport.
