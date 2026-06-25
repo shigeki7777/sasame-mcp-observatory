@@ -1,3 +1,17 @@
-Data and documentation in this repository are licensed CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
-The ed25519 signatures and the offline verifier may be used freely to check any certificate.
+SaSame MCP Observatory — license & boundary
+
+CODE (the mcp-readiness CLI, the offline certificate verifier, and code snippets in this repo):
+  MIT License. Use it, fork it, sell it, wire it into your build. The criteria and grading logic are open by design.
+
+DATA & DOCUMENTATION in this repository (the snapshot index in data/latest, the Standard, the
+methodology, the portfolio listings, and the contents of the published certificates):
+  Creative Commons Attribution 4.0 (CC-BY 4.0) — https://creativecommons.org/licenses/by/4.0/
+  Reuse and redistribute freely WITH attribution to "SaSame MCP Observatory".
+  The ed25519 signatures and the offline verifier may be used freely to check any certificate.
+
+NOT licensed here (SaSame's proprietary service, not granted by this file): the continuous
+re-measurement, the full longitudinal grade-over-time history, the live Observatory dataset beyond
+the lightweight snapshots mirrored here, and the ed25519 *signing* key. Anyone may verify a
+certificate; only SaSame issues them.
+
 (c) 2026 SaSame SRL.
