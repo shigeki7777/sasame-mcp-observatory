@@ -18,18 +18,19 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 8,
+    "release_downloads_total": 9,
     "pages_traffic_views_14d": 24,
     "pages_traffic_uniques_14d": 6,
-    "clones_14d": 498
+    "clones_14d": 498,
+    "badge_installs": 0,
+    "badge_impressions": 0
   },
   "not_tracked_yet": {
-    "badge_installs": null,
     "dataset_mentions": null,
-    "_note": "No reliable cost-zero detector yet; reported as null rather than faked."
+    "_note": "badge_installs is now TRACKED (measured.badge_installs) from nginx observer JSONL since 2026-06-26. dataset_mentions still has no cost-zero detector; null not faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-26T07:15:45.709473+00:00",
+  "generated_at": "2026-06-26T08:09:19.949507+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
