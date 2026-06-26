@@ -1,42 +1,41 @@
 {
-  "generated_at": "2026-06-22T04:44:41.285Z",
+  "generated_at": "2026-06-26T04:30:38.638Z",
   "source": "https://live-vps.sasame.online/observatory/",
   "standard": "agent-tool-discoverability-standard/0.1",
   "indexed_total": 30000,
-  "auditable_endpoints": 20876,
-  "audited": 3606,
-  "observed_ready": 1108,
+  "auditable_endpoints": 21064,
+  "audited": 6420,
+  "observed_ready": 2551,
   "by_source": {
-    "official MCP registry": 15358,
-    "x402 discovery catalog": 1418,
+    "official MCP registry": 15115,
     "PulseMCP": 100,
-    "Glama": 13124
+    "Glama": 14785
   },
   "categories": [
     {
       "key": "research",
       "title": "Research & Knowledge",
-      "count": 100
+      "count": 169
     },
     {
       "key": "livedata",
       "title": "Live Data",
-      "count": 193
+      "count": 341
     },
     {
       "key": "commerce",
       "title": "Commerce & Payments",
-      "count": 83
+      "count": 133
     },
     {
       "key": "security",
       "title": "Security & Compliance",
-      "count": 51
+      "count": 77
     },
     {
       "key": "devtools",
       "title": "Developer Tools",
-      "count": 216
+      "count": 1194
     },
     {
       "key": "bizops",
@@ -46,7 +45,7 @@
     {
       "key": "agentinfra",
       "title": "Agent Infrastructure",
-      "count": 168
+      "count": 167
     },
     {
       "key": "experimental",
