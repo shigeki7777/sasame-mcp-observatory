@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,19 +18,19 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 9,
-    "pages_traffic_views_14d": 28,
+    "release_downloads_total": 10,
+    "pages_traffic_views_14d": 29,
     "pages_traffic_uniques_14d": 10,
-    "clones_14d": 524,
-    "badge_installs": 0,
-    "badge_impressions": 0
+    "clones_14d": 549,
+    "badge_installs": 3,
+    "badge_impressions": 5
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
     "_note": "badge_installs is now TRACKED (measured.badge_installs) from nginx observer JSONL since 2026-06-26. dataset_mentions still has no cost-zero detector; null not faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-06-27T07:15:29.152001+00:00",
+  "generated_at": "2026-06-28T07:15:42.962178+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -42,27 +42,27 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 1526,
-    "external_tool_calls": 6,
+    "mcp_client_sessions": 1693,
+    "external_tool_calls": 8,
     "real_arg_tool_calls": 1,
     "claim_related_calls": 0,
     "pricing_related_calls": 1,
-    "registry_scanners": 2,
+    "registry_scanners": 3,
     "security_scanners": 0,
-    "hostile_probe_ips": 1,
+    "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "ai_crawler": 8,
-      "registry_scanner": 2,
-      "unknown_automation": 51,
-      "crawler": 29,
-      "likely_human": 11,
-      "hostile_probe": 1
+      "unknown_automation": 92,
+      "registry_scanner": 3,
+      "ai_crawler": 13,
+      "likely_human": 17,
+      "crawler": 15,
+      "mcp_client": 1
     },
     "conversion_funnel": {
-      "reach_external_ips": 102,
-      "mcp_probe_initializes": 1526,
-      "tool_calls": 6,
+      "reach_external_ips": 141,
+      "mcp_probe_initializes": 1693,
+      "tool_calls": 8,
       "real_intent_calls": 1,
       "claim_calls": 0
     },
@@ -71,13 +71,19 @@
         "as_org": "AMAZON-AES - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 166
+        "hits": 482
+      },
+      {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 273
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
-        "primary_class": "ai_crawler",
-        "hits": 138
+        "primary_class": "unknown_automation",
+        "hits": 143
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
@@ -86,69 +92,63 @@
         "hits": 117
       },
       {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "crawler",
+        "hits": 69
+      },
+      {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
-        "primary_class": "unknown_automation",
-        "hits": 66
+        "primary_class": "ai_crawler",
+        "hits": 33
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
-        "primary_class": "crawler",
-        "hits": 49
+        "primary_class": "mcp_client",
+        "hits": 26
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
-        "primary_class": "unknown_automation",
-        "hits": 42
-      },
-      {
-        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "crawler",
-        "hits": 18
+        "primary_class": "ai_crawler",
+        "hits": 16
       },
       {
         "as_org": "TWITTER - Twitter Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 17
+        "hits": 16
       },
       {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
         "country": "US",
-        "primary_class": "hostile_probe",
-        "hits": 15
-      },
-      {
-        "as_org": "APPLE-ENGINEERING - Apple Inc., US",
-        "country": "US",
-        "primary_class": "crawler",
-        "hits": 12
+        "primary_class": "unknown_automation",
+        "hits": 14
       }
     ],
     "top_observer_orgs": [
       "AMAZON-AES - Amazon.com, Inc., US",
       "AMAZON-02 - Amazon.com, Inc., US",
-      "APPLE-ENGINEERING - Apple Inc., US",
-      "FACEBOOK - Facebook, Inc., US",
+      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "TWITTER - Twitter Inc., US",
-      "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "HETZNER-AS - Hetzner Online GmbH, DE"
+      "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
+      "ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US",
+      "CLOUDFLARENET - Cloudflare, Inc., US"
     ],
     "top_interest_paths": [
       "/observatory/check/index.html",
-      "/robots.txt",
       "/",
-      "/premium/research",
-      "/.well-known/agent-card.json",
-      "/.well-known/agent.json",
+      "/robots.txt",
+      "/.well-known/oauth-protected-resource",
+      "/.well-known/oauth-authorization-server",
       "/token",
-      "/.well-known/x402"
+      "/.well-known/agent-card.json",
+      "/.well-known/glama.json"
     ],
-    "generated_at": "2026-06-27T07:15:25.039031+00:00",
+    "generated_at": "2026-06-28T07:15:39.887624+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -159,15 +159,15 @@
       },
       "external_sessions": {
         "now": null,
-        "window_start": 28,
+        "window_start": 147,
         "delta": null,
         "direction": "flat",
         "days": 7
       },
       "external_tool_calls": {
-        "now": 6,
+        "now": 8,
         "window_start": 2,
-        "delta": 4,
+        "delta": 6,
         "direction": "up",
         "days": 7
       },
@@ -179,9 +179,9 @@
         "days": 7
       },
       "pages_views_14d": {
-        "now": 28,
-        "window_start": 6,
-        "delta": 22,
+        "now": 29,
+        "window_start": 22,
+        "delta": 7,
         "direction": "up",
         "days": 7
       }
