@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-30T16:39:04.367Z",
+  "standard": "agent-tool-discoverability-standard/0.2",
+  "indexed_total": 30000,
+  "auditable_endpoints": 21145,
+  "latest_observation_per_endpoint": 13761,
+  "grade_counts": {
+    "D": 10879,
+    "B": 2135,
+    "C": 328,
+    "A": 419
+  },
+  "first_observed_at": "2026-06-18T09:50:05.293Z",
+  "last_observed_at": "2026-06-30T12:47:39.987Z",
+  "named_positive_rows": 2554,
+  "pseudonymous_non_positive_rows": 11207,
+  "note": "A/B endpoints are named; C/D rows are endpoint-hashed to publish ecosystem evidence without a named failure list."
+}

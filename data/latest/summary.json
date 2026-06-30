@@ -1,14 +1,22 @@
 {
-  "generated_at": "2026-06-30T04:30:33.809Z",
+  "generated_at": "2026-06-30T16:39:04.367Z",
   "source": "https://live-vps.sasame.online/observatory/",
-  "standard": "agent-tool-discoverability-standard/0.1",
+  "standard": "agent-tool-discoverability-standard/0.2",
   "indexed_total": 30000,
-  "auditable_endpoints": 21112,
-  "audited": 13012,
+  "auditable_endpoints": 21145,
+  "audited": 13761,
   "observed_ready": 2554,
+  "signed_certificates": 2515,
+  "observed_ready_file_rows": 2554,
   "by_source": {
-    "official MCP registry": 15357,
-    "Glama": 14643
+    "official MCP registry": 15327,
+    "Glama": 14673
+  },
+  "grade_counts": {
+    "D": 10879,
+    "B": 2135,
+    "C": 328,
+    "A": 419
   },
   "categories": [
     {
@@ -57,5 +65,6 @@
     "observed": "measured from outside, owner not confirmed",
     "claimed": "owner proved control",
     "certified": "continuously monitored by SaSame"
-  }
+  },
+  "provenance": "data/latest/provenance.json"
 }

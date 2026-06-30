@@ -3,11 +3,15 @@ SaSame MCP Observatory — license & boundary
 CODE (the mcp-readiness CLI, the offline certificate verifier, and code snippets in this repo):
   MIT License. Use it, fork it, sell it, wire it into your build. The criteria and grading logic are open by design.
 
-DATA & DOCUMENTATION in this repository (the snapshot index in data/latest, the Standard, the
-methodology, the portfolio listings, and the contents of the published certificates):
+SASAME-CREATED MEASUREMENTS & DOCUMENTATION in this repository (grades, timestamps, evidence
+hashes, derived readiness summaries, the Standard, methodology, and published certificates):
   Creative Commons Attribution 4.0 (CC-BY 4.0) — https://creativecommons.org/licenses/by/4.0/
   Reuse and redistribute freely WITH attribution to "SaSame MCP Observatory".
   The ed25519 signatures and the offline verifier may be used freely to check any certificate.
+
+UPSTREAM METADATA BOUNDARY: names, URLs, descriptions, and registry/index metadata retain the
+license and terms of their upstream source. SaSame does not relicense those fields. See
+data/latest/provenance.json for the source-level boundary.
 
 NOT licensed here (SaSame's proprietary service, not granted by this file): the continuous
 re-measurement, the full longitudinal grade-over-time history, the live Observatory dataset beyond

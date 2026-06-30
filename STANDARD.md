@@ -1,4 +1,4 @@
-# The Agent-Tool Discoverability Standard v0.1
+# The Agent-Tool Discoverability Standard v0.2
 
 A falsifiable standard for whether an MCP/agent server is findable, understandable, trustable, and callable by AI. Each criterion is bound to the MCP spec, the registry schema, crypto/information-theory, or direct measurement — **never taste** — so a competitor's checker reaches the same booleans.
 
