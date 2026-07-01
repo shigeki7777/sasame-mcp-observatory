@@ -1,6 +1,6 @@
 {
   "schema": "sasame-observer-census-v0.1",
-  "generated_at": "2026-06-30T07:15:17.944119+00:00",
+  "generated_at": "2026-07-01T07:15:56.602765+00:00",
   "window": "rolling nginx retention (~14d)",
   "what_this_is": "A measured, PII-free roster of self-declared SERVICE crawlers that map the agent/MCP economy and have fetched SaSame's public surfaces. Observation only — no trust/safety verdict on any party. SaSame's own probes, browsers, anonymous clients, and exploit scanners are excluded from the roster.",
   "agent_economy_observers": [
@@ -8,7 +8,7 @@
       "service": "openai-mcp",
       "declared_url": null,
       "category": "agent-economy observer (self-declared)",
-      "hits": 7148,
+      "hits": 8964,
       "surfaces": [
         "/",
         "/public-mcp"
@@ -16,13 +16,13 @@
       "reached_mcp_layer": true,
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-30",
-      "days_span": 12
+      "days_span": 13
     },
     {
       "service": "agent-tools.cloud-crawler",
       "declared_url": "https://agent-tools.cloud",
       "category": "agent-economy observer (self-declared)",
-      "hits": 1972,
+      "hits": 2105,
       "surfaces": [
         "/",
         "/.well-known/x402",
@@ -30,15 +30,15 @@
         "/public-mcp"
       ],
       "reached_mcp_layer": true,
-      "first_seen": "2026-06-16",
-      "last_seen": "2026-06-30",
-      "days_span": 14
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-07-01",
+      "days_span": 15
     },
     {
       "service": "aisec-registry",
       "declared_url": "https://sec.sqrx.io",
       "category": "agent-economy observer (self-declared)",
-      "hits": 719,
+      "hits": 809,
       "surfaces": [
         "/public-mcp",
         "/public-mcp/.well-known/mcp",
@@ -47,14 +47,14 @@
       ],
       "reached_mcp_layer": true,
       "first_seen": "2026-06-17",
-      "last_seen": "2026-06-29",
-      "days_span": 12
+      "last_seen": "2026-06-30",
+      "days_span": 14
     },
     {
       "service": "DoppelOps-AgentPlane-LivenessCheck",
       "declared_url": "https://agentplane.doppelops.com",
       "category": "agent-economy observer (self-declared)",
-      "hits": 279,
+      "hits": 287,
       "surfaces": [
         "/public-mcp"
       ],
@@ -67,7 +67,20 @@
       "service": "PRSM-MCP-Graph",
       "declared_url": "https://prsm.network",
       "category": "agent-economy observer (self-declared)",
-      "hits": 184,
+      "hits": 196,
+      "surfaces": [
+        "/public-mcp"
+      ],
+      "reached_mcp_layer": true,
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-07-01",
+      "days_span": 15
+    },
+    {
+      "service": "mcp-rugpull-research",
+      "declared_url": null,
+      "category": "agent-economy observer (self-declared)",
+      "hits": 120,
       "surfaces": [
         "/public-mcp"
       ],
@@ -75,19 +88,6 @@
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-30",
       "days_span": 14
-    },
-    {
-      "service": "mcp-rugpull-research",
-      "declared_url": null,
-      "category": "agent-economy observer (self-declared)",
-      "hits": 111,
-      "surfaces": [
-        "/public-mcp"
-      ],
-      "reached_mcp_layer": true,
-      "first_seen": "2026-06-17",
-      "last_seen": "2026-06-29",
-      "days_span": 12
     },
     {
       "service": "MCP-Catalog-Bot",
@@ -116,19 +116,6 @@
       "days_span": 1
     },
     {
-      "service": "Chiark",
-      "declared_url": null,
-      "category": "agent-economy observer (self-declared)",
-      "hits": 21,
-      "surfaces": [
-        "/public-mcp"
-      ],
-      "reached_mcp_layer": true,
-      "first_seen": "2026-06-16",
-      "last_seen": "2026-06-30",
-      "days_span": 14
-    },
-    {
       "service": "openai-mcp",
       "declared_url": null,
       "category": "agent-economy observer (self-declared)",
@@ -154,6 +141,19 @@
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-20",
       "days_span": 4
+    },
+    {
+      "service": "Chiark",
+      "declared_url": null,
+      "category": "agent-economy observer (self-declared)",
+      "hits": 15,
+      "surfaces": [
+        "/public-mcp"
+      ],
+      "reached_mcp_layer": true,
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-30",
+      "days_span": 14
     },
     {
       "service": "AgentSEO",
@@ -185,32 +185,17 @@
       "days_span": 6
     },
     {
-      "service": "SmitheryBot",
-      "declared_url": "https://smithery.ai",
-      "category": "agent-economy observer (self-declared)",
-      "hits": 6,
-      "surfaces": [
-        "/.well-known/oauth-protected-resource",
-        "/.well-known/oauth-protected-resource/public-mcp",
-        "/public-mcp"
-      ],
-      "reached_mcp_layer": true,
-      "first_seen": "2026-06-17",
-      "last_seen": "2026-06-17",
-      "days_span": 1
-    },
-    {
       "service": "mcp-scraper",
       "declared_url": "https://mcp-cloud.ai",
       "category": "agent-economy observer (self-declared)",
-      "hits": 6,
+      "hits": 8,
       "surfaces": [
         "/public-mcp"
       ],
       "reached_mcp_layer": true,
       "first_seen": "2026-06-24",
-      "last_seen": "2026-06-29",
-      "days_span": 5
+      "last_seen": "2026-06-30",
+      "days_span": 7
     },
     {
       "service": "mcp-registry-review",
@@ -224,6 +209,21 @@
       "first_seen": "2026-06-21",
       "last_seen": "2026-06-24",
       "days_span": 4
+    },
+    {
+      "service": "SmitheryBot",
+      "declared_url": "https://smithery.ai",
+      "category": "agent-economy observer (self-declared)",
+      "hits": 6,
+      "surfaces": [
+        "/.well-known/oauth-protected-resource",
+        "/.well-known/oauth-protected-resource/public-mcp",
+        "/public-mcp"
+      ],
+      "reached_mcp_layer": true,
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-17",
+      "days_span": 1
     },
     {
       "service": "mcp-audit",
@@ -265,17 +265,17 @@
       "days_span": 1
     },
     {
-      "service": "AgentSEO",
-      "declared_url": null,
+      "service": "MCP-Stats-Prober",
+      "declared_url": "https://github.com/anthropics/mcp-stats",
       "category": "agent-economy observer (self-declared)",
       "hits": 2,
       "surfaces": [
         "/public-mcp"
       ],
       "reached_mcp_layer": true,
-      "first_seen": "2026-06-21",
-      "last_seen": "2026-06-28",
-      "days_span": 7
+      "first_seen": "2026-06-22",
+      "last_seen": "2026-06-24",
+      "days_span": 2
     },
     {
       "service": "meta-externalagent",
@@ -291,17 +291,30 @@
       "days_span": 7
     },
     {
-      "service": "MCP-Stats-Prober",
-      "declared_url": "https://github.com/anthropics/mcp-stats",
+      "service": "AgentSEO",
+      "declared_url": null,
       "category": "agent-economy observer (self-declared)",
       "hits": 2,
       "surfaces": [
         "/public-mcp"
       ],
       "reached_mcp_layer": true,
-      "first_seen": "2026-06-22",
-      "last_seen": "2026-06-24",
-      "days_span": 2
+      "first_seen": "2026-06-21",
+      "last_seen": "2026-06-28",
+      "days_span": 7
+    },
+    {
+      "service": "Dominion-Census",
+      "declared_url": "https://dominionobservatory.com/auth.md",
+      "category": "agent-economy observer (self-declared)",
+      "hits": 1,
+      "surfaces": [
+        "/public-mcp"
+      ],
+      "reached_mcp_layer": true,
+      "first_seen": "2026-06-19",
+      "last_seen": "2026-06-19",
+      "days_span": 1
     },
     {
       "service": "RoamBot",
@@ -317,29 +330,42 @@
       "days_span": 1
     },
     {
-      "service": "Dominion-Census",
-      "declared_url": "https://dominionobservatory.com/auth.md",
+      "service": "provider-evidence",
+      "declared_url": null,
       "category": "agent-economy observer (self-declared)",
       "hits": 1,
       "surfaces": [
         "/public-mcp"
       ],
       "reached_mcp_layer": true,
-      "first_seen": "2026-06-19",
-      "last_seen": "2026-06-19",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "days_span": 1
+    },
+    {
+      "service": "mcp-streamable-auth-scan",
+      "declared_url": null,
+      "category": "agent-economy observer (self-declared)",
+      "hits": 1,
+      "surfaces": [
+        "/public-mcp"
+      ],
+      "reached_mcp_layer": true,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
       "days_span": 1
     }
   ],
-  "observer_count": 24,
+  "observer_count": 26,
   "context_traffic_buckets": {
-    "anonymous": 28937,
-    "agentecon": 10612,
-    "exploit": 8551,
-    "generic_client": 4657,
-    "aisearch": 3099,
-    "self": 2365,
-    "other": 740,
-    "genweb": 12
+    "anonymous": 28724,
+    "agentecon": 12678,
+    "exploit": 8737,
+    "generic_client": 4859,
+    "aisearch": 2557,
+    "self": 2447,
+    "other": 833,
+    "genweb": 13
   },
   "honesty": "Listing here is NOT an endorsement and NOT a safety claim. It records only that the named service self-identified (via its own User-Agent with a public +URL or a known agent-economy bot name) and fetched a SaSame public endpoint."
 }
