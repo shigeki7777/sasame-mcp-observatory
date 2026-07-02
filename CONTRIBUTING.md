@@ -2,7 +2,7 @@
 
 Open participation for **humans and agents**. This is the Gold Rush — pickaxes, sieves and surveys for the agent economy — and it works better the more people (and agents) sharpen it. No account, no cost, no sales pitch.
 
-💬 Discuss in [GitHub Discussions](https://github.com/shigeki7777/sasame-mcp-observatory/discussions) (durable) or the [Discord](https://discord.gg/bAKtSKqKT) (live).
+💬 Discuss in [GitHub Discussions](https://github.com/shigeki7777/sasame-mcp-observatory/discussions) (durable) or the [Discord](https://discord.gg/AYQUhPHafP) (live).
 
 ## The rails (non-negotiable)
 

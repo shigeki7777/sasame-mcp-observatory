@@ -6,15 +6,15 @@
 
 **🪪 Is your MCP server listed here? [Claim your MCP Readiness Passport free →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — a public, owner-controlled, agent-readable record of measured readiness. Prove control via `.well-known` / DNS / repo. No account setup, no cost, no sales pitch.
 
-💬 **Early Access & feedback:** join the [SaSame MCP Readiness Discord](https://discord.gg/bAKtSKqKT) — ask questions, share feedback, get help claiming your passport.
+💬 **Early Access & feedback:** join the [SaSame MCP Readiness Discord](https://discord.gg/AYQUhPHafP) — ask questions, share feedback, get help claiming your passport.
 
 We continuously and externally audit public MCP (Model Context Protocol) servers — does each one actually complete the handshake, list valid tools, return real content, and stay reachable — and publish **signed, time-limited readiness observations**. This repo is the transparent mirror of https://live-vps.sasame.online/observatory/.
 
 ## The numbers (latest)
 
-- **20035** public MCP entries indexed (6763 with an auditable remote endpoint)
-- **14469** audited · **2554** named rows currently meet the **Observed MCP-Ready** bar (A/B)
-- **2515** signed certificates copied into this snapshot
+- **30000** public MCP entries indexed (21154 with an auditable remote endpoint)
+- **14501** audited · **2567** named rows currently meet the **Observed MCP-Ready** bar (A/B)
+- **2549** signed certificates copied into this snapshot
 - Coverage and freshness: [`data/latest/coverage.json`](data/latest/coverage.json) · provenance and license boundary: [`data/latest/provenance.json`](data/latest/provenance.json)
 - Full numbers: [`data/latest/summary.json`](data/latest/summary.json)
 
@@ -62,10 +62,10 @@ This is an **open participation entrance**, not a sales list. Three ways in:
 - Show the signal: post your agent's first external `tools/call` in [Discussion #10](https://github.com/shigeki7777/sasame-mcp-observatory/discussions/10).
 - Take a small task: start with [#4 verifier port](https://github.com/shigeki7777/sasame-mcp-observatory/issues/4), [#5 audit disagreement](https://github.com/shigeki7777/sasame-mcp-observatory/issues/5), or [#7 offline cert verifier](https://github.com/shigeki7777/sasame-mcp-observatory/issues/7).
 
-💬 Coordinate in [GitHub Discussions](https://github.com/shigeki7777/sasame-mcp-observatory/discussions) (the durable forum: Show and tell, Q&A, Ideas) or the [Discord](https://discord.gg/bAKtSKqKT) (live chat).
+💬 Coordinate in [GitHub Discussions](https://github.com/shigeki7777/sasame-mcp-observatory/discussions) (the durable forum: Show and tell, Q&A, Ideas) or the [Discord](https://discord.gg/AYQUhPHafP) (live chat).
 
 ## Honesty
 
 This is a **v0.2 draft**, not affiliated with the official MCP project. Observations are **snapshots** and **time-limited** (certs expire ~14 days; liveness decays). We list only A/B servers (positive); we **never** publish a "worst/dead/fake" list — failure patterns are aggregated anonymously as *common failure modes*. We disclose our interest: SaSame helps builders make MCP servers AI-callable. That is exactly why the criteria, the verifier, and every certificate's evidence are open — **re-run it and tell us if we're wrong.**
 
-_Generated 2026-07-01T04:30:36.336Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
+_Generated 2026-07-02T04:30:37.453Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
