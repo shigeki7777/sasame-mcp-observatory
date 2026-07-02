@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,19 +18,19 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 13,
+    "release_downloads_total": 14,
     "pages_traffic_views_14d": 32,
     "pages_traffic_uniques_14d": 10,
-    "clones_14d": 625,
-    "badge_installs": 56,
-    "badge_impressions": 203
+    "clones_14d": 645,
+    "badge_installs": 49,
+    "badge_impressions": 100
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
     "_note": "badge_installs is now TRACKED (measured.badge_installs) from nginx observer JSONL since 2026-06-26. dataset_mentions still has no cost-zero detector; null not faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-01T07:15:55.494220+00:00",
+  "generated_at": "2026-07-02T07:15:32.446828+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -42,27 +42,26 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 2257,
+    "mcp_client_sessions": 2830,
     "external_tool_calls": 20,
     "real_arg_tool_calls": 1,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
     "registry_scanners": 3,
     "security_scanners": 0,
-    "hostile_probe_ips": 8,
+    "hostile_probe_ips": 1,
     "canary_hits": 0,
     "client_class_counts": {
       "registry_scanner": 3,
-      "unknown_automation": 35,
-      "ai_crawler": 9,
-      "likely_human": 89,
-      "hostile_probe": 8,
-      "crawler": 19,
-      "mcp_client": 1
+      "likely_human": 39,
+      "crawler": 26,
+      "ai_crawler": 5,
+      "unknown_automation": 12,
+      "hostile_probe": 1
     },
     "conversion_funnel": {
-      "reach_external_ips": 164,
-      "mcp_probe_initializes": 2257,
+      "reach_external_ips": 86,
+      "mcp_probe_initializes": 2830,
       "tool_calls": 20,
       "real_intent_calls": 1,
       "claim_calls": 0
@@ -72,37 +71,19 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 177
-      },
-      {
-        "as_org": "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
-        "country": "US",
-        "primary_class": "hostile_probe",
-        "hits": 158
-      },
-      {
-        "as_org": "GOOGLE - Google LLC, US",
-        "country": "US",
-        "primary_class": "hostile_probe",
-        "hits": 149
+        "hits": 261
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 147
+        "hits": 127
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
         "hits": 120
-      },
-      {
-        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-        "country": "GB",
-        "primary_class": "ai_crawler",
-        "hits": 118
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
@@ -114,42 +95,60 @@
         "as_org": "VDSINA-AS - Hosting technology LTD, RU",
         "country": "RU",
         "primary_class": "likely_human",
-        "hits": 48
+        "hits": 44
       },
       {
-        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
-        "country": "US",
+        "as_org": "H3G-Austria-AS - Hutchison Drei Austria GmbH, AT",
+        "country": "AT",
         "primary_class": "unknown_automation",
-        "hits": 48
+        "hits": 20
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "registry_scanner",
+        "hits": 16
+      },
+      {
+        "as_org": "DIGI-RO - DIGI ROMANIA S.A., RO",
+        "country": "RO",
+        "primary_class": "likely_human",
+        "hits": 12
+      },
+      {
+        "as_org": "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
+        "country": "IN",
+        "primary_class": "likely_human",
+        "hits": 12
       },
       {
         "as_org": "AMAZON-AES - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "likely_human",
-        "hits": 45
+        "hits": 9
       }
     ],
     "top_observer_orgs": [
-      "AMAZON-AES - Amazon.com, Inc., US",
-      "M247 - M247 Europe SRL, RO",
+      "AMAZON-02 - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
+      "AMAZON-AES - Amazon.com, Inc., US",
+      "OVH - OVH SAS, FR",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "AMAZON-02 - Amazon.com, Inc., US",
-      "FACEBOOK - Facebook, Inc., US",
+      "APPLE-ENGINEERING - Apple Inc., US",
       "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
     ],
     "top_interest_paths": [
       "/",
-      "/observatory/check/index.html",
       "/robots.txt",
-      "/.well-known/oauth-protected-resource",
-      "/.well-known/oauth-authorization-server",
-      "/.well-known/farcaster.json",
       "/.well-known/agent-card.json",
-      "/observatory/certified.json"
+      "/.well-known/oauth-authorization-server",
+      "/.well-known/oauth-protected-resource",
+      "/.well-known/x402",
+      "/token",
+      "/openapi.json"
     ],
-    "generated_at": "2026-07-01T07:15:52.712192+00:00",
+    "generated_at": "2026-07-02T07:15:29.698516+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -167,16 +166,16 @@
       },
       "external_tool_calls": {
         "now": 20,
-        "window_start": 5,
-        "delta": 15,
-        "direction": "up",
+        "window_start": 31,
+        "delta": -11,
+        "direction": "down",
         "days": 7
       },
       "real_arg_tool_calls": {
         "now": 1,
-        "window_start": 0,
-        "delta": 1,
-        "direction": "up",
+        "window_start": 21,
+        "delta": -20,
+        "direction": "down",
         "days": 7
       },
       "pages_views_14d": {
