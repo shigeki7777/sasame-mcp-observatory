@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-02",
+  "date": "2026-07-03",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,19 +18,19 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 14,
-    "pages_traffic_views_14d": 32,
-    "pages_traffic_uniques_14d": 10,
-    "clones_14d": 645,
-    "badge_installs": 49,
-    "badge_impressions": 100
+    "release_downloads_total": 15,
+    "pages_traffic_views_14d": 28,
+    "pages_traffic_uniques_14d": 11,
+    "clones_14d": 504,
+    "badge_installs": 0,
+    "badge_impressions": 0
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
     "_note": "badge_installs is now TRACKED (measured.badge_installs) from nginx observer JSONL since 2026-06-26. dataset_mentions still has no cost-zero detector; null not faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-02T07:15:32.446828+00:00",
+  "generated_at": "2026-07-03T07:15:29.410803+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -42,27 +42,26 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 2830,
-    "external_tool_calls": 20,
+    "mcp_client_sessions": 3424,
+    "external_tool_calls": 28,
     "real_arg_tool_calls": 1,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
-    "registry_scanners": 3,
+    "registry_scanners": 2,
     "security_scanners": 0,
-    "hostile_probe_ips": 1,
+    "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "registry_scanner": 3,
-      "likely_human": 39,
-      "crawler": 26,
+      "likely_human": 26,
+      "crawler": 28,
+      "registry_scanner": 2,
       "ai_crawler": 5,
-      "unknown_automation": 12,
-      "hostile_probe": 1
+      "unknown_automation": 53
     },
     "conversion_funnel": {
-      "reach_external_ips": 86,
-      "mcp_probe_initializes": 2830,
-      "tool_calls": 20,
+      "reach_external_ips": 114,
+      "mcp_probe_initializes": 3424,
+      "tool_calls": 28,
       "real_intent_calls": 1,
       "claim_calls": 0
     },
@@ -71,37 +70,43 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 261
-      },
-      {
-        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "ai_crawler",
-        "hits": 127
-      },
-      {
-        "as_org": "AS-COLOCROSSING - HostPapa, US",
-        "country": "US",
-        "primary_class": "registry_scanner",
-        "hits": 120
+        "hits": 142
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 69
+        "hits": 125
+      },
+      {
+        "as_org": "AS-COLOCROSSING - HostPapa, US",
+        "country": "US",
+        "primary_class": "registry_scanner",
+        "hits": 115
+      },
+      {
+        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 100
       },
       {
         "as_org": "VDSINA-AS - Hosting technology LTD, RU",
         "country": "RU",
         "primary_class": "likely_human",
-        "hits": 44
+        "hits": 46
       },
       {
-        "as_org": "H3G-Austria-AS - Hutchison Drei Austria GmbH, AT",
-        "country": "AT",
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 20
+        "hits": 38
+      },
+      {
+        "as_org": "DIGI-RO - DIGI ROMANIA S.A., RO",
+        "country": "RO",
+        "primary_class": "likely_human",
+        "hits": 23
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
@@ -110,45 +115,39 @@
         "hits": 16
       },
       {
-        "as_org": "DIGI-RO - DIGI ROMANIA S.A., RO",
-        "country": "RO",
-        "primary_class": "likely_human",
-        "hits": 12
-      },
-      {
-        "as_org": "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
-        "country": "IN",
-        "primary_class": "likely_human",
-        "hits": 12
-      },
-      {
-        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
+        "as_org": "TWITTER - Twitter Inc., US",
         "country": "US",
-        "primary_class": "likely_human",
-        "hits": 9
+        "primary_class": "crawler",
+        "hits": 12
+      },
+      {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "ai_crawler",
+        "hits": 11
       }
     ],
     "top_observer_orgs": [
+      "AMAZON-AES - Amazon.com, Inc., US",
       "AMAZON-02 - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "HostRoyale - HostRoyale Technologies Pvt Ltd, IN",
-      "AMAZON-AES - Amazon.com, Inc., US",
+      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
       "OVH - OVH SAS, FR",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "APPLE-ENGINEERING - Apple Inc., US",
-      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
+      "DIGI-RO - DIGI ROMANIA S.A., RO",
+      "TWITTER - Twitter Inc., US"
     ],
     "top_interest_paths": [
       "/",
+      "/observatory/check/index.html",
       "/robots.txt",
       "/.well-known/agent-card.json",
-      "/.well-known/oauth-authorization-server",
-      "/.well-known/oauth-protected-resource",
       "/.well-known/x402",
-      "/token",
-      "/openapi.json"
+      "/openapi.json",
+      "/.well-known/oauth-protected-resource",
+      "/.well-known/oauth-authorization-server"
     ],
-    "generated_at": "2026-07-02T07:15:29.698516+00:00",
+    "generated_at": "2026-07-03T07:15:26.700818+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -165,23 +164,23 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 20,
-        "window_start": 31,
-        "delta": -11,
-        "direction": "down",
+        "now": 28,
+        "window_start": 6,
+        "delta": 22,
+        "direction": "up",
         "days": 7
       },
       "real_arg_tool_calls": {
         "now": 1,
-        "window_start": 21,
-        "delta": -20,
-        "direction": "down",
+        "window_start": 1,
+        "delta": 0,
+        "direction": "flat",
         "days": 7
       },
       "pages_views_14d": {
-        "now": 32,
-        "window_start": 23,
-        "delta": 9,
+        "now": 28,
+        "window_start": 24,
+        "delta": 4,
         "direction": "up",
         "days": 7
       }
