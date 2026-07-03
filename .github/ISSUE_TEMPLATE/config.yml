@@ -9,3 +9,6 @@ contact_links:
   - name: Email instead
     url: mailto:consulting@srl-sasame.com
     about: Prefer email? Claim, correct, or delist via consulting@srl-sasame.com from your domain.
+  - name: Public scope boundary (read before filing)
+    url: https://github.com/shigeki7777/sasame-mcp-observatory/blob/master/CONTRIBUTING.md#public-scope-boundary
+    about: This repo carries public measurement data and docs only. Internal business/implementation planning belongs in SaSame private tracking, not here.

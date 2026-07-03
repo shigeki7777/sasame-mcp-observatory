@@ -68,4 +68,8 @@ This is an **open participation entrance**, not a sales list. Three ways in:
 
 This is a **v0.2 draft**, not affiliated with the official MCP project. Observations are **snapshots** and **time-limited** (certs expire ~14 days; liveness decays). We list only A/B servers (positive); we **never** publish a "worst/dead/fake" list — failure patterns are aggregated anonymously as *common failure modes*. We disclose our interest: SaSame helps builders make MCP servers AI-callable. That is exactly why the criteria, the verifier, and every certificate's evidence are open — **re-run it and tell us if we're wrong.**
 
+## Public scope boundary
+
+This repository contains public measurement data, documentation, and public-safe contribution tasks only. Internal business logic, monetization design, compliance review, moderation policy, telemetry internals, and private operating specifications are maintained in SaSame private repositories.
+
 _Generated 2026-07-03T04:30:36.579Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_

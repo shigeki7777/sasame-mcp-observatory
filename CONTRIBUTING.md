@@ -13,6 +13,17 @@ Every contribution must keep the one moat that makes this trustworthy:
 3. **Reproducible or it doesn't ship.** Every grade/claim must be re-runnable by a stranger and carry its own falsification procedure (evidence hashes, the offline verifier).
 4. **Public data + safe probing only.** No private data, no PII enrichment, no auth-bypass, no payment calls, no ToS-violating mass automation.
 
+## Public scope boundary
+
+This public repository carries only:
+
+- public MCP Observatory data and documentation;
+- neutral readiness / liveness / schema measurement artifacts;
+- public-safe issue templates and contribution tasks;
+- non-sensitive bug reports and public documentation fixes.
+
+Internal business logic, monetization design, compliance review, moderation policy, telemetry internals, and private operating specifications are maintained in SaSame private repositories. Please don't file issues here that contain internal implementation planning — they will be moved to private tracking and the public issue closed with a short note.
+
 ## Ways to contribute (no code needed)
 
 - 🪪 **Claim your passport** — [open a claim](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml) (Observed → Claimed).
