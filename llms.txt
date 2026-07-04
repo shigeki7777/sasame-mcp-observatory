@@ -48,3 +48,11 @@
 - Methodology: https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/METHODOLOGY.md
 - Observer Census: https://shigeki7777.github.io/sasame-mcp-observatory/observers.html
 - Telemetry & privacy note: https://github.com/shigeki7777/sasame-mcp-observatory/blob/master/PRIVACY-TELEMETRY.md
+## MCP lifecycle archive (live source of truth is live-vps.sasame.online)
+- Live lifecycle page: https://live-vps.sasame.online/observatory/lifecycle.html
+- Live exact lookup API: https://live-vps.sasame.online/observatory/lookup?query=<url-or-name>
+- Mirror lifecycle summary: https://shigeki7777.github.io/sasame-mcp-observatory/data/latest/lifecycle.json
+- Mirror Active Index preview: https://shigeki7777.github.io/sasame-mcp-observatory/data/latest/active-index.head.json
+- Mirror archive summary: https://shigeki7777.github.io/sasame-mcp-observatory/data/latest/archive-summary.json
+- Mirror revived feed: https://shigeki7777.github.io/sasame-mcp-observatory/data/latest/revived.json
+
