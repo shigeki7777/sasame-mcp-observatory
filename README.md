@@ -2,9 +2,9 @@
 
 > **Check your MCP → see the measured grade → claim the owner-controlled Readiness Passport.** SaSame publishes agent-readable readiness records for public MCP servers: reachable, callable, schema-valid, and re-checkable over time. Verification status only; never a safe/good/worth-using verdict.
 
-**🪪 Is your MCP server listed here? [Claim your MCP Readiness Passport free →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — prove control via `.well-known` / DNS / repo and turn an outside observation into an owner-confirmed record. No account setup, no cost, no sales pitch.
+**🛫 Submitting to Claude Connectors, ChatGPT Apps, Cursor, or any MCP registry? [Run a free pre-flight first →](https://shigeki7777.github.io/sasame-mcp-observatory/preflight.html)** — catch mechanical reject reasons before you submit or install. Prefer a terminal? `npx mcp-readiness <url>`.
 
-**🛫 Submitting to Claude Connectors or ChatGPT Apps? [Run a free pre-flight first →](https://shigeki7777.github.io/sasame-mcp-observatory/preflight.html)** — catches mechanical reject reasons before you submit. Prefer a terminal? `npx mcp-readiness <url>`; then claim the Passport.
+**🪪 Is your MCP server listed here? [Claim your MCP Readiness Passport free →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — prove control via `.well-known` / DNS / repo and turn an outside observation into an owner-confirmed record. No account setup, no cost, no sales pitch. A/B should claim and display; C/D should fix blockers first.
 
 💬 **Early Access & feedback:** join the [SaSame MCP Readiness Discord](https://discord.gg/AYQUhPHafP) — ask questions, share feedback, get help claiming your passport.
 

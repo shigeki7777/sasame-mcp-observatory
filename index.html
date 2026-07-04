@@ -154,9 +154,9 @@
 <header class="site"><div class="wrap fade">
   <p class="eyebrow">Built by SaSame · Agent Customs</p>
   <h1>MCP Readiness Passport Registry</h1>
-  <p class="thesis">Check your MCP, see the measured readiness grade, then claim the owner-controlled Passport. Verification status only — never a safety, quality, or risk verdict.</p>
+  <p class="thesis">Run a pre-flight, see the measured readiness grade, then claim the owner-controlled Passport. Unclaimed means outside observation; claimed means the operator proved control. Verification status only — never a safety, quality, or risk verdict.</p>
 
-  <p class="hook"><strong>Check → Grade → Claim.</strong> Search your MCP endpoint.</p>
+  <p class="hook"><strong>Check → Grade → Fix / Claim → Badge → Monitor → Town.</strong> Start with your MCP endpoint.</p>
 
   <div class="herosearch">
     <input id="hq" type="search" placeholder="Search your MCP endpoint — domain or name" aria-label="Search your endpoint" autocomplete="off">
@@ -176,8 +176,9 @@
   </div>
 
   <div class="cta-row">
+    <a class="btn primary" href="/observatory/check/">Run Pre-Flight &rarr;</a>
     <a class="btn primary" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your MCP Passport</a>
-    <a class="btn primary" href="preflight.html">Run Pre-Flight &rarr;</a>
+    <a class="btn" href="/observatory/start/">Choose your path</a>
     <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Download full dataset</a>
     <a class="btn" href="observers.html">Observer Census &rarr;</a>
     <a class="btn" href="claims/index.json">Claim receipts</a>
@@ -185,9 +186,9 @@
     <a class="btn" href="gold-vein.html">Gold Vein &rarr;</a>
   </div>
 
-  <p class="honesty-pill">Not KYC · Not a risk verdict · public observability only — claiming is free</p>
+  <p class="honesty-pill">Unclaimed = outside observation · Claimed = owner-confirmed record · Not KYC · Not a risk verdict · claiming is free</p>
   <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:6px">No GitHub? Claim by email <a href="mailto:consulting@srl-sasame.com?subject=Claim%20my%20MCP%20endpoint">consulting@srl-sasame.com</a> from your domain. Prove control with a <code>.well-known/mcp-ready-claim.txt</code>, a DNS TXT record, your repo, or your agent-card.</p>
-  <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:4px">First run a full <strong style="color:var(--teal)">MCP Readiness Report</strong>, then claim the Passport — what your endpoint passes, what to fix, and proof the operator controls the record. <a href="mailto:consulting@srl-sasame.com?subject=MCP%20Readiness%20Report%20(early%20access)&body=Endpoint%3A%20%0AI%27d%20like%20a%20readiness%20report%20%2F%20repair.">Request early access &rarr;</a></p>
+  <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:4px">First run the free pre-flight, then claim the Passport — what your endpoint passes, what to fix, and proof the operator controls the record. A/B should claim and display; C/D should fix blockers before directory submission. <a href="mailto:consulting@srl-sasame.com?subject=MCP%20Readiness%20Report%20(early%20access)&body=Endpoint%3A%20%0AI%27d%20like%20a%20readiness%20report%20%2F%20repair.">Request early access &rarr;</a></p>
 
   <div class="ladder">
     <div class="ladder-track" id="ladder" aria-label="Population by identity confidence"></div>
