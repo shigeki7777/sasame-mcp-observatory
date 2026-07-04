@@ -50,11 +50,11 @@
 <body>
 <header class="site"><div class="wrap">
   <p class="eyebrow">SaSame MCP Observatory · Directory Pre-Flight</p>
-  <h1>About to submit your MCP server to a directory? Run a free pre-flight first.</h1>
-  <p class="thesis">The Claude Connectors Directory and the ChatGPT Apps Directory reject many first submissions for <b>mechanical</b> reasons — missing tool annotations, untyped input schemas, unclear descriptions, an unreachable endpoint, generic errors. SaSame's free readiness audit measures exactly that class from the outside, before you submit.</p>
-  <div class="banner"><b>Honest scope.</b> A clean pre-flight is <b>not</b> directory approval, and SaSame does not assert your server is "safe / good / worth using" — only what it could verify (reachable, callable, schema-valid, annotated). The legal/account requirements below are out of scope: you handle those yourself.</div>
+  <h1>Check your MCP, fix the mechanical blockers, then claim its Readiness Passport.</h1>
+  <p class="thesis">SaSame's free pre-flight measures the mechanical readiness that agents and directories care about: handshake, tools/list, schemas, descriptions, annotations, real-content behavior, and honest errors. After the grade, claim the owner-controlled Passport so agents can identify the operator-controlled record.</p>
+  <div class="banner"><b>Honest scope.</b> A clean pre-flight is <b>not</b> directory approval, and SaSame does not assert your server is "safe / good / worth using" — only what it could verify. Claiming proves endpoint control; it does not create a paid ranking, endorsement, custody relationship, or KYC result.</div>
   <p style="margin-top:18px">
-    <a class="btn primary" href="#run">How to run it →</a>
+    <a class="btn primary" href="#run">Check → grade → claim</a>
     <a class="btn" href="./index.html">Observatory home</a>
     <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/blob/main/STANDARD.md">The open standard</a>
   </p>
@@ -96,6 +96,7 @@
 <section id="run"><div class="wrap">
   <h2>How to run it (free, handshake-only)</h2>
   <p>Point either tool at <b>your own</b> public MCP endpoint. The probe is a legitimate MCP handshake (<code>initialize</code> + <code>tools/list</code> + one read-only tool call) — no auth-bypass, no payment, no data written to your server.</p>
+  <div class="banner"><b>Fast path:</b> run <code>readiness_report(url)</code> or <code>npx mcp-readiness &lt;url&gt;</code>, fix the top blocker, then claim the Passport with <code>claim_start(url)</code> → <code>claim_confirm</code>.</div>
   <h3>Public MCP endpoint</h3>
   <pre>https://live-vps.sasame.online/public-mcp</pre>
   <table>
@@ -107,7 +108,7 @@
   <h3>Prefer the command line?</h3>
   <p>Run the same readiness audit locally in one command — no MCP client, no install, no key (open-source, MIT):</p>
   <pre>npx mcp-readiness https://your-server.example/mcp</pre>
-  <p style="font-size:13px;color:var(--muted)">Same A→D grade and directory pre-flight as the hosted tools. On npm: <a href="https://www.npmjs.com/package/mcp-readiness">mcp-readiness</a>.</p>
+  <p style="font-size:13px;color:var(--muted)">Same A→D grade and directory pre-flight as the hosted tools. The latest CLI also prints the claim path after the grade. On npm: <a href="https://www.npmjs.com/package/mcp-readiness">mcp-readiness</a>.</p>
   <h3>Pre-flight checks (advisory layer)</h3>
   <table>
     <tr><th>ID</th><th>Check</th><th>Maps to</th></tr>
@@ -116,6 +117,12 @@
     <tr><td><span class="pill soft">PF3</span></td><td>Privacy-policy URL surfaced over MCP (soft reminder)</td><td>Claude: missing policy = immediate reject (verify in your public docs)</td></tr>
   </table>
   <p style="font-size:13px;color:var(--muted);margin-top:12px">These map to the canonical, reproducible 10-criterion standard (C1–C10) but are reported as a <b>separate advisory layer</b> — a third party's directory policy never alters the reproducible grade.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>After the grade: claim the Passport</h2>
+  <p>If the endpoint is yours, call <code>claim_start(url)</code>, publish the returned token through <code>.well-known</code> or DNS, then call <code>claim_confirm</code>. The result is an owner-controlled, agent-readable Readiness Passport. It is still measured-facts only: no safety verdict, no paid ranking, no KYC, no custody.</p>
+  <p><a class="btn primary" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Open GitHub claim template</a> <a class="btn" href="https://live-vps.sasame.online/for-agents/">Agent instructions</a></p>
 </div></section>
 
 <section><div class="wrap">

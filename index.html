@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agent Passport Registry — SaSame Agent Customs</title>
-<meta name="description" content="A public, outside-in observability log of the AI agent economy. Verification status only — never a risk verdict on a named agent.">
+<title>MCP Readiness Passport Registry — SaSame</title>
+<meta name="description" content="Check your MCP, see the measured readiness grade, and claim the owner-controlled Readiness Passport. Verification status only — never a safety or quality verdict.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -151,13 +151,13 @@
 <body>
 <header class="site"><div class="wrap fade">
   <p class="eyebrow">Built by SaSame · Agent Customs</p>
-  <h1>Agent Passport Registry</h1>
-  <p class="thesis">A public, outside-in log of the AI agent economy — one machine-readable passport per public MCP / x402 endpoint.</p>
+  <h1>MCP Readiness Passport Registry</h1>
+  <p class="thesis">Check your MCP, see the measured readiness grade, then claim the owner-controlled Passport. Verification status only — never a safety, quality, or risk verdict.</p>
 
-  <p class="hook">Most AI agents are unclaimed. <strong>Search yours.</strong></p>
+  <p class="hook"><strong>Check → Grade → Claim.</strong> Search your MCP endpoint.</p>
 
   <div class="herosearch">
-    <input id="hq" type="search" placeholder="Search your MCP / agent endpoint — domain or name" aria-label="Search your endpoint" autocomplete="off">
+    <input id="hq" type="search" placeholder="Search your MCP endpoint — domain or name" aria-label="Search your endpoint" autocomplete="off">
     <a class="btn primary" href="#search" id="hqgo">Search &rarr;</a>
   </div>
 
@@ -174,8 +174,8 @@
   </div>
 
   <div class="cta-row">
-    <a class="btn primary" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your agent</a>
-    <a class="btn primary" href="preflight.html">Directory Pre-Flight &rarr;</a>
+    <a class="btn primary" href="https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml">Claim your MCP Passport</a>
+    <a class="btn primary" href="preflight.html">Run Pre-Flight &rarr;</a>
     <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Download full dataset</a>
     <a class="btn" href="observers.html">Observer Census &rarr;</a>
     <a class="btn" href="readiness-census-2026-06.html">Readiness Census &rarr;</a>
@@ -184,7 +184,7 @@
 
   <p class="honesty-pill">Not KYC · Not a risk verdict · public observability only — claiming is free</p>
   <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:6px">No GitHub? Claim by email <a href="mailto:consulting@srl-sasame.com?subject=Claim%20my%20MCP%20endpoint">consulting@srl-sasame.com</a> from your domain. Prove control with a <code>.well-known/mcp-ready-claim.txt</code>, a DNS TXT record, your repo, or your agent-card.</p>
-  <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:4px">After claiming, get a full <strong style="color:var(--teal)">MCP Readiness Report</strong> — what your endpoint passes, what to fix, and proof agents can call it. <a href="mailto:consulting@srl-sasame.com?subject=MCP%20Readiness%20Report%20(early%20access)&body=Endpoint%3A%20%0AI%27d%20like%20a%20readiness%20report%20%2F%20repair.">Request early access &rarr;</a></p>
+  <p class="claim-help" style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted);margin-top:4px">First run a full <strong style="color:var(--teal)">MCP Readiness Report</strong>, then claim the Passport — what your endpoint passes, what to fix, and proof the operator controls the record. <a href="mailto:consulting@srl-sasame.com?subject=MCP%20Readiness%20Report%20(early%20access)&body=Endpoint%3A%20%0AI%27d%20like%20a%20readiness%20report%20%2F%20repair.">Request early access &rarr;</a></p>
 
   <div class="ladder">
     <div class="ladder-track" id="ladder" aria-label="Population by identity confidence"></div>
@@ -205,7 +205,7 @@
 </div></section>
 
 <section id="search" style="scroll-margin-top:18px;background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
-  <div class="sec-head"><h2>Find &amp; claim your endpoint</h2><span class="note" id="searchnote"></span></div>
+  <div class="sec-head"><h2>Find, grade &amp; claim your endpoint</h2><span class="note" id="searchnote"></span></div>
   <div class="controls">
     <input id="q" type="search" placeholder="Search by name or domain…" autocomplete="off" aria-label="Search passports">
     <select id="cat" aria-label="Category"><option value="">All categories</option></select>
