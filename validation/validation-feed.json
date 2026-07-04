@@ -1,14 +1,16 @@
 {
   "@context": "https://shigeki7777.github.io/sasame-mcp-observatory/validation/validation-context.jsonld",
-  "schema": "sasame-validation-feed/0.1",
+  "schema": "sasame-validation-feed/0.2",
   "validation_type": "mcp-readiness",
   "method": "agent-tool-discoverability-standard/0.2",
   "issuer_pubkey_spki_hex": "302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6",
   "count": 21137,
+  "claim_records_overlay_count": 1,
+  "claim_parse_errors": 0,
   "attestations_file": "https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl",
-  "attestations_sha256": "6f92175ea30aceb64b370fa59b8a76c9fc7f396f9600ff77f045d683d6ae0c36",
-  "generated_at": "2026-06-20T08:49:20.308Z",
-  "attestations_bytes": 19115370,
+  "attestations_sha256": "d6fd154cf9d070dd4b07dede2c6b772de7ab7855ebd358bc2a4e8cba14d6f55a",
+  "generated_at": "2026-07-04T12:05:26.813Z",
+  "attestations_bytes": 19115555,
   "grade_distribution": {
     "C": 694,
     "B": 261,
@@ -34,12 +36,13 @@
     "attestations": "https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl",
     "human": "https://shigeki7777.github.io/sasame-mcp-observatory/validation/",
     "claim": "https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml",
+    "claim_receipts": "https://shigeki7777.github.io/sasame-mcp-observatory/claims/index.json",
     "standard": "https://live-vps.sasame.online/research/agent-tool-discoverability-standard.html",
     "observer_census": "https://shigeki7777.github.io/sasame-mcp-observatory/observers.html"
   },
   "signature": {
     "signed_by": "sasame-trust-302a300506032b65",
-    "signature": "ieuNPcbcF0IwGJt1SToISMLlKyw0b681COibm3Os7cxaFOyld55m3t7ByKrTxYBUzMDjF+is3lrhS+WSiDYkDg==",
-    "canonical_json": "{\"attestations_file\":\"https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl\",\"attestations_sha256\":\"6f92175ea30aceb64b370fa59b8a76c9fc7f396f9600ff77f045d683d6ae0c36\",\"count\":21137,\"generated_at\":\"2026-06-20T08:49:20.308Z\",\"issuer_pubkey_spki_hex\":\"302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6\",\"method\":\"agent-tool-discoverability-standard/0.2\",\"schema\":\"sasame-validation-feed/0.1\",\"validation_type\":\"mcp-readiness\"}"
+    "signature": "2v5fELQ6c51wZM9VqkGW7hO0ok6AZFDiHsH3yZn25vX8880epZwhaYq1lfeQz/AWYc6JPGIcLqrs2Od0n2vsCQ==",
+    "canonical_json": "{\"attestations_file\":\"https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl\",\"attestations_sha256\":\"d6fd154cf9d070dd4b07dede2c6b772de7ab7855ebd358bc2a4e8cba14d6f55a\",\"claim_parse_errors\":0,\"claim_records_overlay_count\":1,\"count\":21137,\"generated_at\":\"2026-07-04T12:05:26.813Z\",\"issuer_pubkey_spki_hex\":\"302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6\",\"method\":\"agent-tool-discoverability-standard/0.2\",\"schema\":\"sasame-validation-feed/0.2\",\"validation_type\":\"mcp-readiness\"}"
   }
 }
