@@ -136,6 +136,8 @@
   .claimlink{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--teal);border:1px solid var(--teal);border-radius:6px;padding:4px 9px;display:inline-block;transition:background .2s,color .2s}
   .claimlink:hover{background:var(--teal);color:#fff;text-decoration:none}
   .claimed-tag{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--brass)}
+  .claim-proof{font-family:"Space Mono",monospace;font-size:10px;color:var(--muted)}
+  .pill.owner{border-color:var(--brass);color:var(--brass);background:#FBF7EC}
 </style>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Agent Passport Registry — SaSame">
@@ -178,6 +180,7 @@
     <a class="btn primary" href="preflight.html">Run Pre-Flight &rarr;</a>
     <a class="btn" href="https://github.com/shigeki7777/sasame-mcp-observatory/releases/tag/passports-v0.2">Download full dataset</a>
     <a class="btn" href="observers.html">Observer Census &rarr;</a>
+    <a class="btn" href="claims/index.json">Claim receipts</a>
     <a class="btn" href="readiness-census-2026-06.html">Readiness Census &rarr;</a>
     <a class="btn" href="gold-vein.html">Gold Vein &rarr;</a>
   </div>
@@ -254,12 +257,14 @@ function bars(host,obj,opts={}){
 
 Promise.all([
   fetch('passports/summary.json').then(r=>r.json()),
-  fetch('passports/agent-map.summary.json').then(r=>r.json())
-]).then(([sum,map])=>{
+  fetch('passports/agent-map.summary.json').then(r=>r.json()),
+  fetch('claims/index.json').then(r=>r.json()).catch(()=>({count:0,receipts:[]}))
+]).then(([sum,map,claims])=>{
   const A=sum.aggregates;
   const setn=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=fmt(v);};
   setn('bignum',sum.count);
-  const AL=A.audit_level||{};setn('t-observed',AL.observed||0);setn('t-claimed',AL.claimed||0);setn('t-certified',AL.certified||0);
+  const AL=A.audit_level||{};const claimReceiptCount=(claims&&claims.count)||0;
+  setn('t-observed',AL.observed||0);setn('t-claimed',Math.max(AL.claimed||0,claimReceiptCount));setn('t-certified',AL.certified||0);
   // ladder
   const order=[['u',A.identity_status.unclaimed||0],['s',A.identity_status.self_claimed||0],['c',A.identity_status.claimed||0],['v',A.identity_status.verified||0]];
   const tot=order.reduce((a,b)=>a+b[1],0)||1;const L=document.getElementById('ladder');
@@ -268,7 +273,8 @@ Promise.all([
     if(k==='u')seg.style.color='#2a3942';L.appendChild(seg);});
   // stats
   const grades=A.audit_grade||{};const ab=(grades.A||0)+(grades.B||0);
-  const st=[['Passports',fmt(sum.count)],['Owner-proven',fmt((A.identity_status.claimed||0)+(A.identity_status.verified||0))],['Observed-ready (A/B)',fmt(ab)],['Registries',fmt(Object.keys(A.source_registry||{}).length)]];
+  const ownerProven=Math.max((A.identity_status.claimed||0)+(A.identity_status.verified||0),claimReceiptCount);
+  const st=[['Passports',fmt(sum.count)],['Owner-proven',fmt(ownerProven)],['Observed-ready (A/B)',fmt(ab)],['Claim receipts',fmt(claimReceiptCount)]];
   const S=document.getElementById('stats');st.forEach(([k,v])=>{const d=el('div','stat');d.innerHTML='<div class="v">'+v+'</div><div class="k">'+k+'</div>';S.appendChild(d);});
   // maps
   const M=document.getElementById('maps');M.innerHTML='';
@@ -283,13 +289,26 @@ Promise.all([
 
 // ---- search ----
 let ROWS=[],FI=null,shown=0,PAGE=50;
+let CLAIMS={count:0,byDomain:new Map(),byEndpoint:new Map()};
+const cleanHost=(x)=>String(x||'').toLowerCase().replace(/^https?:\/\//,'').split('/')[0].replace(/^www\./,'');
+const cleanEndpoint=(x)=>String(x||'').toLowerCase().replace(/\/+$/,'');
+const claimForRow=(r)=>CLAIMS.byDomain.get(cleanHost(r[1]))||CLAIMS.byEndpoint.get(cleanEndpoint(r[1]))||null;
+const dateOnly=(x)=>String(x||'').slice(0,10);
 const STFILTER=new Set();
 const q=document.getElementById('q'),catSel=document.getElementById('cat'),regSel=document.getElementById('reg'),
   cardsEl=document.getElementById('cards'),moreBtn=document.getElementById('more'),countLine=document.getElementById('countline');
 
-fetch('passports/search-index.json').then(r=>r.json()).then(d=>{
+Promise.all([
+  fetch('passports/search-index.json').then(r=>r.json()),
+  fetch('claims/index.json').then(r=>r.json()).catch(()=>({count:0,receipts:[]}))
+]).then(([d,claimIndex])=>{
+  CLAIMS={count:(claimIndex&&claimIndex.count)||0,byDomain:new Map(),byEndpoint:new Map()};
+  for(const c of ((claimIndex&&claimIndex.receipts)||[])){
+    if(c.domain)CLAIMS.byDomain.set(cleanHost(c.domain),c);
+    if(c.endpoint)CLAIMS.byEndpoint.set(cleanEndpoint(c.endpoint),c);
+  }
   ROWS=d.rows; // [name,domain,status,grade,category,registry]
-  document.getElementById('searchnote').textContent=fmt(ROWS.length)+' endpoints indexed';
+  document.getElementById('searchnote').textContent=fmt(ROWS.length)+' endpoints indexed · '+fmt(CLAIMS.count)+' claimed receipt'+(CLAIMS.count===1?'':'s');
   // dropdowns
   const cats=[...new Set(ROWS.map(r=>r[4]).filter(Boolean))].sort();
   const regs=[...new Set(ROWS.map(r=>r[5]).filter(Boolean))].sort();
@@ -329,14 +348,22 @@ function render(list,append){
   if(!append)shown=0;
   const slice=list.slice(shown,shown+PAGE);
   for(const r of slice){
-    const s=STATUS[r[2]]||STATUS.u;
+    const claim=claimForRow(r);
+    const statusCode=claim?'c':r[2];
+    const s=STATUS[statusCode]||STATUS.u;
     const c=el('div','card');
     let meta='<span class="pill id"><i class="dot" style="background:'+s.c+'"></i>'+s.lab+'</span>';
+    if(claim)meta+='<span class="pill owner">owner proof</span>';
     if(r[3])meta+='<span class="pill grade">grade '+r[3]+'</span>';
     if(r[4])meta+='<span class="pill cat">'+r[4]+'</span>';
     if(r[5])meta+='<span class="pill">'+r[5]+'</span>';
     let action='';
-    if(r[2]==='u'||r[2]==='s'){
+    if(claim){
+      const proof=(claim.method?claim.method:'owner proof')+(claim.verified_at?' · '+dateOnly(claim.verified_at):'');
+      action='<div class="claimrow"><span class="claimed-tag">Claimed &#10003;</span>'
+        +'<a class="claimlink" href="'+claim.claim_record_url+'" target="_blank" rel="noopener noreferrer">claim receipt</a>'
+        +'<span class="claim-proof">'+proof+'</span></div>';
+    } else if(r[2]==='u'||r[2]==='s'){
       const t=encodeURIComponent('Claim: '+(r[0]||r[1]||'my endpoint'));
       const ep=encodeURIComponent(r[1]||'');const nm=encodeURIComponent(r[0]||'');
       const url=CLAIM_BASE+'?template=claim-passport.yml&title='+t+'&endpoint='+ep+'&name='+nm;
