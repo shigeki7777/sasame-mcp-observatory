@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -18,19 +18,19 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 15,
-    "pages_traffic_views_14d": 28,
-    "pages_traffic_uniques_14d": 11,
+    "release_downloads_total": 16,
+    "pages_traffic_views_14d": 14,
+    "pages_traffic_uniques_14d": 8,
     "clones_14d": 504,
-    "badge_installs": 0,
-    "badge_impressions": 0
+    "badge_installs": 30,
+    "badge_impressions": 30
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
     "_note": "badge_installs is now TRACKED (measured.badge_installs) from nginx observer JSONL since 2026-06-26. dataset_mentions still has no cost-zero detector; null not faked."
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-03T07:15:29.410803+00:00",
+  "generated_at": "2026-07-04T07:15:36.906315+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -42,26 +42,28 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 3424,
-    "external_tool_calls": 28,
+    "mcp_client_sessions": 4052,
+    "external_tool_calls": 30,
     "real_arg_tool_calls": 1,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
-    "registry_scanners": 2,
+    "registry_scanners": 3,
     "security_scanners": 0,
     "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "likely_human": 26,
-      "crawler": 28,
-      "registry_scanner": 2,
+      "unknown_automation": 21,
+      "registry_scanner": 3,
+      "crawler": 43,
       "ai_crawler": 5,
-      "unknown_automation": 53
+      "likely_human": 23,
+      "mcp_client": 1,
+      "self_test": 1
     },
     "conversion_funnel": {
-      "reach_external_ips": 114,
-      "mcp_probe_initializes": 3424,
-      "tool_calls": 28,
+      "reach_external_ips": 97,
+      "mcp_probe_initializes": 4052,
+      "tool_calls": 30,
       "real_intent_calls": 1,
       "claim_calls": 0
     },
@@ -70,49 +72,37 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 142
+        "hits": 327
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 125
+        "hits": 166
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 115
+        "hits": 117
+      },
+      {
+        "as_org": "OVH - OVH SAS, FR",
+        "country": "FR",
+        "primary_class": "crawler",
+        "hits": 40
       },
       {
         "as_org": "AMAZON-AES - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 100
-      },
-      {
-        "as_org": "VDSINA-AS - Hosting technology LTD, RU",
-        "country": "RU",
-        "primary_class": "likely_human",
-        "hits": 46
-      },
-      {
-        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "unknown_automation",
-        "hits": 38
-      },
-      {
-        "as_org": "DIGI-RO - DIGI ROMANIA S.A., RO",
-        "country": "RO",
-        "primary_class": "likely_human",
-        "hits": 23
+        "hits": 26
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 16
+        "hits": 20
       },
       {
         "as_org": "TWITTER - Twitter Inc., US",
@@ -124,30 +114,42 @@
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 11
+        "hits": 10
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "hits": 10
+      },
+      {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 10
       }
     ],
     "top_observer_orgs": [
-      "AMAZON-AES - Amazon.com, Inc., US",
       "AMAZON-02 - Amazon.com, Inc., US",
+      "AMAZON-AES - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
-      "OVH - OVH SAS, FR",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "DIGI-RO - DIGI ROMANIA S.A., RO",
-      "TWITTER - Twitter Inc., US"
+      "TWITTER - Twitter Inc., US",
+      "OVH - OVH SAS, FR",
+      "FACEBOOK - Facebook, Inc., US"
     ],
     "top_interest_paths": [
       "/",
-      "/observatory/check/index.html",
       "/robots.txt",
       "/.well-known/agent-card.json",
       "/.well-known/x402",
       "/openapi.json",
+      "/observatory/check/index.html",
       "/.well-known/oauth-protected-resource",
       "/.well-known/oauth-authorization-server"
     ],
-    "generated_at": "2026-07-03T07:15:26.700818+00:00",
+    "generated_at": "2026-07-04T07:15:33.643609+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -164,9 +166,9 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 28,
+        "now": 30,
         "window_start": 6,
-        "delta": 22,
+        "delta": 24,
         "direction": "up",
         "days": 7
       },
@@ -178,10 +180,10 @@
         "days": 7
       },
       "pages_views_14d": {
-        "now": 28,
-        "window_start": 24,
-        "delta": 4,
-        "direction": "up",
+        "now": 14,
+        "window_start": 28,
+        "delta": -14,
+        "direction": "down",
         "days": 7
       }
     }
