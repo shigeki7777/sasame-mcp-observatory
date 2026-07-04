@@ -14,11 +14,16 @@
     "claimed_total": 1,
     "self_claimed_by_sasame": 1,
     "certified_total": 0,
+    "claim_records_total": 1,
+    "claim_records_external_total": 0,
+    "passport_claimed_total": 1,
+    "passport_external_claims_total": 0,
+    "latest_external_claim_at": null,
     "github_stars": 0,
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 16,
+    "release_downloads_total": 17,
     "pages_traffic_views_14d": 14,
     "pages_traffic_uniques_14d": 8,
     "clones_14d": 504,
@@ -29,8 +34,14 @@
     "dataset_mentions": null,
     "_note": "badge_installs is now TRACKED (measured.badge_installs) from nginx observer JSONL since 2026-06-26. dataset_mentions still has no cost-zero detector; null not faked."
   },
+  "claim_pipeline": {
+    "source_of_truth": "census/claims.jsonl written by claim_confirm after owner-control proof",
+    "north_star_uses": "canonical_claim_records_not_passports_projection",
+    "visibility_delay_note": "public Observatory pages may refresh later, but scoreboard external_claims updates from the claim feed immediately",
+    "external_claims": []
+  },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-04T07:15:36.906315+00:00",
+  "generated_at": "2026-07-04T11:25:46.263064+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -167,8 +178,8 @@
       },
       "external_tool_calls": {
         "now": 30,
-        "window_start": 6,
-        "delta": 24,
+        "window_start": 8,
+        "delta": 22,
         "direction": "up",
         "days": 7
       },
@@ -181,8 +192,8 @@
       },
       "pages_views_14d": {
         "now": 14,
-        "window_start": 28,
-        "delta": -14,
+        "window_start": 29,
+        "delta": -15,
         "direction": "down",
         "days": 7
       }
