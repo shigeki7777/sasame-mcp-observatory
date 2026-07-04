@@ -1,0 +1,18 @@
+{
+  "schema": "sasame-claim-receipt/0.1",
+  "endpoint": "https://live-vps.sasame.online/public-mcp",
+  "domain": "live-vps.sasame.online",
+  "level": "claimed",
+  "status": "owner_control_verified",
+  "method": "well-known",
+  "verified_at": "2026-06-18T11:12:34.778Z",
+  "claim_record_url": "https://live-vps.sasame.online/observatory/claims/live-vps-sasame-online-public-mcp.json",
+  "certificate_url": "https://live-vps.sasame.online/observatory/certs/live-vps-sasame-online-public-mcp.json",
+  "badge": "https://live-vps.sasame.online/observatory/badge/live-vps-sasame-online-public-mcp.svg",
+  "scoreboard": "https://live-vps.sasame.online/observatory/gold-rush-scoreboard.json",
+  "boundaries": [
+    "Claimed means owner-controlled endpoint proof only.",
+    "This is not a safety verdict, quality endorsement, KYC, custody, sanctions check, paid ranking, or fiscal/tax invoice.",
+    "Readiness grade is a separate measured status and may change over time."
+  ]
+}
