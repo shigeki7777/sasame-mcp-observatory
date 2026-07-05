@@ -1,6 +1,6 @@
 {
   "schema": "gold-vein-v0.1",
-  "generated_at": "2026-06-21T10:28:50.035108Z",
+  "generated_at": "2026-07-04T13:48:14.730015Z",
   "note": "Curated cell of unclaimed, owner-identifiable MCP-Ready servers SaSame observed from the outside. If one is yours, claim your free Readiness Passport. This is verification-status only (reachable / callable / schema-valid / observed grade) — NOT a safety, quality, or trust verdict.",
   "rails": [
     "verification-status only",
@@ -10,6 +10,52 @@
     "PULL / invited only — no cold outbound"
   ],
   "selection": "audit_grade=A AND not priced AND owner-identifiable custom domain AND still unclaimed (observed)",
+  "commercial_status": {
+    "active": [
+      "free Readiness Passport claim",
+      "free readiness/discovery checks",
+      "Hosted Citizen / resident marketplace where configured"
+    ],
+    "inquiry_only": [
+      "custom MCP/agent monitoring or build/operate scope via public MCP engage_sasame",
+      "bulk Trust API access"
+    ],
+    "owner_gated": [
+      "new binding price commitments",
+      "new x402/mainnet metered rail activation",
+      "custody/KYC/payment integration changes"
+    ]
+  },
+  "agent_next_actions": [
+    {
+      "goal": "claim one of these servers if it is yours",
+      "tool": "claim_start",
+      "args_example": {
+        "url": "https://example.com/mcp"
+      }
+    },
+    {
+      "goal": "check any MCP server before calling it",
+      "tool": "audit_mcp",
+      "args_example": {
+        "url": "https://example.com/mcp"
+      }
+    },
+    {
+      "goal": "request a Gold Rush deliverable",
+      "tool": "engage_sasame",
+      "args_example": {
+        "need": "MCP monitoring / audit / build scope"
+      }
+    },
+    {
+      "goal": "see current commercial state",
+      "tool": "get_pricing",
+      "args_example": {}
+    }
+  ],
+  "public_mcp": "https://live-vps.sasame.online/public-mcp",
+  "x402_status": "Discovery surface only unless a specific self-serve rail is explicitly returned by get_pricing. This file does not imply live metered x402 checkout.",
   "cell_size": 30,
   "pool_total": 2286,
   "cell": [
