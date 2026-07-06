@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -23,12 +23,12 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 6,
-    "release_downloads_total": 17,
-    "pages_traffic_views_14d": 16,
+    "release_downloads_total": 18,
+    "pages_traffic_views_14d": 19,
     "pages_traffic_uniques_14d": 7,
-    "clones_14d": 441,
-    "badge_installs": 0,
-    "badge_impressions": 0
+    "clones_14d": 436,
+    "badge_installs": 13,
+    "badge_impressions": 13
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
@@ -41,7 +41,7 @@
     "external_claims": []
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-05T07:15:39.814711+00:00",
+  "generated_at": "2026-07-06T07:15:36.643009+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -53,29 +53,28 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 4778,
-    "external_tool_calls": 46,
+    "mcp_client_sessions": 5500,
+    "external_tool_calls": 51,
     "real_arg_tool_calls": 6,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
-    "registry_scanners": 3,
+    "registry_scanners": 2,
     "security_scanners": 0,
-    "hostile_probe_ips": 2,
+    "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "unknown_automation": 14,
-      "registry_scanner": 3,
-      "crawler": 30,
-      "likely_human": 24,
-      "ai_crawler": 5,
-      "self_test": 9,
-      "hostile_probe": 2,
-      "mcp_client": 1
+      "registry_scanner": 2,
+      "crawler": 25,
+      "unknown_automation": 9,
+      "ai_crawler": 10,
+      "likely_human": 19,
+      "self_test": 12,
+      "mcp_client": 2
     },
     "conversion_funnel": {
-      "reach_external_ips": 88,
-      "mcp_probe_initializes": 4778,
-      "tool_calls": 46,
+      "reach_external_ips": 79,
+      "mcp_probe_initializes": 5500,
+      "tool_calls": 51,
       "real_intent_calls": 6,
       "claim_calls": 0
     },
@@ -84,7 +83,7 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 585
+        "hits": 496
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
@@ -96,72 +95,72 @@
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 115
-      },
-      {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "hostile_probe",
-        "hits": 35
+        "hits": 95
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 18
+        "hits": 16
+      },
+      {
+        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "country": "GB",
+        "primary_class": "ai_crawler",
+        "hits": 16
       },
       {
         "as_org": "TWITTER - Twitter Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 11
-      },
-      {
-        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-        "country": "US",
-        "primary_class": "self_test",
-        "hits": 10
-      },
-      {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 9
+        "hits": 15
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 8
+        "hits": 12
+      },
+      {
+        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "country": "US",
+        "primary_class": "self_test",
+        "hits": 12
       },
       {
         "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
         "country": "GB",
         "primary_class": "self_test",
-        "hits": 8
+        "hits": 12
+      },
+      {
+        "as_org": "RAILWAY - Railway, US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 11
       }
     ],
     "top_observer_orgs": [
       "AMAZON-02 - Amazon.com, Inc., US",
-      "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+      "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "AMAZON-AES - Amazon.com, Inc., US",
       "TWITTER - Twitter Inc., US",
-      "BABBAR-AS - Babbar SAS, FR",
-      "FACEBOOK - Facebook, Inc., US",
-      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
+      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+      "GTT-BACKBONE - GTT Communications Inc., US",
+      "FACEBOOK - Facebook, Inc., US"
     ],
     "top_interest_paths": [
       "/",
       "/robots.txt",
       "/.well-known/agent-card.json",
+      "/llms.txt",
       "/.well-known/x402",
       "/openapi.json",
-      "/llms.txt",
-      "/.well-known/oauth-protected-resource",
+      "/observatory/check/index.html",
       "/.well-known/oauth-authorization-server"
     ],
-    "generated_at": "2026-07-05T07:15:35.411538+00:00",
+    "generated_at": "2026-07-06T07:15:33.836193+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -178,9 +177,9 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 46,
+        "now": 51,
         "window_start": 8,
-        "delta": 38,
+        "delta": 43,
         "direction": "up",
         "days": 7
       },
@@ -192,9 +191,9 @@
         "days": 7
       },
       "pages_views_14d": {
-        "now": 16,
-        "window_start": 29,
-        "delta": -13,
+        "now": 19,
+        "window_start": 31,
+        "delta": -12,
         "direction": "down",
         "days": 7
       }
