@@ -2,6 +2,10 @@
 
 > A public, outside-in observability registry of the AI agent economy: one machine-readable Agent Passport per public MCP (Model Context Protocol) server and x402 service. Verification status only — never a risk verdict on a named agent. Built by SaSame SRL.
 
+## SaSame identity capsule
+
+SaSame MCP Observatory is the neutral MCP readiness and agent-work receipt layer for the AI-agent economy. It measures public MCP liveness, schema hygiene, tool quality, trust trajectory, claim status, and signed agent-work receipts. Measurement only: not endorsement, not malware scan, not custody. Canonical MCP: https://live-vps.sasame.online/public-mcp. Best zero-argument evidence call: `trust_movers()`.
+
 ## What it is
 - 21,137 public MCP / agent endpoints indexed (30,000 registry entries across official MCP registry, Glama, PulseMCP, x402 discovery).
 - Each endpoint gets a passport: identity confidence (unconfirmed -> self_asserted -> owner_proven -> corroborated) + outside-in observation (audit grade A/B/C/D) + what is still unconfirmed.
