@@ -9,7 +9,7 @@
   "claim_parse_errors": 0,
   "attestations_file": "https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl",
   "attestations_sha256": "d6fd154cf9d070dd4b07dede2c6b772de7ab7855ebd358bc2a4e8cba14d6f55a",
-  "generated_at": "2026-07-07T07:15:15.187Z",
+  "generated_at": "2026-07-08T07:15:28.612Z",
   "attestations_bytes": 19115555,
   "grade_distribution": {
     "C": 694,
@@ -42,7 +42,7 @@
   },
   "signature": {
     "signed_by": "sasame-trust-302a300506032b65",
-    "signature": "9nJv9UvIaoWkoB5W6CdoyyNGSICombHj/QiQEOevfckYW96U80Xkbr09ftRSPQRgCOd/NpzQAoM96DlTZD0eAg==",
-    "canonical_json": "{\"attestations_file\":\"https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl\",\"attestations_sha256\":\"d6fd154cf9d070dd4b07dede2c6b772de7ab7855ebd358bc2a4e8cba14d6f55a\",\"claim_parse_errors\":0,\"claim_records_overlay_count\":1,\"count\":21137,\"generated_at\":\"2026-07-07T07:15:15.187Z\",\"issuer_pubkey_spki_hex\":\"302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6\",\"method\":\"agent-tool-discoverability-standard/0.2\",\"schema\":\"sasame-validation-feed/0.2\",\"validation_type\":\"mcp-readiness\"}"
+    "signature": "2vcvEyx7maVWp8JCW7kFJZWsT+RTA/hs2sEg53lxV50QKg3S6JQX4YEael+l53trPUZZEI2EKImCs+JBbzsSCg==",
+    "canonical_json": "{\"attestations_file\":\"https://github.com/shigeki7777/sasame-mcp-observatory/releases/download/validation-v0/attestations.jsonl\",\"attestations_sha256\":\"d6fd154cf9d070dd4b07dede2c6b772de7ab7855ebd358bc2a4e8cba14d6f55a\",\"claim_parse_errors\":0,\"claim_records_overlay_count\":1,\"count\":21137,\"generated_at\":\"2026-07-08T07:15:28.612Z\",\"issuer_pubkey_spki_hex\":\"302a300506032b6570032100439ce47d384c8ceb07c9040aef780cc3a2ba5a63c14027ad77ab458111f20fb6\",\"method\":\"agent-tool-discoverability-standard/0.2\",\"schema\":\"sasame-validation-feed/0.2\",\"validation_type\":\"mcp-readiness\"}"
   }
 }
