@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -23,10 +23,10 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 4,
-    "release_downloads_total": 21,
-    "pages_traffic_views_14d": 23,
+    "release_downloads_total": 22,
+    "pages_traffic_views_14d": 22,
     "pages_traffic_uniques_14d": 6,
-    "clones_14d": 439,
+    "clones_14d": 446,
     "badge_installs": 0,
     "badge_impressions": 0
   },
@@ -41,7 +41,7 @@
     "external_claims": []
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-09T07:15:17.407454+00:00",
+  "generated_at": "2026-07-10T07:15:30.333963+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -53,28 +53,28 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 7174,
-    "external_tool_calls": 86,
-    "real_arg_tool_calls": 12,
+    "mcp_client_sessions": 7661,
+    "external_tool_calls": 93,
+    "real_arg_tool_calls": 17,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
-    "registry_scanners": 2,
+    "registry_scanners": 3,
     "security_scanners": 0,
     "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "unknown_automation": 9,
-      "crawler": 28,
-      "registry_scanner": 2,
-      "ai_crawler": 7,
-      "self_test": 4,
-      "likely_human": 14
+      "registry_scanner": 3,
+      "unknown_automation": 10,
+      "ai_crawler": 8,
+      "crawler": 10,
+      "likely_human": 19,
+      "self_test": 12
     },
     "conversion_funnel": {
-      "reach_external_ips": 64,
-      "mcp_probe_initializes": 7174,
-      "tool_calls": 86,
-      "real_intent_calls": 12,
+      "reach_external_ips": 62,
+      "mcp_probe_initializes": 7661,
+      "tool_calls": 93,
+      "real_intent_calls": 17,
       "claim_calls": 0
     },
     "observer_roster": [
@@ -82,7 +82,7 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 153
+        "hits": 230
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
@@ -94,19 +94,19 @@
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 72
+        "hits": 103
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 18
+        "hits": 17
       },
       {
-        "as_org": "GTT-BACKBONE - GTT Communications Inc., US",
-        "country": "FR",
-        "primary_class": "unknown_automation",
-        "hits": 12
+        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "country": "US",
+        "primary_class": "self_test",
+        "hits": 14
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
@@ -118,48 +118,48 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "likely_human",
-        "hits": 8
-      },
-      {
-        "as_org": "HETZNER-AS - Hetzner Online GmbH, DE",
-        "country": "DE",
-        "primary_class": "crawler",
-        "hits": 6
+        "hits": 12
       },
       {
         "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
         "country": "GB",
-        "primary_class": "ai_crawler",
-        "hits": 5
+        "primary_class": "self_test",
+        "hits": 10
       },
       {
-        "as_org": "APPLE-ENGINEERING - Apple Inc., US",
-        "country": "US",
-        "primary_class": "crawler",
-        "hits": 5
+        "as_org": "GTT-BACKBONE - GTT Communications Inc., US",
+        "country": "FR",
+        "primary_class": "unknown_automation",
+        "hits": 8
+      },
+      {
+        "as_org": "CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN",
+        "country": "CN",
+        "primary_class": "likely_human",
+        "hits": 8
       }
     ],
     "top_observer_orgs": [
-      "AMAZON-02 - Amazon.com, Inc., US",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+      "AMAZON-02 - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+      "CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN",
       "AMAZON-AES - Amazon.com, Inc., US",
-      "APPLE-ENGINEERING - Apple Inc., US",
-      "FACEBOOK - Facebook, Inc., US",
-      "HETZNER-AS - Hetzner Online GmbH, DE",
-      "OVH - OVH SAS, FR"
+      "CNCGROUP-SH - China Unicom Shanghai network, CN",
+      "AS-COLOCROSSING - HostPapa, US",
+      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
     ],
     "top_interest_paths": [
-      "/robots.txt",
       "/",
       "/.well-known/agent-card.json",
+      "/robots.txt",
+      "/llms.txt",
+      "/token",
       "/.well-known/oauth-authorization-server",
       "/.well-known/oauth-protected-resource",
-      "/token",
-      "/.well-known/x402",
-      "/llms.txt"
+      "/.well-known/x402"
     ],
-    "generated_at": "2026-07-09T07:15:14.606959+00:00",
+    "generated_at": "2026-07-10T07:15:27.399774+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -176,23 +176,23 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 86,
-        "window_start": 20,
-        "delta": 66,
+        "now": 93,
+        "window_start": 28,
+        "delta": 65,
         "direction": "up",
         "days": 7
       },
       "real_arg_tool_calls": {
-        "now": 12,
+        "now": 17,
         "window_start": 1,
-        "delta": 11,
+        "delta": 16,
         "direction": "up",
         "days": 7
       },
       "pages_views_14d": {
-        "now": 23,
-        "window_start": 32,
-        "delta": -9,
+        "now": 22,
+        "window_start": 28,
+        "delta": -6,
         "direction": "down",
         "days": 7
       }
