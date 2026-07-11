@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "north_star": {
     "metric": "external_claims",
     "value": 0,
@@ -23,12 +23,12 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 4,
-    "release_downloads_total": 22,
-    "pages_traffic_views_14d": 22,
-    "pages_traffic_uniques_14d": 6,
-    "clones_14d": 446,
-    "badge_installs": 0,
-    "badge_impressions": 0
+    "release_downloads_total": 23,
+    "pages_traffic_views_14d": 19,
+    "pages_traffic_uniques_14d": 4,
+    "clones_14d": 466,
+    "badge_installs": 24,
+    "badge_impressions": 24
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
@@ -41,7 +41,7 @@
     "external_claims": []
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-10T07:15:30.333963+00:00",
+  "generated_at": "2026-07-11T07:15:19.964276+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -53,8 +53,8 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 7661,
-    "external_tool_calls": 93,
+    "mcp_client_sessions": 8180,
+    "external_tool_calls": 94,
     "real_arg_tool_calls": 17,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
@@ -63,17 +63,17 @@
     "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
+      "unknown_automation": 9,
+      "crawler": 12,
       "registry_scanner": 3,
-      "unknown_automation": 10,
-      "ai_crawler": 8,
-      "crawler": 10,
-      "likely_human": 19,
-      "self_test": 12
+      "likely_human": 35,
+      "ai_crawler": 9,
+      "self_test": 3
     },
     "conversion_funnel": {
-      "reach_external_ips": 62,
-      "mcp_probe_initializes": 7661,
-      "tool_calls": 93,
+      "reach_external_ips": 71,
+      "mcp_probe_initializes": 8180,
+      "tool_calls": 94,
       "real_intent_calls": 17,
       "claim_calls": 0
     },
@@ -82,19 +82,25 @@
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 230
+        "hits": 142
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 124
+        "hits": 118
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 103
+        "hits": 70
+      },
+      {
+        "as_org": "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
+        "country": "US",
+        "primary_class": "likely_human",
+        "hits": 24
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
@@ -103,63 +109,57 @@
         "hits": 17
       },
       {
-        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-        "country": "US",
-        "primary_class": "self_test",
-        "hits": 14
-      },
-      {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
         "hits": 12
       },
       {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 12
-      },
-      {
         "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
         "country": "GB",
-        "primary_class": "self_test",
-        "hits": 10
+        "primary_class": "ai_crawler",
+        "hits": 9
       },
       {
-        "as_org": "GTT-BACKBONE - GTT Communications Inc., US",
-        "country": "FR",
+        "as_org": "CACHENETWORKS - CacheFly, US",
+        "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 8
+        "hits": 7
       },
       {
-        "as_org": "CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN",
-        "country": "CN",
-        "primary_class": "likely_human",
-        "hits": 8
+        "as_org": "COMCAST-7922 - Comcast Cable Communications, LLC, US",
+        "country": "US",
+        "primary_class": "crawler",
+        "hits": 6
+      },
+      {
+        "as_org": "APPLE-ENGINEERING - Apple Inc., US",
+        "country": "US",
+        "primary_class": "crawler",
+        "hits": 5
       }
     ],
     "top_observer_orgs": [
+      "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "AMAZON-02 - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN",
+      "APPLE-ENGINEERING - Apple Inc., US",
       "AMAZON-AES - Amazon.com, Inc., US",
-      "CNCGROUP-SH - China Unicom Shanghai network, CN",
       "AS-COLOCROSSING - HostPapa, US",
-      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
+      "CACHENETWORKS - CacheFly, US"
     ],
     "top_interest_paths": [
       "/",
-      "/.well-known/agent-card.json",
       "/robots.txt",
-      "/llms.txt",
       "/token",
-      "/.well-known/oauth-authorization-server",
-      "/.well-known/oauth-protected-resource",
-      "/.well-known/x402"
+      "/.well-known/agent-card.json",
+      "/llms.txt",
+      "/premium/research",
+      "/.well-known/x402",
+      "/observatory/check/index.html"
     ],
-    "generated_at": "2026-07-10T07:15:27.399774+00:00",
+    "generated_at": "2026-07-11T07:15:16.942252+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -176,9 +176,9 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 93,
-        "window_start": 28,
-        "delta": 65,
+        "now": 94,
+        "window_start": 30,
+        "delta": 64,
         "direction": "up",
         "days": 7
       },
@@ -190,10 +190,10 @@
         "days": 7
       },
       "pages_views_14d": {
-        "now": 22,
-        "window_start": 28,
-        "delta": -6,
-        "direction": "down",
+        "now": 19,
+        "window_start": 14,
+        "delta": 5,
+        "direction": "up",
         "days": 7
       }
     }
