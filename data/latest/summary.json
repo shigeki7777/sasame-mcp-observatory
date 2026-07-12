@@ -1,22 +1,23 @@
 {
-  "generated_at": "2026-07-11T04:30:40.909Z",
+  "generated_at": "2026-07-12T04:30:46.441Z",
   "source": "https://live-vps.sasame.online/observatory/",
   "standard": "agent-tool-discoverability-standard/0.2",
   "indexed_total": 30000,
-  "auditable_endpoints": 21477,
-  "audited": 23404,
-  "observed_ready": 3581,
-  "signed_certificates": 3569,
-  "observed_ready_file_rows": 3581,
+  "auditable_endpoints": 21393,
+  "audited": 23721,
+  "observed_ready": 3631,
+  "signed_certificates": 3619,
+  "observed_ready_file_rows": 3631,
   "by_source": {
-    "official MCP registry": 15568,
-    "Glama": 14432
+    "official MCP registry": 15631,
+    "PulseMCP": 293,
+    "Glama": 14076
   },
   "grade_counts": {
-    "D": 19490,
-    "B": 2991,
-    "C": 333,
-    "A": 590
+    "D": 19768,
+    "B": 3027,
+    "C": 322,
+    "A": 604
   },
   "categories": [
     {
