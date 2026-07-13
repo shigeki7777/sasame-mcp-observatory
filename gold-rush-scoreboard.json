@@ -23,12 +23,12 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 4,
-    "release_downloads_total": 25,
+    "release_downloads_total": 26,
     "pages_traffic_views_14d": 20,
     "pages_traffic_uniques_14d": 6,
     "clones_14d": 435,
-    "badge_installs": 0,
-    "badge_impressions": 0
+    "badge_installs": 6,
+    "badge_impressions": 12
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
@@ -41,7 +41,7 @@
     "external_claims": []
   },
   "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-13T07:15:32.942386+00:00",
+  "generated_at": "2026-07-13T19:18:48.503593+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -53,29 +53,29 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 9176,
-    "external_tool_calls": 101,
-    "real_arg_tool_calls": 17,
+    "mcp_client_sessions": 9439,
+    "external_tool_calls": 104,
+    "real_arg_tool_calls": 18,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
-    "registry_scanners": 4,
+    "registry_scanners": 5,
     "security_scanners": 0,
     "hostile_probe_ips": 1,
     "canary_hits": 0,
     "client_class_counts": {
-      "likely_human": 15,
-      "registry_scanner": 4,
-      "ai_crawler": 8,
-      "crawler": 13,
-      "unknown_automation": 8,
-      "hostile_probe": 1,
-      "mcp_client": 1
+      "likely_human": 32,
+      "registry_scanner": 5,
+      "ai_crawler": 11,
+      "crawler": 16,
+      "unknown_automation": 16,
+      "mcp_client": 2,
+      "hostile_probe": 1
     },
     "conversion_funnel": {
-      "reach_external_ips": 50,
-      "mcp_probe_initializes": 9176,
-      "tool_calls": 101,
-      "real_intent_calls": 17,
+      "reach_external_ips": 83,
+      "mcp_probe_initializes": 9439,
+      "tool_calls": 104,
+      "real_intent_calls": 18,
       "claim_calls": 0
     },
     "observer_roster": [
@@ -83,31 +83,43 @@
         "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
         "country": "GB",
         "primary_class": "ai_crawler",
-        "hits": 316
-      },
-      {
-        "as_org": "AS-COLOCROSSING - HostPapa, US",
-        "country": "US",
-        "primary_class": "registry_scanner",
-        "hits": 117
+        "hits": 322
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 103
+        "hits": 174
+      },
+      {
+        "as_org": "AS-COLOCROSSING - HostPapa, US",
+        "country": "US",
+        "primary_class": "registry_scanner",
+        "hits": 157
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 77
+        "hits": 100
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "hits": 29
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 19
+        "hits": 26
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "registry_scanner",
+        "hits": 16
       },
       {
         "as_org": "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
@@ -122,45 +134,33 @@
         "hits": 15
       },
       {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "registry_scanner",
-        "hits": 12
-      },
-      {
         "as_org": "RAILWAY - Railway, US",
         "country": "US",
         "primary_class": "unknown_automation",
         "hits": 11
-      },
-      {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 8
       }
     ],
     "top_observer_orgs": [
-      "AMAZON-02 - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+      "AMAZON-02 - Amazon.com, Inc., US",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
       "AMAZON-AES - Amazon.com, Inc., US",
+      "CNW - Connect Northwest Internet Services, LLC, US",
+      "FACEBOOK - Facebook, Inc., US",
       "INTERNETBOLAGET - Internet Vikings International AB, SE",
-      "DIGI-RO - DIGI ROMANIA S.A., RO",
-      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
-      "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN"
+      "DIGI-RO - DIGI ROMANIA S.A., RO"
     ],
     "top_interest_paths": [
       "/",
       "/robots.txt",
+      "/observatory/check/index.html",
       "/.well-known/agent-card.json",
       "/token",
       "/.well-known/x402",
       "/openapi.json",
-      "/.well-known/agent.json",
-      "/sitemap.xml"
+      "/.well-known/agent.json"
     ],
-    "generated_at": "2026-07-13T07:15:30.335472+00:00",
+    "generated_at": "2026-07-13T19:18:45.844301+00:00",
     "trend_7d": {
       "external_claims": {
         "now": 0,
@@ -177,16 +177,16 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 101,
-        "window_start": 51,
-        "delta": 50,
+        "now": 104,
+        "window_start": 60,
+        "delta": 44,
         "direction": "up",
         "days": 7
       },
       "real_arg_tool_calls": {
-        "now": 17,
+        "now": 18,
         "window_start": 6,
-        "delta": 11,
+        "delta": 12,
         "direction": "up",
         "days": 7
       },
