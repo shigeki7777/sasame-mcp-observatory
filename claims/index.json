@@ -1,6 +1,6 @@
 {
   "schema": "sasame-claim-receipts-index/0.1",
-  "generated_at": "2026-07-13T19:18:49.085Z",
+  "generated_at": "2026-07-14T07:16:07.615Z",
   "count": 1,
   "source_of_truth": "census/claims.jsonl written by claim_confirm after owner-control proof",
   "public_note": "Claim receipts prove endpoint control only. They are not safety/quality/KYC/custody/paid ranking/tax documents.",
