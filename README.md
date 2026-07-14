@@ -12,9 +12,9 @@ We continuously and externally audit public MCP (Model Context Protocol) servers
 
 ## The numbers (latest)
 
-- **30000** public MCP entries indexed (21346 with an auditable remote endpoint)
-- **24386** audited · **3516** named rows currently meet the **Observed MCP-Ready** bar (A/B)
-- **3504** signed certificates copied into this snapshot
+- **30000** public MCP entries indexed (21255 with an auditable remote endpoint)
+- **24788** audited · **3584** named rows currently meet the **Observed MCP-Ready** bar (A/B)
+- **3572** signed certificates copied into this snapshot
 - Coverage and freshness: [`data/latest/coverage.json`](data/latest/coverage.json) · provenance and license boundary: [`data/latest/provenance.json`](data/latest/provenance.json)
 - Full numbers: [`data/latest/summary.json`](data/latest/summary.json)
 
@@ -72,4 +72,4 @@ This is a **v0.2 draft**, not affiliated with the official MCP project. Observat
 
 This repository contains public measurement data, documentation, and public-safe contribution tasks only. Internal business logic, monetization design, compliance review, moderation policy, telemetry internals, and private operating specifications are maintained in SaSame private repositories.
 
-_Generated 2026-07-13T04:30:46.559Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
+_Generated 2026-07-14T04:30:55.103Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
