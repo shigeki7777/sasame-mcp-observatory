@@ -13,6 +13,8 @@ Every contribution must keep the one moat that makes this trustworthy:
 3. **Reproducible or it doesn't ship.** Every grade/claim must be re-runnable by a stranger and carry its own falsification procedure (evidence hashes, the offline verifier).
 4. **Public data + safe probing only.** No private data, no PII enrichment, no auth-bypass, no payment calls, no ToS-violating mass automation.
 
+Every listed endpoint also carries a three-state **operational state** — `observed_callable` (last check succeeded), `observed_not_callable` (last check failed to initialize or list tools), or `insufficient_recent_evidence` (never observed, or not observed recently enough to say). Insufficient evidence is **not** a failure — an endpoint we simply haven't rechecked lately is reported as unknown, never folded into a negative result.
+
 ## Public scope boundary
 
 This public repository carries only:
