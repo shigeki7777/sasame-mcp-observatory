@@ -1,10 +1,14 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "north_star": {
-    "metric": "external_claims",
+    "metric": "first_organic_paid_revenue",
+    "target": 1,
     "value": 0,
-    "definition": "owner-proven control of a non-SaSame endpoint"
+    "met": false,
+    "counted": [],
+    "definition": "independent external live payment plus exact, verifiable checkout fulfillment",
+    "source": "docs/V1/EVIDENCE/paid-revenue-ledger.jsonl"
   },
   "measured": {
     "passports_total": 21137,
@@ -23,12 +27,12 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 4,
-    "release_downloads_total": 27,
-    "pages_traffic_views_14d": 19,
+    "release_downloads_total": 30,
+    "pages_traffic_views_14d": 20,
     "pages_traffic_uniques_14d": 5,
-    "clones_14d": 491,
-    "badge_installs": 7,
-    "badge_impressions": 42
+    "clones_14d": 486,
+    "badge_installs": 9,
+    "badge_impressions": 13
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
@@ -36,12 +40,12 @@
   },
   "claim_pipeline": {
     "source_of_truth": "census/claims.jsonl written by claim_confirm after owner-control proof",
-    "north_star_uses": "canonical_claim_records_not_passports_projection",
-    "visibility_delay_note": "public Observatory pages may refresh later, but scoreboard external_claims updates from the claim feed immediately",
+    "role": "supporting_adoption_metric_not_current_north_star",
+    "visibility_delay_note": "public Observatory pages may refresh later, but external_claims updates from the claim feed immediately",
     "external_claims": []
   },
-  "framing": "World's largest *claimable* Agent Passport Registry is the aim. We do NOT claim 'world's largest' yet (unproven). We do NOT chase raw passport count (count-first deferred until the claim gate is proven). The honest headline is external_claims.",
-  "generated_at": "2026-07-14T07:16:07.042750+00:00",
+  "framing": "Protocol Observatory and MCP Owner Intelligence are the active product hierarchy. External claims are supporting adoption evidence. The current headline metric is first_organic_paid_revenue, counted only after live payment and exact verified fulfillment.",
+  "generated_at": "2026-07-15T07:15:52.807385+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -53,115 +57,121 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 9679,
+    "mcp_client_sessions": 10170,
     "external_tool_calls": 104,
     "real_arg_tool_calls": 18,
     "claim_related_calls": 0,
     "pricing_related_calls": 4,
-    "registry_scanners": 4,
+    "registry_scanners": 2,
     "security_scanners": 0,
     "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "registry_scanner": 4,
-      "crawler": 25,
-      "ai_crawler": 12,
-      "likely_human": 63,
-      "unknown_automation": 17,
-      "mcp_client": 1
+      "crawler": 39,
+      "registry_scanner": 2,
+      "likely_human": 46,
+      "ai_crawler": 13,
+      "unknown_automation": 26
     },
     "conversion_funnel": {
-      "reach_external_ips": 122,
-      "mcp_probe_initializes": 9679,
+      "reach_external_ips": 126,
+      "mcp_probe_initializes": 10170,
       "tool_calls": 104,
       "real_intent_calls": 18,
       "claim_calls": 0
     },
     "observer_roster": [
       {
+        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "crawler",
+        "hits": 118
+      },
+      {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 117
+        "hits": 118
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 103
+        "hits": 56
+      },
+      {
+        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 32
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
-        "primary_class": "crawler",
-        "hits": 86
-      },
-      {
-        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 39
+        "primary_class": "ai_crawler",
+        "hits": 19
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "likely_human",
-        "hits": 29
-      },
-      {
-        "as_org": "AMAZON-02 - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "ai_crawler",
-        "hits": 17
-      },
-      {
-        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 16
-      },
-      {
-        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-        "country": "GB",
-        "primary_class": "ai_crawler",
-        "hits": 8
-      },
-      {
-        "as_org": "TWITTER - Twitter Inc., US",
-        "country": "US",
-        "primary_class": "crawler",
-        "hits": 8
+        "hits": 15
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 8
+        "hits": 12
+      },
+      {
+        "as_org": "LEVEL3 - Level 3 Parent, LLC, US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "hits": 11
+      },
+      {
+        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "country": "GB",
+        "primary_class": "ai_crawler",
+        "hits": 9
+      },
+      {
+        "as_org": "TWITTER - Twitter Inc., US",
+        "country": "US",
+        "primary_class": "crawler",
+        "hits": 7
       }
     ],
     "top_observer_orgs": [
       "AMAZON-02 - Amazon.com, Inc., US",
+      "AMAZON-AES - Amazon.com, Inc., US",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "AMAZON-AES - Amazon.com, Inc., US",
-      "CNW - Connect Northwest Internet Services, LLC, US",
-      "GOOGLE - Google LLC, US",
       "LEVEL3 - Level 3 Parent, LLC, US",
-      "OVH - OVH SAS, FR"
+      "FACEBOOK - Facebook, Inc., US",
+      "OVH - OVH SAS, FR",
+      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
     ],
     "top_interest_paths": [
-      "/",
       "/robots.txt",
+      "/",
       "/analytics/plans/index.html",
-      "/observatory/check/index.html",
       "/.well-known/agent-card.json",
       "/.well-known/x402",
       "/openapi.json",
+      "/observatory/check/index.html",
       "/token"
     ],
-    "generated_at": "2026-07-14T07:16:04.214216+00:00",
+    "generated_at": "2026-07-15T07:15:49.164607+00:00",
     "trend_7d": {
-      "external_claims": {
+      "first_organic_paid_revenue": {
+        "now": 0,
+        "window_start": null,
+        "delta": null,
+        "direction": "flat",
+        "days": 7
+      },
+      "external_claims_supporting_metric": {
         "now": 0,
         "window_start": 0,
         "delta": 0,
@@ -177,8 +187,8 @@
       },
       "external_tool_calls": {
         "now": 104,
-        "window_start": 60,
-        "delta": 44,
+        "window_start": 61,
+        "delta": 43,
         "direction": "up",
         "days": 7
       },
@@ -190,10 +200,10 @@
         "days": 7
       },
       "pages_views_14d": {
-        "now": 19,
-        "window_start": 19,
-        "delta": 0,
-        "direction": "flat",
+        "now": 20,
+        "window_start": 22,
+        "delta": -2,
+        "direction": "down",
         "days": 7
       }
     }
