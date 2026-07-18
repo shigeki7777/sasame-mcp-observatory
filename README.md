@@ -1,6 +1,12 @@
 # SaSame MCP Observatory
 
-> **Check your MCP → see the measured grade → claim the owner-controlled Readiness Passport.** SaSame publishes agent-readable readiness records for public MCP servers: reachable, callable, schema-valid, and re-checkable over time. Verification status only; never a safe/good/worth-using verdict.
+> **Check your MCP → see the measured grade → claim the owner-controlled Readiness Passport.** SaSame MCP Observatory is the **inspection and observation station of the SaSame MCP Factory** — SaSame publishes agent-readable readiness records for public MCP servers: reachable, callable, schema-valid, and re-checkable over time. Verification status only; never a safe/good/worth-using verdict.
+
+## Part of SaSame MCP Factory
+
+SaSame is now one modular **MCP Factory**: a production, distribution, inspection and continuous-observation system for Model Context Protocol servers. Multiple creator entry points (idea, blueprint, unfinished build, finished build, live MCP, underperforming MCP, portfolio monitoring) feed one Factory Lifecycle — creators keep their product, repo, code, data and credentials; the Factory supplies market intelligence, blueprint normalization, inspection, runtime verification, shipment manifests, distribution, AEO, neutral observation, and repair/reverification. **This repo is the Factory's inspection and observation station** — the independent observation, conformance and evidence capability that previously named the company, preserved as a permanent core layer of the Factory. Neutrality, evidence, correction, and no-endorsement are unchanged.
+
+Sibling stations in the Factory: [sasame-mcp](https://github.com/shigeki7777/sasame-mcp) (the Factory's public MCP entry point) · [gold-rush-town](https://github.com/shigeki7777/gold-rush-town) (the Factory's public demonstration/engagement station) · [mcp-readiness](https://github.com/shigeki7777/mcp-readiness) (the Factory's forkable local inspection CLI). Public site: https://srl-sasame.com.
 
 **🪪 Is your MCP server listed here? [Claim your MCP Readiness Passport free →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — prove control via `.well-known` / DNS / repo and turn an outside observation into an owner-confirmed record. No account setup, no cost, no sales pitch.
 
