@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "north_star": {
     "metric": "first_organic_paid_revenue",
     "target": 1,
@@ -27,12 +27,12 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 4,
-    "release_downloads_total": 35,
-    "pages_traffic_views_14d": 12,
+    "release_downloads_total": 36,
+    "pages_traffic_views_14d": 10,
     "pages_traffic_uniques_14d": 4,
-    "clones_14d": 442,
-    "badge_installs": 15,
-    "badge_impressions": 15
+    "clones_14d": 434,
+    "badge_installs": 2,
+    "badge_impressions": 2
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
@@ -45,7 +45,7 @@
     "external_claims": []
   },
   "framing": "Protocol Observatory and MCP Owner Intelligence are the active product hierarchy. External claims are supporting adoption evidence. The current headline metric is first_organic_paid_revenue, counted only after live payment and exact verified fulfillment.",
-  "generated_at": "2026-07-20T07:15:32.800660+00:00",
+  "generated_at": "2026-07-21T07:15:16.654624+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -57,54 +57,54 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 15391,
-    "external_tool_calls": 121,
-    "real_arg_tool_calls": 22,
+    "mcp_client_sessions": 15858,
+    "external_tool_calls": 137,
+    "real_arg_tool_calls": 23,
     "claim_related_calls": 0,
-    "pricing_related_calls": 4,
-    "registry_scanners": 3,
+    "pricing_related_calls": 5,
+    "registry_scanners": 2,
     "security_scanners": 0,
-    "hostile_probe_ips": 2,
+    "hostile_probe_ips": 1,
     "canary_hits": 0,
     "client_class_counts": {
-      "crawler": 17,
-      "registry_scanner": 3,
-      "likely_human": 35,
-      "ai_crawler": 9,
-      "hostile_probe": 2,
-      "unknown_automation": 6
+      "registry_scanner": 2,
+      "crawler": 26,
+      "ai_crawler": 8,
+      "likely_human": 17,
+      "unknown_automation": 4,
+      "hostile_probe": 1
     },
     "conversion_funnel": {
-      "reach_external_ips": 72,
-      "mcp_probe_initializes": 15391,
-      "tool_calls": 121,
-      "real_intent_calls": 22,
+      "reach_external_ips": 58,
+      "mcp_probe_initializes": 15858,
+      "tool_calls": 137,
+      "real_intent_calls": 23,
       "claim_calls": 0
     },
     "observer_roster": [
       {
-        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-        "country": "US",
-        "primary_class": "unknown_automation",
-        "hits": 184
-      },
-      {
         "as_org": "HETZNER-AS - Hetzner Online GmbH, DE",
         "country": "DE",
         "primary_class": "crawler",
-        "hits": 144
+        "hits": 247
+      },
+      {
+        "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "country": "US",
+        "primary_class": "unknown_automation",
+        "hits": 116
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 75
+        "hits": 81
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 47
+        "hits": 63
       },
       {
         "as_org": "HETZNER-CLOUD2-AS - Hetzner Online GmbH, DE",
@@ -113,57 +113,57 @@
         "hits": 22
       },
       {
-        "as_org": "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
-        "country": "US",
-        "primary_class": "likely_human",
-        "hits": 19
-      },
-      {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 16
+        "hits": 19
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
-        "primary_class": "hostile_probe",
-        "hits": 15
+        "primary_class": "likely_human",
+        "hits": 12
+      },
+      {
+        "as_org": "OVH - OVH SAS, FR",
+        "country": "FR",
+        "primary_class": "crawler",
+        "hits": 11
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 14
+        "hits": 10
       },
       {
-        "as_org": "RAILWAY - Railway, US",
+        "as_org": "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
         "country": "US",
-        "primary_class": "unknown_automation",
-        "hits": 11
+        "primary_class": "likely_human",
+        "hits": 10
       }
     ],
     "top_observer_orgs": [
       "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
-      "AMAZON-02 - Amazon.com, Inc., US",
-      "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "FACEBOOK - Facebook, Inc., US",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "OVH - OVH SAS, FR",
+      "FACEBOOK - Facebook, Inc., US",
+      "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
       "HETZNER-AS - Hetzner Online GmbH, DE",
-      "AS-COLOCROSSING - HostPapa, US"
+      "AMAZON-02 - Amazon.com, Inc., US",
+      "APPLE-ENGINEERING - Apple Inc., US",
+      "AMAZON-AES - Amazon.com, Inc., US"
     ],
     "top_interest_paths": [
       "/robots.txt",
-      "/",
       "/start/index.html",
-      "/observatory/check/index.html",
-      "/token",
+      "/",
       "/.well-known/agent-card.json",
-      "/.well-known/agent.json",
-      "/.well-known/x402"
+      "/activation/index.html",
+      "/token",
+      "/premium/research",
+      "/analytics/index.html"
     ],
-    "generated_at": "2026-07-20T07:15:30.015306+00:00",
+    "generated_at": "2026-07-21T07:15:13.653185+00:00",
     "trend_7d": {
       "first_organic_paid_revenue": {
         "now": 0,
@@ -187,23 +187,23 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 121,
+        "now": 137,
         "window_start": 104,
-        "delta": 17,
+        "delta": 33,
         "direction": "up",
         "days": 7
       },
       "real_arg_tool_calls": {
-        "now": 22,
+        "now": 23,
         "window_start": 18,
-        "delta": 4,
+        "delta": 5,
         "direction": "up",
         "days": 7
       },
       "pages_views_14d": {
-        "now": 12,
-        "window_start": 20,
-        "delta": -8,
+        "now": 10,
+        "window_start": 19,
+        "delta": -9,
         "direction": "down",
         "days": 7
       }
