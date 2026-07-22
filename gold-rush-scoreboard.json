@@ -1,6 +1,6 @@
 {
   "schema": "gold-rush-scoreboard-v0.1",
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "north_star": {
     "metric": "first_organic_paid_revenue",
     "target": 1,
@@ -27,12 +27,12 @@
     "github_forks": 0,
     "github_watchers": 0,
     "github_open_issues": 4,
-    "release_downloads_total": 36,
-    "pages_traffic_views_14d": 10,
+    "release_downloads_total": 37,
+    "pages_traffic_views_14d": 8,
     "pages_traffic_uniques_14d": 4,
-    "clones_14d": 434,
-    "badge_installs": 2,
-    "badge_impressions": 2
+    "clones_14d": 428,
+    "badge_installs": 0,
+    "badge_impressions": 0
   },
   "not_tracked_yet": {
     "dataset_mentions": null,
@@ -45,7 +45,7 @@
     "external_claims": []
   },
   "framing": "Protocol Observatory and MCP Owner Intelligence are the active product hierarchy. External claims are supporting adoption evidence. The current headline metric is first_organic_paid_revenue, counted only after live payment and exact verified fulfillment.",
-  "generated_at": "2026-07-21T07:15:16.654624+00:00",
+  "generated_at": "2026-07-22T07:15:18.242549+00:00",
   "notable_events": [
     {
       "date": "2026-06-19",
@@ -57,72 +57,65 @@
     }
   ],
   "observer_intelligence": {
-    "mcp_client_sessions": 15858,
-    "external_tool_calls": 137,
-    "real_arg_tool_calls": 23,
+    "mcp_client_sessions": 16337,
+    "external_tool_calls": 155,
+    "real_arg_tool_calls": 27,
     "claim_related_calls": 0,
-    "pricing_related_calls": 5,
-    "registry_scanners": 2,
+    "pricing_related_calls": 8,
+    "registry_scanners": 3,
     "security_scanners": 0,
-    "hostile_probe_ips": 1,
+    "hostile_probe_ips": 0,
     "canary_hits": 0,
     "client_class_counts": {
-      "registry_scanner": 2,
-      "crawler": 26,
-      "ai_crawler": 8,
+      "crawler": 15,
+      "registry_scanner": 3,
       "likely_human": 17,
-      "unknown_automation": 4,
-      "hostile_probe": 1
+      "unknown_automation": 8,
+      "ai_crawler": 10
     },
     "conversion_funnel": {
-      "reach_external_ips": 58,
-      "mcp_probe_initializes": 15858,
-      "tool_calls": 137,
-      "real_intent_calls": 23,
+      "reach_external_ips": 53,
+      "mcp_probe_initializes": 16337,
+      "tool_calls": 155,
+      "real_intent_calls": 27,
       "claim_calls": 0
     },
     "observer_roster": [
       {
-        "as_org": "HETZNER-AS - Hetzner Online GmbH, DE",
-        "country": "DE",
-        "primary_class": "crawler",
-        "hits": 247
-      },
-      {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "unknown_automation",
-        "hits": 116
+        "hits": 118
       },
       {
         "as_org": "AS-COLOCROSSING - HostPapa, US",
         "country": "US",
         "primary_class": "registry_scanner",
-        "hits": 81
+        "hits": 83
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "crawler",
-        "hits": 63
-      },
-      {
-        "as_org": "HETZNER-CLOUD2-AS - Hetzner Online GmbH, DE",
-        "country": "DE",
-        "primary_class": "hostile_probe",
-        "hits": 22
+        "hits": 56
       },
       {
         "as_org": "AMAZON-02 - Amazon.com, Inc., US",
         "country": "US",
         "primary_class": "ai_crawler",
-        "hits": 19
+        "hits": 22
       },
       {
         "as_org": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
         "country": "US",
         "primary_class": "likely_human",
         "hits": 12
+      },
+      {
+        "as_org": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "country": "GB",
+        "primary_class": "ai_crawler",
+        "hits": 11
       },
       {
         "as_org": "OVH - OVH SAS, FR",
@@ -140,30 +133,36 @@
         "as_org": "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
         "country": "US",
         "primary_class": "likely_human",
-        "hits": 10
+        "hits": 7
+      },
+      {
+        "as_org": "AMAZON-AES - Amazon.com, Inc., US",
+        "country": "US",
+        "primary_class": "likely_human",
+        "hits": 4
       }
     ],
     "top_observer_orgs": [
-      "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
       "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
-      "FACEBOOK - Facebook, Inc., US",
+      "ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN",
       "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
-      "HETZNER-AS - Hetzner Online GmbH, DE",
+      "AMAZON-AES - Amazon.com, Inc., US",
       "AMAZON-02 - Amazon.com, Inc., US",
-      "APPLE-ENGINEERING - Apple Inc., US",
-      "AMAZON-AES - Amazon.com, Inc., US"
+      "OVH - OVH SAS, FR",
+      "HETZNER-AS - Hetzner Online GmbH, DE",
+      "DIGITALOCEAN-ASN - DigitalOcean, LLC, US"
     ],
     "top_interest_paths": [
       "/robots.txt",
-      "/start/index.html",
       "/",
-      "/.well-known/agent-card.json",
-      "/activation/index.html",
+      "/start/index.html",
       "/token",
       "/premium/research",
-      "/analytics/index.html"
+      "/.well-known/agent-card.json",
+      "/analytics/interest-next.html",
+      "/correction/index.html"
     ],
-    "generated_at": "2026-07-21T07:15:13.653185+00:00",
+    "generated_at": "2026-07-22T07:15:15.410068+00:00",
     "trend_7d": {
       "first_organic_paid_revenue": {
         "now": 0,
@@ -187,23 +186,23 @@
         "days": 7
       },
       "external_tool_calls": {
-        "now": 137,
+        "now": 155,
         "window_start": 104,
-        "delta": 33,
+        "delta": 51,
         "direction": "up",
         "days": 7
       },
       "real_arg_tool_calls": {
-        "now": 23,
+        "now": 27,
         "window_start": 18,
-        "delta": 5,
+        "delta": 9,
         "direction": "up",
         "days": 7
       },
       "pages_views_14d": {
-        "now": 10,
-        "window_start": 19,
-        "delta": -9,
+        "now": 8,
+        "window_start": 20,
+        "delta": -12,
         "direction": "down",
         "days": 7
       }
