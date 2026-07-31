@@ -72,4 +72,4 @@ This is a **v0.4 draft**, not affiliated with the official MCP project. Observat
 
 This repository contains public measurement data, documentation, and public-safe contribution tasks only. Internal business logic, monetization design, compliance review, moderation policy, telemetry internals, and private operating specifications are maintained in SaSame private repositories.
 
-_Generated 2026-07-31T15:45:07.128Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
+_Generated 2026-07-31T15:49:19.239Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
