@@ -4,11 +4,11 @@
 <meta name="description" content="Outside-in, reproducible verification-status census of public MCP endpoints (June 2026): how many are reachable, callable, and schema-valid across fragmented registries. Verification status only — no risk verdict on any named server.">
 <link rel="canonical" href="https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html">
 <meta property="og:title" content="MCP Readiness Census — June 2026">
-<meta property="og:description" content="How many of 21,921 auditable public MCP endpoints are actually reachable, callable, and schema-valid. Verification status only.">
+<meta property="og:description" content="How many of 22,176 auditable public MCP endpoints are actually reachable, callable, and schema-valid. Verification status only.">
 <meta property="og:url" content="https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"MCP Readiness Census — June 2026","description":"Outside-in verification-status census of public MCP endpoints. Aggregate only; no risk verdict on any named server.","url":"https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html","creator":{"@type":"Organization","name":"SaSame SRL","url":"https://srl-sasame.com"},"isAccessibleForFree":true,"license":"https://shigeki7777.github.io/sasame-mcp-observatory/LICENSE","dateModified":"2026-07-27"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"MCP Readiness Census — June 2026","description":"Outside-in verification-status census of public MCP endpoints. Aggregate only; no risk verdict on any named server.","url":"https://shigeki7777.github.io/sasame-mcp-observatory/readiness-census-2026-06.html","creator":{"@type":"Organization","name":"SaSame SRL","url":"https://srl-sasame.com"},"isAccessibleForFree":true,"license":"https://shigeki7777.github.io/sasame-mcp-observatory/LICENSE","dateModified":"2026-07-31"}</script>
 <style>
 :root{--ground:#EEF1F2;--panel:#F7F9F9;--ink:#14202A;--muted:#5F6E76;--line:#D5DCDD;--teal:#0E6E6E;--teal-soft:#7FB0AE;--brass:#9A6B12;--grey:#B7C0C4;--maxw:1080px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
@@ -44,7 +44,7 @@ code{font-family:"Space Mono",monospace;background:#e7ecec;padding:1px 5px;borde
 </style></head>
 <body>
 <header class="site"><div class="wrap">
-<p class="eyebrow">SaSame Observatory &middot; Reproducible &middot; 2026-07-27</p>
+<p class="eyebrow">SaSame Observatory &middot; Reproducible &middot; 2026-07-31</p>
 <h1>MCP Readiness Census — June 2026</h1>
 <p class="thesis">An outside-in, reproducible measurement of how many public MCP endpoints are actually reachable, callable, and schema-valid across fragmented registries. <b>Verification status only — no risk verdict on any named server.</b></p>
 <div class="banner"><b>What this is &amp; isn't.</b> Every number below is an aggregate from a polite, outside-in probe (MCP <code>initialize</code> + <code>tools/list</code> + one read-only <code>tools/call</code>) graded against a public 10-criterion discoverability standard. A grade reflects <b>pass count, not safety, quality, or trust</b>. Failure patterns are aggregated; <b>no endpoint is named or scored as "bad" here</b>. Priced/x402 endpoints are recorded as delivery <i>unverified</i>, never asserted.</div>
@@ -52,32 +52,32 @@ code{font-family:"Space Mono",monospace;background:#e7ecec;padding:1px 5px;borde
 
 <section><div class="wrap">
 <h2>Scope</h2>
-<p class="note">Registry entries indexed across four public sources, reduced to auditable public endpoints, rolling-audited over time. Audit window 2026-06-17 → 2026-07-27.</p>
+<p class="note">Registry entries indexed across four public sources, reduced to auditable public endpoints, rolling-audited over time. Audit window 2026-06-17 → 2026-07-31.</p>
 <div class="cards">
 <div class="card"><div class="n">30,000</div><div class="l">Registry entries indexed</div></div>
-<div class="card"><div class="n">21,921</div><div class="l">Auditable public endpoints</div></div>
-<div class="card"><div class="n">29,971</div><div class="l">Audited (latest state)</div></div>
-<div class="card"><div class="n">4,079</div><div class="l">Observed-ready, re-checked</div></div>
+<div class="card"><div class="n">22,176</div><div class="l">Auditable public endpoints</div></div>
+<div class="card"><div class="n">35,174</div><div class="l">Audited (latest state)</div></div>
+<div class="card"><div class="n">2,835</div><div class="l">Observed-ready, re-checked</div></div>
 <div class="card"><div class="n">1</div><div class="l">Owner-claimed</div></div>
 </div></div></section>
 
 <section><div class="wrap">
 <h2>Readiness distribution</h2>
-<p class="note">Of 29,971 audited endpoints (latest state), share by outside-in grade. <b>Observed-ready = A or B.</b> Grade is a deterministic function of pass count against the standard — not a safety or quality verdict.</p>
-<div class="row"><div class="rl mono">A — top</div><div class="rt"><div class="rf" style="width:1.7%;background:var(--teal)"></div></div><div class="rv mono">504 &middot; 1.7%</div></div>
-<div class="row"><div class="rl mono">B</div><div class="rt"><div class="rf" style="width:10.8%;background:var(--teal-soft)"></div></div><div class="rv mono">3,229 &middot; 10.8%</div></div>
-<div class="row"><div class="rl mono">C</div><div class="rt"><div class="rf" style="width:85.8%;background:#cdb98a"></div></div><div class="rv mono">25,704 &middot; 85.8%</div></div>
-<div class="row"><div class="rl mono">D</div><div class="rt"><div class="rf" style="width:1.7%;background:#c4a04a"></div></div><div class="rv mono">511 &middot; 1.7%</div></div>
-<p class="note" style="margin-top:16px"><b>Observed-ready (A or B): 3,733 of 29,971 (12.5%).</b> On a single bounded read-only call, <b>1,950 of 29,971 (6.5%)</b> returned substantive content. These counts describe what was observable under one declared method at one point in time. They are NOT integration-success rates, availability guarantees, security findings, or a statement that the remaining records are unusable. Authentication requirements, the absence of a safely callable read-only tool, argument or context requirements, and transient errors are all counted as not-observed. Denominator = latest unique endpoint audit records; it is not the registry-side auditable count above.</p>
+<p class="note">Of 35,174 audited endpoints (latest state), share by outside-in grade. <b>Observed-ready = A or B.</b> Grade is a deterministic function of pass count against the standard — not a safety or quality verdict.</p>
+<div class="row"><div class="rl mono">A — top</div><div class="rt"><div class="rf" style="width:1.5%;background:var(--teal)"></div></div><div class="rv mono">517 &middot; 1.5%</div></div>
+<div class="row"><div class="rl mono">B</div><div class="rt"><div class="rf" style="width:9.6%;background:var(--teal-soft)"></div></div><div class="rv mono">3,362 &middot; 9.6%</div></div>
+<div class="row"><div class="rl mono">C</div><div class="rt"><div class="rf" style="width:87.4%;background:#cdb98a"></div></div><div class="rv mono">30,746 &middot; 87.4%</div></div>
+<div class="row"><div class="rl mono">D</div><div class="rt"><div class="rf" style="width:1.5%;background:#c4a04a"></div></div><div class="rv mono">526 &middot; 1.5%</div></div>
+<p class="note" style="margin-top:16px"><b>Observed-ready (A or B): 3,879 of 35,174 (11%).</b> On a single bounded read-only call, <b>1,989 of 35,174 (5.7%)</b> returned substantive content. These counts describe what was observable under one declared method at one point in time. They are NOT integration-success rates, availability guarantees, security findings, or a statement that the remaining records are unusable. Authentication requirements, the absence of a safely callable read-only tool, argument or context requirements, and transient errors are all counted as not-observed. Denominator = latest unique endpoint audit records; it is not the registry-side auditable count above.</p>
 </div></section>
 
 <section><div class="wrap">
 <h2>Registries disagree — cross-reference at least two</h2>
 <p class="note">Indexed entries by source. No single registry is a complete or authoritative slice of the ecosystem.</p>
 <table class="tbl"><tr><th>Source</th><th>Indexed entries</th></tr>
-<tr><td>Glama</td><td class="mono">15,458</td></tr><tr><td>official MCP registry</td><td class="mono">14,152</td></tr><tr><td>PulseMCP</td><td class="mono">390</td></tr>
+<tr><td>Glama</td><td class="mono">15,918</td></tr><tr><td>official MCP registry</td><td class="mono">14,082</td></tr>
 </table>
-<p class="note" style="margin-top:14px"><b>Overlap finding (2026-07-27):</b> two independent registries shared only <b>~0% of their union</b> (0 in both; 0 and 14,267 unique to each). A single source is a biased lens; buyers should cross-reference.</p>
+<p class="note" style="margin-top:14px"><b>Overlap finding (2026-07-31):</b> two independent registries shared only <b>~0% of their union</b> (0 in both; 0 and 14,765 unique to each). A single source is a biased lens; buyers should cross-reference.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -100,8 +100,8 @@ code{font-family:"Space Mono",monospace;background:#e7ecec;padding:1px 5px;borde
 </div></section>
 
 <footer><div class="wrap">
-<p>Deterministic, no LLM, reproducible. Aggregate verification-status only; no risk verdict on any named party. Source: <a href="https://live-vps.sasame.online/observatory/">https://live-vps.sasame.online/observatory/</a> &middot; standard <code>agent-tool-discoverability-standard/0.2</code>.</p>
-<p class="mono">data self_sha256: 5314865171cbcfed48a559af3cf6e420f04ca7a475452f987872cae329b5c69e</p>
+<p>Deterministic, no LLM, reproducible. Aggregate verification-status only; no risk verdict on any named party. Source: <a href="https://live-vps.sasame.online/observatory/">https://live-vps.sasame.online/observatory/</a> &middot; standard <code>agent-tool-discoverability-standard/0.4</code>.</p>
+<p class="mono">data self_sha256: 37119d6b9ad098770e6039ee094477348963e6b3a6963627a55bdeabda198d06</p>
 <p><a href="https://shigeki7777.github.io/sasame-mcp-observatory/">← Observatory home</a> &middot; <a href="https://shigeki7777.github.io/sasame-mcp-observatory/observers.html">Observer Census</a> &middot; <a href="https://shigeki7777.github.io/sasame-mcp-observatory/gold-vein.html">Gold Vein</a></p>
 </div></footer>
 </body></html>

@@ -1,12 +1,6 @@
 # SaSame MCP Observatory
 
-> **Check your MCP → see the measured grade → claim the owner-controlled Readiness Passport.** SaSame MCP Observatory is the **inspection and observation station of the SaSame MCP Factory** — SaSame publishes agent-readable readiness records for public MCP servers: reachable, callable, schema-valid, and re-checkable over time. Verification status only; never a safe/good/worth-using verdict.
-
-## Part of SaSame MCP Factory
-
-SaSame is now one modular **MCP Factory**: a production, distribution, inspection and continuous-observation system for Model Context Protocol servers. Multiple creator entry points (idea, blueprint, unfinished build, finished build, live MCP, underperforming MCP, portfolio monitoring) feed one Factory Lifecycle — creators keep their product, repo, code, data and credentials; the Factory supplies market intelligence, blueprint normalization, inspection, runtime verification, shipment manifests, distribution, AEO, neutral observation, and repair/reverification. **This repo is the Factory's inspection and observation station** — the independent observation, conformance and evidence capability that previously named the company, preserved as a permanent core layer of the Factory. Neutrality, evidence, correction, and no-endorsement are unchanged.
-
-Sibling stations in the Factory: [sasame-mcp](https://github.com/shigeki7777/sasame-mcp) (the Factory's public MCP entry point) · [gold-rush-town](https://github.com/shigeki7777/gold-rush-town) (the Factory's public demonstration/engagement station) · [mcp-readiness](https://github.com/shigeki7777/mcp-readiness) (the Factory's forkable local inspection CLI). Public site: https://srl-sasame.com.
+> **Check your MCP → see the measured grade → claim the owner-controlled Readiness Passport.** SaSame publishes agent-readable readiness records for public MCP servers: reachable, callable, schema-valid, and re-checkable over time. Verification status only; never a safe/good/worth-using verdict.
 
 **🪪 Is your MCP server listed here? [Claim your MCP Readiness Passport free →](https://github.com/shigeki7777/sasame-mcp-observatory/issues/new?template=claim-passport.yml)** — prove control via `.well-known` / DNS / repo and turn an outside observation into an owner-confirmed record. No account setup, no cost, no sales pitch.
 
@@ -18,9 +12,9 @@ We continuously and externally audit public MCP (Model Context Protocol) servers
 
 ## The numbers (latest)
 
-- **30000** public MCP entries indexed (21276 with an auditable remote endpoint)
-- **26155** audited · **3724** named rows currently meet the **Observed MCP-Ready** bar (A/B)
-- **3712** signed certificates copied into this snapshot
+- **30000** public MCP entries indexed (22176 with an auditable remote endpoint)
+- **36835** audited · **2835** named rows currently meet the **Observed MCP-Ready** bar (A/B)
+- **2823** signed certificates copied into this snapshot
 - Coverage and freshness: [`data/latest/coverage.json`](data/latest/coverage.json) · provenance and license boundary: [`data/latest/provenance.json`](data/latest/provenance.json)
 - Full numbers: [`data/latest/summary.json`](data/latest/summary.json)
 
@@ -72,10 +66,10 @@ This is an **open participation entrance**, not a sales list. Three ways in:
 
 ## Honesty
 
-This is a **v0.2 draft**, not affiliated with the official MCP project. Observations are **snapshots** and **time-limited** (certs expire ~14 days; liveness decays). We list only A/B servers (positive); we **never** publish a "worst/dead/fake" list — failure patterns are aggregated anonymously as *common failure modes*. We disclose our interest: SaSame helps builders make MCP servers AI-callable. That is exactly why the criteria, the verifier, and every certificate's evidence are open — **re-run it and tell us if we're wrong.**
+This is a **v0.4 draft**, not affiliated with the official MCP project. Observations are **snapshots** and **time-limited** (certs expire ~14 days; liveness decays). We list only A/B servers (positive); we **never** publish a "worst/dead/fake" list — failure patterns are aggregated anonymously as *common failure modes*. We disclose our interest: SaSame helps builders make MCP servers AI-callable. That is exactly why the criteria, the verifier, and every certificate's evidence are open — **re-run it and tell us if we're wrong.**
 
 ## Public scope boundary
 
 This repository contains public measurement data, documentation, and public-safe contribution tasks only. Internal business logic, monetization design, compliance review, moderation policy, telemetry internals, and private operating specifications are maintained in SaSame private repositories.
 
-_Generated 2026-07-16T04:30:50.393Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_
+_Generated 2026-07-31T15:45:07.128Z · SaSame-created measurements CC-BY; upstream metadata retains upstream terms · delist: consulting@srl-sasame.com_

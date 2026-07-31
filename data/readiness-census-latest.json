@@ -1,64 +1,63 @@
 {
   "schema": "sasame-readiness-census-v0.3",
-  "generated_at": "2026-07-27T11:14:23.000Z",
+  "generated_at": "2026-07-31T15:45:07.128Z",
   "data_quality": {
     "status": "fresh",
     "fail_closed": false,
-    "summary_generated_at": "2026-07-27T00:24:29.379Z",
-    "summary_age_seconds": 38993,
+    "summary_generated_at": "2026-07-31T15:45:07.128Z",
+    "summary_age_seconds": 0,
     "summary_expected_max_age_seconds": 172800,
-    "latest_audit_at": "2026-07-27T03:44:54.066Z",
-    "latest_audit_age_seconds": 26968,
+    "latest_audit_at": "2026-07-31T15:39:10.811Z",
+    "latest_audit_age_seconds": 356,
     "latest_audit_expected_max_age_seconds": 172800,
     "note": "Registry summary and latest audit are within the declared freshness windows."
   },
   "source": "https://live-vps.sasame.online/observatory/",
-  "standard": "agent-tool-discoverability-standard/0.2",
+  "standard": "agent-tool-discoverability-standard/0.4",
   "what_this_is": "Outside-in, reproducible verification-status census of public MCP endpoints. Aggregate only. No risk/safety/trust verdict on any named party.",
   "scope": {
     "registry_entries_indexed": 30000,
-    "auditable_public_endpoints": 21921,
-    "audited_records_latest_state": 29971,
-    "unique_domains_audited": 5835,
-    "observed_ready_continuously_rechecked": 4079,
+    "auditable_public_endpoints": 22176,
+    "audited_records_latest_state": 35174,
+    "unique_domains_audited": 6186,
+    "observed_ready_continuously_rechecked": 2835,
     "owner_claimed": 1,
     "owner_claimed_source": "census/claims.jsonl unique normalized endpoints",
     "audit_window": {
       "from": "2026-06-17",
-      "to": "2026-07-27"
+      "to": "2026-07-31"
     }
   },
   "by_source": {
-    "official MCP registry": 14152,
-    "PulseMCP": 390,
-    "Glama": 15458
+    "official MCP registry": 14082,
+    "Glama": 15918
   },
   "measurement_basis": {
-    "denominator_count": 29971,
+    "denominator_count": 35174,
     "denominator_field": "scope.audited_records_latest_state",
     "denominator_definition": "latest unique endpoint audit records: census/audits.jsonl reduced to one record per endpoint URL, keeping the row with the greatest audited_at.",
     "auditable_public_endpoints_note": "scope.auditable_public_endpoints is a registry-side count taken from summary.json at its own generation time. It is NOT the denominator of any percentage in readiness_distribution, and the two numbers are expected to differ.",
-    "observed_ready_A_or_B_count": 3733,
-    "real_content_observed_count": 1950,
-    "real_content_denominator_count": 29971,
+    "observed_ready_A_or_B_count": 3879,
+    "real_content_observed_count": 1989,
+    "real_content_denominator_count": 35174,
     "real_content_definition": "audit records where returns_real_content === true: one bounded read-only call returned substantive content under the declared methodology.",
     "percentage_derivation": "every pct in readiness_distribution = Number((100 * count / denominator_count).toFixed(1)).",
     "not_a_verdict": "These counts describe what was observable under one declared method at one point in time. They are NOT integration-success rates, availability guarantees, security findings, or a statement that the remaining records are unusable. Authentication requirements, the absence of a safely callable read-only tool, argument or context requirements, and transient errors are all counted as not-observed.",
     "input_provenance": {
       "generator_source_sha256": "985433101045d1afaaf6659170dd967e2e688f6eecfd47e8b0a692b92240cc3c",
-      "audits_jsonl_sha256": "4d5935acf4933f2a361179a4aeb1cfb9a83861a8d73502d8fcecc436ba219561",
-      "summary_json_sha256": "29d389d0cf8f08ee23fdabfc0795ab64c1c64b0b73fd87f0d84d85e3988be3a3",
+      "audits_jsonl_sha256": "69745f59dc8fbe4ecbe48a17e7e6f2863f7345109cf631b21c7ace2bbb0fd7ee",
+      "summary_json_sha256": "90cba73cb65eea0b89bd6ba2aa868f23b182ccce7659a5b7b8520de5f70572e9",
       "claims_jsonl_present": true,
       "claims_jsonl_sha256": "94f4281168d3f634f4b36c73ce0f7297634f725bd41db4bd54f37de1e34f6028",
       "cross_reference_snapshot": {
         "selected": true,
-        "path": "observatory/snapshots_multi/2026-07-27.json",
-        "date": "2026-07-27",
-        "sha256": "b3377efb6719e7851ee159c2c2b96eb0b987ef4430aac6773a704a54c442966b"
+        "path": "observatory/snapshots_multi/2026-07-31.json",
+        "date": "2026-07-31",
+        "sha256": "50f439bd7808ccbbb22eb78274d8acf4e7fdd693c91e8a92c0f64d9b25aa414b"
       }
     },
     "generation_parameters": {
-      "census_now": "2026-07-27T11:14:23.000Z",
+      "census_now": "2026-07-31T15:45:07.128Z",
       "summary_max_age_seconds": 172800,
       "audit_max_age_seconds": 172800
     },
@@ -66,38 +65,38 @@
   },
   "readiness_distribution": {
     "note": "Grade = deterministic function of pass count vs a 10-criterion outside-in discoverability standard. NOT a safety, quality, or trust verdict. Failure patterns are aggregated; no endpoint is named here.",
-    "denominator_count": 29971,
+    "denominator_count": 35174,
     "A": {
-      "count": 504,
-      "pct": 1.7
+      "count": 517,
+      "pct": 1.5
     },
     "B": {
-      "count": 3229,
-      "pct": 10.8
+      "count": 3362,
+      "pct": 9.6
     },
     "C": {
-      "count": 25704,
-      "pct": 85.8
+      "count": 30746,
+      "pct": 87.4
     },
     "D": {
-      "count": 511,
-      "pct": 1.7
+      "count": 526,
+      "pct": 1.5
     },
-    "observed_ready_A_or_B_count": 3733,
-    "observed_ready_A_or_B_pct": 12.5,
-    "returns_real_content_on_one_read_only_call_count": 1950,
-    "returns_real_content_on_one_read_only_call_denominator": 29971,
-    "returns_real_content_on_one_read_only_call_pct": 6.5
+    "observed_ready_A_or_B_count": 3879,
+    "observed_ready_A_or_B_pct": 11,
+    "returns_real_content_on_one_read_only_call_count": 1989,
+    "returns_real_content_on_one_read_only_call_denominator": 35174,
+    "returns_real_content_on_one_read_only_call_pct": 5.7
   },
   "registry_fragmentation": {
     "finding": "Two independent registries overlap on ~0% of their union — a single registry is a biased lens; cross-reference at least two sources.",
     "in_both": 0,
     "only_a": 0,
-    "only_b": 14267,
-    "as_of": "2026-07-27"
+    "only_b": 14765,
+    "as_of": "2026-07-31"
   },
   "external_context": {
     "note": "Independent 2026 security research documents an auth/SSRF crisis in the MCP ecosystem (e.g. ~37% SSRF-exposed, ~41% no-auth, ~8.5% OAuth across ~7,000 public servers; 30+ CVEs in a 60-day window). SaSame does NOT assign risk/badness to named servers — it publishes continuous verification-status so the readiness gap is measurable without naming-and-shaming."
   },
-  "self_sha256": "5314865171cbcfed48a559af3cf6e420f04ca7a475452f987872cae329b5c69e"
+  "self_sha256": "37119d6b9ad098770e6039ee094477348963e6b3a6963627a55bdeabda198d06"
 }
